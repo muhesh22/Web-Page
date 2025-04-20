@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Project Management</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="shortcut icon" href="webicon.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link href="../navbar.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Helvetica:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link href="../styles.css" rel="stylesheet">
+    <style>
+        nav.premium-nav {
+            position: relative;
+            z-index: 100 !important;
+            /* Keep it above the Vanta.js effect */
+        }
+
+        /* Ensure the mobile menu is on top */
+        nav.premium-nav .mobile-menu {
+            position: relative;
+            z-index: 200 !important;
+            /* Make it higher than the nav to ensure visibility */
+        }
+
+        /* Banner (background should stay behind) */
+        .banner {
+            position: relative;
+            z-index: 1 !important;
+            /* Keep the background effect behind */
+        }
+        body {
+        font-family: 'Helvetica';
+        }
+    </style>
+</head>
+<body>
+    <nav class="premium-nav">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">
+                <span class="logo-text">Muhesh Fab Academy '25</span>
+                <div class="logo-shine"></div>
+            </a>
+    
+            <div class="nav-links">
+                <a href="../index.html" class="nav-link " style="text-decoration: none;">
+                    <i class="ri-home-5-line"></i>
+                    <span>Home</span>
+                </a>
+                <a href="../about.html" class="nav-link" style="text-decoration: none;">
+                    <i class="ri-information-line"></i>
+                    <span>About</span>
+                </a>
+                <a href="../final_proj.html" class="nav-link " style="text-decoration: none;">
+                    <i class="ri-stack-line"></i>
+                    <span>Final Project</span>
+                </a>
+                <a href="../Weekly Assignment.html" class="nav-link active" style="text-decoration: none;">
+                    <i class="ri-printer-cloud-line"></i>
+                    <span> Assignment</span>
+                </a>
+                <a href="#footer" class="nav-link" style="text-decoration: none;">
+                    <i class="ri-mail-line"></i>
+                    <span>Contact</span>
+                </a>
+    
+            </div>
+    
+            <div class="nav-actions">
+                <button class="theme-toggle" aria-label="Toggle theme">
+                    <i class="ri-sun-line sun-icon"></i>
+                    <i class="ri-moon-line moon-icon"></i>
+                </button>
+                <button class="mobile-menu" aria-label="Menu">
+                    <i class="ri-menu-line"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="three-column-layout">
+        <div class="left-column">
+            <ol>
+                <li>Week 1 : Project Management</li>
+                <li>Week 2 : CAD Assignment</li>
+                <li>Week 3 : Computer Controlled Cutting</li>
+                <li>Week 4 : 3D Printing</li>
+            </ol>
+        </div>
+
+        <div class="center-column">
+            <h1 class="display-3 mb-0"><b>Student Agreement</b></h1>
+            <b>I am a Fab Academy student, responsible for </b>
+            <ul>
+                <li>Attending class lectures and participating in reviews</li>
+                <li>Developing and documenting projects assigned to introduce and demonstrate skills, in enough detail to be able to reproduce them</li>
+                <li>Honestly reporting on my work, and appropriately attributing the work of others (both human and machine, including AI prompts)</li>
+                <li>Being prepared to answer questions about my work</li>
+                <li>Allowing the Fab Academy to share my work (with attribution) in the class for purposes compatible with its mission</li>
+                <li>Working safely</li>
+                <li>Leaving workspaces in the same (or better) condition than I found them</li>
+                <li>Participating in the upkeep of my lab</li>
+                <li>Ensuring that my tuition for local and central class costs is covered</li>
+                <li>Following locally applicable health and safety guidance</li>
+                <li>Recognizing limits on lab and staff time</li>
+                <li>Promoting a respectful environment free of harassment and discrimination</li>
+            </ul>
+            <p class="mt-1">Signed by committing this file in my repository<br></p>
+            <h4><b>Muheshkumar R</b></h4>
+
+            <p class="lead mt-2 text-secondary">
+                <h1 class="display-3 mb-0" style="font-weight: bold;">Week 1: Project Management</h1>
+                This week describes my understanding of how to use Git and GitHub for version control. It also includes how to create a repository, how to create a branch, how to commit changes, and how to push and pull changes from the remote repository.
+            </p>
+
+            <h1 style="font-weight: bold;">About Final Project</h1> 
+            <a href="../final_proj.html">For more...</a>
+
+            <h3 style="font-weight: bold; font-style: italic;">Line Bot - Smarter Than Your Average Cart</h3>
+                
+             <ul style="font-size: 1.2em">
+                    <li>This is not just another industrial robot—it’s a campus logistics revolution on wheels.</li>
+                    <li>Designed to move small loads like waste bags, supplies, or anything people are too lazy to carry.</li>
+                    <li>It glides across the campus, tackling uneven terrain with independent suspension like an off-road champion.</li>
+                    <li>No unnecessary AI here—just a PlayStation joystick and pure mechanical efficiency.</li>
+                    <li>Who needs fancy automation when you can have full manual control and actually enjoy driving it?</li>
+                    <li>Built to be rugged, reliable, and resistant to questionable student experiments.</li>
+                    <li>Designed for efficiency but guaranteed to make heads turn as it rolls by.</li>
+                    <li>Powered by engineering, controlled by common sense, and driven by necessity.</li>
+                    <li>It’s not just a robot—it’s a smarter, tougher, and way more entertaining alternative to walking.</li>
+            </ul>
+            <br>
+            <h3><b>Final Project Conceptual Sketch</b></h3>
+                
+            <div class="col">
+                <img src="../media/final_proj_sketch.png" class="img-fluid" alt="3D model" style="border-radius: 10px; width: 50%;">
+            </div>
+
+            
+            <h1 class="display-3 mb-5">Git_Tutorial</h1>
+            <img src="../media/proj_man/git_logo.png" class="img-fluid mb-4" alt="Description of Image" style="max-width: 100%; height: auto;">
+
+            <h1 class="display-5">What’s Git?</h1>
+  
+            <p class="lead mt-3 text-secondary">Git is a version control software that allows developers to develop the same project. It allows developers to track the
+            changes to a set of files which is called “repository” or “repo”. Install Git.</p>
+        <h1 class="display-5">How to install Git:</h1>
+
+        <pre style="background-color: #fceded2a;border-radius: 5px;">
+            <code class="language-bash">
+                # install git via winget on windows
+                winget install --id Git.Git -e --source winget
+            
+                # install git via homebrew on mac
+                brew install git
+
+                # install git via macport on mac
+                sudo port install git
+            </code>
+        </pre>
+    
+        <h1 class="display-5">1. Basic Git Configuration</h1>
+        <p class="lead text-secondary mt-3">After installing Git, I configure my username and email as Git attaches the information to the commits:</p>
+        <pre style="background-color: #fceded2a;border-radius: 5px;">
+        <code class="language-bash">
+            git config --global user.name "my name"
+            git config --global user.email "my email"
+        </code>
+        </pre>
+        <p class="lead text-secondary mt-3">My name can be found as below:</p>
+        <img src="../media/proj_man/download.png" class="img-fluid" alt="Description of Image" style="max-width: 100%; height: auto;">
+        <h1 class="display-5 mt-5">2. SSH Keys</h1>
+        <h3>2.1 Generating SSH Keys</h3>
+            <p class="lead text-secondary mt-3">SSH keys are used to establish a secure connection between my computer and the Git server. Here’s how to set them up:</p>
+        <ol class="lead text-secondary">
+            <li>Open a terminal or command prompt.</li>
+            <li>Enter <code>ssh-keygen</code> and press Enter to create a new SSH key.</li>
+            <li>When prompted, provide a file path to save the key, or just press Enter to accept the default location.</li>
+            <li>Enter a secure passphrase when prompted or press Enter to continue without a passphrase (which is not recommended).</li>
+        </ol>
+        <img src="../media/proj_man/pm_13.png" class="img-fluid m-2" alt="Description of Image" style="max-width: 100%; height: auto;">
+
+        <img src="../media/proj_man/pm_14.png" class="img-fluid m-2" alt="Description of Image" style="max-width: 100%; height: auto;">
+        <p class="lead text-secondary mt-3">We need to enter the passphrase if we want to encrypt otherwise just press Enter</p>
+
+        <img src="../media/proj_man/pm_15.png" class="img-fluid m-2" alt="Description of Image" style="max-width: 100%; height: auto;">
+        <p class="lead text-secondary mt-3">A Randomart will be generated as above shown</p>
+
+        <img src="../media/proj_man/pm_16.png" class="img-fluid m-2" alt="Description of Image" style="max-width: 100%; height: auto;">
+        
+        <p class="lead text-secondary mt-3">Finslly clip the key and paste it in the Git server</p>
+
+        <h3>2.2 Adding SSH Key to the Git Server</h3>
+        <p class="lead text-secondary mt-3">Locate public SSH key file and open it with a text editor to copy its contents. In my case, the file is <code>id_ed25519.pub</code>. Go to Git server (e.g., GitHub, Bitbucket) and find the section where I can add SSH keys (usually in the account settings).</p>
+        <ol class="lead text-secondary">
+            <li>Copy the contents of the public SSH key file.</li>
+            <li>Paste the key in the SSH key section of the Git server.</li>
+            <li>Enter a label for the key, e.g. <code>My Laptop</code>.</li>
+            <li>Click <code>Add SSH key</code> to add the key to the Git server.</li>
+        </ol>
+        <img src="../media/proj_man/pm_17.png" class="img-fluid" alt="Description of Image" style="max-width: 100%; height: auto;">
+        <p class="lead text-secondary mt-3">3.Paste public key into the appropriate area and save it.</p>
+        <img src="../media/proj_man/pm_18.png" class="img-fluid" alt="Description of Image" style="max-width: 100%; height: auto;">
+
+        <h1 class="display-5 mt-5">4. Cloning a Repository</h1>
+        <p class="lead text-secondary mt-3">To start working on an existing project. The current repository needed to be cloned:</p>
+        <pre style="background-color: #fceded2a;border-radius: 5px;">
+            git clone https://gitlab.fabcloud.org/academany/fabacademy/2025/labs/nellai/students/muheshkumar-r.git
+        </pre>
+
+
+        <h1 class="display-5 mt-5">5. Basic Git Commands</h1>
+        <p class="lead text-secondary mt-3">Here are some basic Git commands I'll use:</p>
+        <pre style="background-color: #fceded2a;border-radius: 5px;">
+        <code class="language-bash">
+            # Check the status of your files (modified, added, etc.)
+            git status
+        
+            # Add all changes to the staging area
+            git add .
+        
+            # Commit your changes with a message
+            git commit -m "Your commit message"
+        
+            # Push your changes to the remote repository
+            git push
+        
+            # Pull the latest changes from the remote repository
+            git pull
+        </code>
+    </pre>
+    <p class="lead text-secondary mt-3"><a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git" target="_blank">Git Installation reference</a></p>
+
+    <h1 class="display-5 mt-5">Image Resizing</h1>
+
+    <h1 class="display-5 mt-5">About Xnconvert Installation</h1>
+    <p class="lead text-secondary mt-3">Xnconvert is a free software for converting and resizing images. To install Xnconvert, go to the <a href="https://www.xnview.com/en/xnconvert/" target="_blank">download page</a> and download the appropriate version for your operating system. Follow the installation instructions to install Xnconvert on your computer.</p>
+    <div class="container mt-5">
+        <!-- Bootstrap Carousel -->
+        <div id="imageSlider" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#imageSlider" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#imageSlider" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#imageSlider" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#imageSlider" data-bs-slide-to="3"></button>
+                <button type="button" data-bs-target="#imageSlider" data-bs-slide-to="4"></button>
+                <button type="button" data-bs-target="#imageSlider" data-bs-slide-to="5"></button>
+            </div>
+            
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner rounded">
+                <div class="carousel-item active">
+                    <img src="../media/proj_man/pm_4.png" class="d-block" alt="Project Management Image 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="../media/proj_man/pm_5.png" class="d-block" alt="Project Management Image 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="../media/proj_man/pm_6.png" class="d-block" alt="Project Management Image 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="../media/proj_man/pm_7.png" class="d-block" alt="Project Management Image 4">
+                </div>
+                <div class="carousel-item">
+                    <img src="../media/proj_man/pm_8.png" class="d-block" alt="Project Management Image 5">
+                </div>
+                <div class="carousel-item">
+                    <img src="../media/proj_man/pm_9.png" class="d-block" alt="Project Management Image 6">
+                </div>
+            </div>
+            
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#imageSlider" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#imageSlider" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <style>
+        /* Custom fade animation */
+        .carousel-item {
+            transition: opacity 1s ease-in-out !important;
+        }
+        .carousel-fade .active.carousel-item-start,
+        .carousel-fade .active.carousel-item-end {
+            transition: opacity 0s 1s !important;
+        }
+        
+        /* Fixed image size container */
+        .carousel-inner {
+            height: 500px; /* Fixed height for all slides */
+        }
+        
+        .carousel-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain; /* Maintain aspect ratio */
+            background-color: #000; /* Black background for consistency */
+        }
+        
+        /* Black navigation arrows */
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 50%;
+            padding: 20px;
+            background-size: 50% 50%;
+        }
+        
+        .carousel-control-prev,
+        .carousel-control-next {
+            width: 8%;
+        }
+        
+        @media (max-width: 768px) {
+            .carousel-inner {
+                height: 400px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .carousel-inner {
+                height: 300px;
+            }
+            
+            .carousel-control-prev-icon,
+            .carousel-control-next-icon {
+                padding: 15px;
+            }
+        }
+    </style>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // Customize the slider behavior
+        document.addEventListener('DOMContentLoaded', function() {
+            var myCarousel = document.getElementById('imageSlider');
+            var carousel = new bootstrap.Carousel(myCarousel, {
+                interval: 2000, // Change slide every 2 seconds
+                pause: 'hover', // Pause on hover
+                wrap: true // Continuously cycle
+            });
+        });
+    </script>
+
+    <h1 class="display-5 mt-5">Importing and Resizing</h1>
+    <p>Use Xnconvert to resize images</p>
+    <p>Import the images into Xnconvert and change the resolution to 800px in width</p>
+    <div class="image-container">
+        <img src="../media/proj_man/pm_10.png" class="img-fluid" alt="Description of Image" style="max-width: 100%; height: auto;">
+        <img src="../media/proj_man/pm_11.png" class="img-fluid" alt="Description of Image" style="max-width: 100%; height: auto;">
+    </div>
+
+    <h1 class="display-5 mt-5">Exporting</h1>
+    <p>Export the resized images to the folder with image containers</p>
+    <p>For adding images, use the image container provided</p>
+
+    <div class="image-container">
+        <img src="../media/proj_man/pm_12.png" class="img-fluid" alt="Description of Image" style="max-width: 100%; height: auto;">
+    </div>
+    <div class="container">
+        <h1 class="display-5 mt-5">Website Creation</h1>
+    
+        <h3 class="mt-5">A New beginning on HTML and CSS</h3>
+        <p>Learmed many languages first time stepping into the HTML and CSS.</p>
+        <p>Learned by Experience, made many mistakes initially afterwards rectified those</p>
+        <p>Let me through the process</p>
+    
+        <div class="step">
+            <h3 class="mt-5">Step 1: Installing VS Code</h3>
+            <p class="lead text-secondary mt-3">Install VS Code from <a href="https://code.visualstudio.com/">https://code.visualstudio.com/</a></p>
+        </div>
+        <div class="image-container">
+            <img src="../media/proj_man/pm1.png" class="img-fluid" alt="Description of Image" style="max-width: 100%; height: auto;">
+        </div>
+        <div class="step">
+            <h3 class="mt-5">Step 2: Installing Live Server Extension</h3>
+           
+            <p class="lead text-secondary mt-3">Install Live Server extension from <a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer">https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer</a></p>
+            <p class="lead text-secondary mt-3">Install the necessary extensions like Live Server, Auto Close Tag, Auto Rename Tag, Highlight, and Intellisense for CSS, HTML, JSON, and PHP.</p>  
+        </div>
+        <div class="image-container">
+            <img src="../media/proj_man/pm3.png" class="img-fluid" alt="Description of Image" style="max-width: 100%; height: auto;">
+        </div>
+    
+        <div class="step">
+            <h3 class="mt-5">Step 3: Introduction to Bootstrap</h3>
+           
+            <p class="lead text-secondary mt-3">For creating a responsive website, we are going to use Bootstrap. Bootstrap is a free and open-source CSS and JavaScript framework for building user interfaces. It is based on HTML, CSS and JavaScript. Learn more about Bootstrap here: <a href="https://getbootstrap.com/">https://getbootstrap.com/</a></p>
+            <p class="lead text-secondary mt-3">For creating the website, we will be using Bootstrap's Card component to create the individual cards for each assignment. We will also be using Bootstrap's Navbar component to create the navigation bar. Refer to the documentation of Bootstrap for more details on how to use the components.</p>  
+        </div>
+        <div class="image-container">
+            <img src="../media/proj_man/pm_28.jpg" class="img-fluid" alt="Description of Image" style="max-width: 100%; height: auto;">
+        </div>
+    
+    
+        <div class="step">
+            <h3 class="mt-5"> Step 4: Creating the Basic structures</h3>
+            <p>Create the basic structures for your website using HTML and CSS:</p>
+            <ul>
+                <li>Create a new folder for your website and create the necessary files such as index.html, style.css, and script.js.</li>
+                <li>Write the basic structure of HTML including the doctype, head, and body tags.</li>
+                <li>Write the basic structure of CSS including the selectors, properties, and values.</li>
+                <li>Write the basic structure of JavaScript including the variables, functions, and events.</li>
+            </ul>
+        </div>
+        <div class="image-container">
+            <img src="../media/proj_man/pm2.png" class="img-fluid" alt="Description of Image" style="max-width: 100%; height: auto;">
+        </div>
+    
+        <div class="step">
+            <h3 class="mt-5">Step 5: Creating the Navbar</h3>
+            <p>Create the navbar for your website using Bootstrap:</p>
+            <ul>
+                <li>Create a navbar component using Bootstrap's Navbar component.</li>
+                <li>Write the HTML and CSS for the navbar component.</li>
+                <li>Configure the navbar to have the desired content and layout.</li>
+                <li>Attach the navbar to the webpage.</li>
+            </ul>
+        </div>
+        <div class="image-container">
+            <img src="../media/proj_man/pm_27.jpg" class="img-fluid" alt="Description of Image" style="max-width: 100%; height: auto;">
+        </div>
+    
+        <div class="step">
+            <h3 class="mt-5">Step 4: Creating the Cards</h3>
+            <p>Create the cards for your website using Bootstrap:</p>
+            <ul>
+                <li>Create a card component for each assignment using Bootstrap's Card component.</li>
+                <li>Write the HTML and CSS for the card component.</li>
+            </ul>
+        </div>
+        <div class="image-container">
+            <img src="../media/proj_man/pm_23.jpg" class="img-fluid" alt="Description of Image" style="max-width: 100%; height: auto;">
+        </div>
+    
+        <div class="step">
+            <h3 class="mt-5">Step 4: Design the Content</h3>
+            <p>Create the content for your website using HTML and CSS:</p>
+            <ul>
+                <li>Create a new folder for your website and create the necessary files such as index.html, style.css, and script.js.</li>
+                <li>Write the basic structure of HTML including the doctype, head, and body tags.</li>
+                <li>Write the basic structure of CSS including the selectors, properties, and values.</li>
+                <li>Write the basic structure of JavaScript including the variables, functions, and events.</li>
+            </ul>
+            <div class="d-flex flex-wrap justify-content-center">
+                <img src="../media/proj_man/pm_4.png" class="img-fluid m-2" alt="Description of Image" style="max-width: 100%; height: auto;">
+                <img src="../media/proj_man/pm_5.png" class="img-fluid m-2" alt="Description of Image" style="max-width: 100%; height: auto;">
+                <img src="../media/proj_man/pm_6.png" class="img-fluid m-2" alt="Description of Image" style="max-width: 100%; height: auto;">
+                <img src="../media/proj_man/pm_7.png" class="img-fluid m-2" alt="Description of Image" style="max-width: 100%; height: auto;">
+                <img src="../media/proj_man/pm_8.png" class="img-fluid m-2" alt="Description of Image" style="max-width: 100%; height: auto;">
+w            </div>
+        </div>
+    
+        <div class="step">
+            <h3 class="mt-5">Step 5: Add the Footer</h3>
+            <p>Add a footer to your website using HTML and CSS:</p>
+            <ul>
+                <li>Create a footer section using HTML.</li>
+                <li>Style the footer with CSS to match your website's theme.</li>
+                <li>Include links to important pages and social media profiles.</li>
+            </ul>
+        </div>
+        <div class="image-container">
+            <img src="../media/proj_man/pm_19.jpg" class="img-fluid" alt="Description of Image" style="max-width: 100%; height: auto;">
+        </div>
+    
+        <div class="step">
+            <h3 class="mt-5">Step 6: Test the Website Thoroughly</h3>
+            <p>Ensure that your website functions correctly and looks good across all platforms:</p>
+            <ul>
+                <li>Launch the website in various web browsers and check for any discrepancies.</li>
+                <li>Verify the website's responsiveness on different devices, including tablets and smartphones.</li>
+                <li>Conduct tests with diverse input scenarios to confirm expected behavior.</li>
+            </ul>
+        </div>
+    
+        <div class="step">
+            <h3 class="mt-5">Step 7: Deploy the Website Using Git</h3>
+            <p>Deploy your website to a hosting platform:</p>
+            <ul>
+                <li>Choose a hosting service that supports Git deployment, like GitHub Pages or Netlify.</li>
+                <li>Push your local repository to the remote server using Git commands.</li>
+                <li>Follow the platform's instructions to set up deployment from your Git repository.</li>
+            </ul>
+        </div>
+    
+    
+        
+        </div>
+    
+    
+
+
+    
+</body>
+<footer id="footer" class="text-center" style="background-color: #1a1a1a; color: #d3d3d3 !important;"
+    data-aos="fade-up">
+    <div class="container pt-4">
+        <section class="mb-4">
+            <a class="btn btn-link btn-floating btn-lg text-light m-1" href="tel:+91 6379839123" role="button"
+                data-aos="flip-left">
+                <img src="https://img.icons8.com/ios-filled/20/ffffff/phone.png" alt="Phone" width="20" height="20" />
+            </a>
+
+            <a class="btn btn-link btn-floating btn-lg text-light m-1" href="mailto:muhesh022@gmail.com" role="button"
+                data-aos="flip-right">
+                <img src="https://img.icons8.com/ios-filled/20/ffffff/gmail.png" alt="Gmail" width="20" height="20" />
+            </a>
+
+            <a class="btn btn-link btn-floating btn-lg text-light m-1" href="https://www.linkedin.com/in/muheshkumar22"
+                target="_blank" role="button" data-aos="flip-left">
+                <img src="https://img.icons8.com/ios-filled/20/ffffff/linkedin.png" alt="LinkedIn" width="20"
+                    height="20" />
+            </a>
+
+            <a class="btn btn-link btn-floating btn-lg text-light m-1" href="https://www.instagram.com/r_muhesh_"
+                target="_blank" role="button" data-aos="flip-right">
+                <img src="https://img.icons8.com/ios-filled/20/ffffff/instagram-new.png" alt="Instagram" width="20"
+                    height="20" />
+            </a>
+
+            <a class="btn btn-link btn-floating btn-lg text-light m-1" href="https://github.com/muhesh22"
+                target="_blank" role="button" data-aos="flip-left">
+                <img src="https://img.icons8.com/ios-filled/20/ffffff/github.png" alt="GitHub" width="20" height="20" />
+            </a>
+
+            <a class="btn btn-link btn-floating btn-lg text-light m-1"
+                href="https://gitlab.fabcloud.org/academany/fabacademy/2025/labs/nellai/students/muheshkumar-r"
+                target="_blank" role="button" data-aos="flip-right">
+                <img src="https://img.icons8.com/ios-filled/20/ffffff/gitlab.png" alt="GitLab" width="20" height="20" />
+            </a>
+        </section>
+
+       
+    </div>
+
+    <div class="text-center p-3" style="background-color: rgba(255, 255, 255, 0.1); color: #d3d3d3;">
+        © 2025 Copyright
+        <p class="text-light"><a href="project_management.html" class="text-light">Student Agreement</a> </p>
+        <a class="text-light" href="#">2025 Muheshkumar R - Creative Common Attribution Non Commercial <br> Source code
+            hosted at</a>
+        <a class="text-light" href="https://gitlab.fabcloud.org/academany/fabacademy/2025/labs/nellai/students/muheshkumar-r"
+            target="_blank">gitlab.fabcloud.org</a> - <a class="text-light" href="https://fabacademy.org/" target="_blank">fabacademy.org</a>
+            target="_blank">gitlab.fabcloud.org</a>    </div>
+</footer>
+<!-- AOS Script -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1000, // Animation duration
+        once: true, // Animation happens only once
+    });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+<script src="../navbar.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const menuToggle = document.querySelector(".mobile-menu");
+        const navLinks = document.querySelector(".nav-links");
+
+        menuToggle.addEventListener("click", function () {
+            navLinks.classList.toggle("active");
+        });
+
+        document.addEventListener("click", function (event) {
+            if (!menuToggle.contains(event.target) && !navLinks.contains(event.target)) {
+                navLinks.classList.remove("active");
+            }
+        });
+    });
+</script>
+
+</html>

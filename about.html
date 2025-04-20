@@ -10,16 +10,37 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-        <link href="navbar.css" rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-        
-</head>
+    <link href="navbar.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+<style>
+    body {
+        font-family: 'Helvetica', sans-serif;
+    }
+    nav.premium-nav {
+    position: relative;
+    z-index: 100 !important; /* Keep it above the Vanta.js effect */
+}
+
+/* Ensure the mobile menu is on top */
+nav.premium-nav .mobile-menu {
+    position: relative;
+    z-index: 200 !important; /* Make it higher than the nav to ensure visibility */
+}
+
+/* Banner (background should stay behind) */
+.banner {
+    position: relative;
+    z-index: 1 !important; /* Keep the background effect behind */
+}
+</style>
+    </head>
 <body>
     <nav class="premium-nav">
         <div class="nav-container">
-            <a href="#" class="nav-logo">
-                <span class="logo-text">Fab Academy</span>
+            <a href="index.html" class="nav-logo">
+                <span class="logo-text">Muhesh Fab Academy '25</span>
                 <div class="logo-shine"></div>
             </a>
     
@@ -32,15 +53,15 @@
                     <i class="ri-information-line"></i>
                     <span>About</span>
                 </a>
-                <a href="Final Project.html" class="nav-link" style="text-decoration: none;">
+                <a href="final_proj.html" class="nav-link" style="text-decoration: none;">
                     <i class="ri-stack-line"></i>
                     <span>Final Project</span>
                 </a>
                 <a href="Weekly Assignment.html" class="nav-link" style="text-decoration: none;">
-                    <img width="20" height="20" src="https://img.icons8.com/windows/32/work.png" alt="work" />
-                    <span>Weekly Assignment</span>
+                <i class="ri-printer-cloud-line"></i>
+                    <span>Assignment</span>
                 </a> 
-                <a href="Contact.html" class="nav-link" style="text-decoration: none;">
+                <a href="#footer" class="nav-link" style="text-decoration: none;">
                     <i class="ri-mail-line"></i>
                     <span>Contact</span>
                 </a>
@@ -58,56 +79,234 @@
             </div>
         </div>
     </nav>
-    <center>
-    <div class="container-fluid d-flex justify-content-center">
-        <div class="row w-75">
-            <div class="col-md-11 m-5">
-                <div class="card" style="background: rgba(253, 249, 9, 0.07);
-                border-radius: 16px;
-                box-shadow: 0 4px 30px rgba(145, 134, 34, 0.493);
-                backdrop-filter: blur(100%);
-                -webkit-backdrop-filter: blur(2px);
-                border: 1px solid rgb(194, 177, 25); color: #b99b16f8;
-                ">
-
-                    <div class="card-body">
-                        <h4 class="card-title">About Me</h4>
-                        <p>Hi, I am Muheshkumar R. I am a passionate engineer with a keen interest in developing innovative solutions. My journey includes working on exciting projects ranging from IoT systems to PCB design. I constantly strive to grow both technically and personally.</p>
-                    </div>
+    <section class="about-section py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6 ms-auto d-flex justify-content" data-aos="fade-right" data-aos-duration="1000">
+                    <img src="media/Bg_fal.jpg" alt="Profile Image" class="rounded-circle img-fluid shadow-lg"
+                        style="width: 300px; height: 300px; object-fit: cover; border-radius: 50%;">
                 </div>
-            </div>
+                <div class="col-lg-6 col-md-8 mt-4 d-flex justify-content-center" data-aos="fade-left" data-aos-duration="1000">
+                    <div>
+                        <h1 class="fw-bold text-warning" data-aos="fade-up" data-aos-delay="200">About Me</h1>
+                        <p class="text-secondary" data-aos="fade-up" data-aos-delay="400">
+                            Hi, I am Muheshkumar R, a passionate engineer with a keen interest in developing
+                            innovative solutions. My journey includes working on exciting projects ranging from IoT systems to
+                            PCB design. I constantly strive to grow both technically and personally.  
+                        </p>
 
-            <div class="col-md-9">
-                <div class="card "style="background: rgba(253, 249, 9, 0.07);
-                border-radius: 16px;
-                box-shadow: 0 4px 30px rgba(145, 134, 34, 0.493);
-                backdrop-filter: blur(100%);
-                -webkit-backdrop-filter: blur(2px);
-                border: 1px solid rgb(194, 177, 25); color: #b99b16f8;
-                ">
-                    <div class="card-body">
-                        <h4 class="card-title">Skills</h4>
-                        <div class="row">
-                            <div class="col-md-3">IoT Development</div>
-                            <div class="col-md-3">PCB Design</div>
-                            <div class="col-md-3">Java Programming</div>
-                            <div class="col-md-3">3D Modeling</div>
-                            <div class="col-md-3">Electronics</div>
-                            <div class="col-md-3">Problem Solving</div>
-                        </div>
+                        <h3 class="fw-bold text-warning" data-aos="fade-up" data-aos-delay="200">Graduate Innovation Engineer</h3>
+                        <p class="text-secondary" data-aos="fade-up" data-aos-delay="400">Participated in ProtoSem - a 20 weeks Graduate Innovation Engineer Certification offered as a comprehensive skills and competency development program that embeds an innovation-centered approach to engineering education. This program helps students to work towards designing, developing and deploying innovative solutions to solve real world problems provided by the Industry. In this process they get transformed into employable individuals or even emerge as technical entrepreneurs.</p>
+                        <h2 class="fw-bold text-warning" data-aos="fade-up" data-aos-delay="200">Projects</h2>
+                        <h4 class="fw-bold text-warning" data-aos="fade-up" data-aos-delay="200">Chainless Bicycle System</h4>
+                        <p class="text-secondary" data-aos="fade-up" data-aos-delay="400"> A chainless bicycle system which runs on the power transmitted by means of DRIVE SHAFT SYSTEM which comprises of 2 pair of bevel gears , A solid shaft and set of bearings.</p>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
+<section class="skills-section text-center py-5">
+    <div class="container">
+        <h2 class="fw-bold mb-4 text-warning" data-aos="fade-up">Skills</h2>
+        <div class="row">
+            <div class="col-md-2 col-6 py-2" data-aos="zoom-in" data-aos-delay="100">
+                <div class="skill-item p-3 bg-light rounded shadow">
+                    <h5>Rapid Prototyping</h5>
+                    <div class="progress">
+                        <div class="progress-bar" id="skill1" data-aos="progress-full" data-aos-duration="1000" data-progress="60"></div>
+                    </div>
+                    <div class="percentage" id="percent1">0%</div>
+                </div>
+            </div>
+            <div class="col-md-2 col-6 py-2" data-aos="zoom-in" data-aos-delay="200">
+                <div class="skill-item p-3 bg-light rounded shadow">
+                    <h5>PCB Design</h5>
+                    <div class="progress">
+                        <div class="progress-bar" id="skill2" data-aos="progress-full" data-aos-duration="1000" data-progress="80"></div>
+                    </div>
+                    <div class="percentage" id="percent2">0%</div>
+                </div>
+            </div>
+            <div class="col-md-2 col-6 py-2" data-aos="zoom-in" data-aos-delay="300">
+                <div class="skill-item p-3 bg-light rounded shadow">
+                    <h5>3D Modelling</h5>
+                    <div class="progress">
+                        <div class="progress-bar" id="skill3" data-aos="progress-full" data-aos-duration="1000" data-progress="80"></div>
+                    </div>
+                    <div class="percentage" id="percent3">0%</div>
+                </div>
+            </div>
+            <div class="col-md-2 col-6 py-2" data-aos="zoom-in" data-aos-delay="400">
+                <div class="skill-item p-3 bg-light rounded shadow">
+                    <h5>Java</h5>
+                    <div class="progress">
+                        <div class="progress-bar" id="skill4" data-aos="progress-full" data-aos-duration="1000" data-progress="70"></div>
+                    </div>
+                    <div class="percentage" id="percent4">0%</div>
+                </div>
+            </div>
+            <div class="col-md-2 col-6 py-2" data-aos="zoom-in" data-aos-delay="500">
+                <div class="skill-item p-3 bg-light rounded shadow">
+                    <h5>Python</h5>
+                    <div class="progress">
+                        <div class="progress-bar" id="skill5" data-aos="progress-full" data-aos-duration="1000" data-progress="70"></div>
+                    </div>
+                    <div class="percentage" id="percent5">0%</div>
+                </div>
+            </div>
+            <div class="col-md-2 col-6 py-2" data-aos="zoom-in" data-aos-delay="600">
+                <div class="skill-item p-3 bg-light rounded shadow">
+                    <h5>Team Hustler</h5>
+                    <div class="progress">
+                        <div class="progress-bar" id="skill6" data-aos="progress-full" data-aos-duration="1000" data-progress="80"></div>
+                    </div>
+                    <div class="percentage" id="percent6">0%</div>
+                </div>
+            </div>
+        </div>
     </div>
-</center>
+</section>
+<!-- Add Custom Styles -->
+<style>
+    .skill-item {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+background: rgba(60, 59, 59, 0.37) !important;
+border-radius: 36px !important;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+color:wheat !important;
+    }
+
+    .skill-item:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .skills-section h2 {
+        font-size: 2.5rem;
+        /* color:wheat !important; */
+    }
+
+    .skills-section .col-md-2 {
+        padding: 15px;
+    }
+
+    .skill-item h5 {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: #f1f1f1;
+    }
+
+    .progress {
+        height: 10px;
+        background-color: #f4f4f449;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+
+    .progress-bar {
+        height: 100%;
+        width: 0;
+        border-radius: 5px;
+        background-color: #ff9800;
+        transition: width 1s ease-in-out;
+    }
+
+    .percentage {
+        margin-top: 5px;
+        font-weight: bold;
+        color: hsl(0, 2%, 71%);
+    }
+</style>
+
+<!-- Add jQuery and Counter Plugin -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.rawgit.com/mhuggins/jquery-countTo/master/jquery.countTo.js"></script>
+
+<!-- Script to animate the percentage count -->
+<script>
+    $(document).ready(function() {
+        // For each progress bar, animate the percentage
+        $(".progress-bar").each(function() {
+            var progress = $(this).data("progress");
+            $(this).animate({ width: progress + "%" }, 1000);
+        });
+
+        // Animate percentage text as well
+        $(".percentage").each(function() {
+            var percentage = $(this).prev().find(".progress-bar").data("progress");
+            $(this).countTo({
+                from: 0,
+                to: percentage,
+                speed: 1000,
+                refreshInterval: 50
+            });
+        });
+    });
+</script>
+
 
 </body>
-<footer class="footer mt-auto py-3 bg-dark">
-    <div class="container">
-      <center><span class="text-light">&copy; 2025 Muheshskumar R </span></center>
+<footer id="footer" class="text-center" style="background-color: #1a1a1a; color: #d3d3d3 !important;"
+    data-aos="fade-up">
+    <div class="container pt-4">
+        <section class="mb-4">
+            <a class="btn btn-link btn-floating btn-lg text-light m-1" href="tel:+91 6379839123" role="button"
+                data-aos="flip-left">
+                <img src="https://img.icons8.com/ios-filled/20/ffffff/phone.png" alt="Phone" width="20" height="20" />
+            </a>
+
+            <a class="btn btn-link btn-floating btn-lg text-light m-1" href="mailto:muhesh022@gmail.com" role="button"
+                data-aos="flip-right">
+                <img src="https://img.icons8.com/ios-filled/20/ffffff/gmail.png" alt="Gmail" width="20" height="20" />
+            </a>
+
+            <a class="btn btn-link btn-floating btn-lg text-light m-1" href="https://www.linkedin.com/in/muheshkumar22"
+                target="_blank" role="button" data-aos="flip-left">
+                <img src="https://img.icons8.com/ios-filled/20/ffffff/linkedin.png" alt="LinkedIn" width="20"
+                    height="20" />
+            </a>
+
+            <a class="btn btn-link btn-floating btn-lg text-light m-1" href="https://www.instagram.com/r_muhesh_"
+                target="_blank" role="button" data-aos="flip-right">
+                <img src="https://img.icons8.com/ios-filled/20/ffffff/instagram-new.png" alt="Instagram" width="20"
+                    height="20" />
+            </a>
+
+            <a class="btn btn-link btn-floating btn-lg text-light m-1" href="https://github.com/muhesh22"
+                target="_blank" role="button" data-aos="flip-left">
+                <img src="https://img.icons8.com/ios-filled/20/ffffff/github.png" alt="GitHub" width="20" height="20" />
+            </a>
+
+            <a class="btn btn-link btn-floating btn-lg text-light m-1"
+                href="https://gitlab.fabcloud.org/academany/fabacademy/2025/labs/nellai/students/muheshkumar-r"
+                target="_blank" role="button" data-aos="flip-right">
+                <img src="https://img.icons8.com/ios-filled/20/ffffff/gitlab.png" alt="GitLab" width="20" height="20" />
+            </a>
+        </section>
+
+       
     </div>
+
+    <div class="text-center p-3" style="background-color: rgba(255, 255, 255, 0.1); color: #d3d3d3;">
+        © 2025 Copyright
+        <p class="text-light"><a href="assigment/project_management.html" class="text-light">Student Agreement</a> </p>
+        <a class="text-light" href="#">2025 Muheshkumar R - Creative Common Attribution Non Commercial <br> Source code
+            hosted at</a>
+        <a class="text-light" href="https://gitlab.fabcloud.org/academany/fabacademy/2025/labs/nellai/students/muheshkumar-r"
+            target="_blank">gitlab.fabcloud.org</a> - <a class="text-light" href="https://fabacademy.org/" target="_blank">fabacademy.org</a>
+            target="_blank">gitlab.fabcloud.org</a>    </div>
 </footer>
+<!-- AOS Script -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1000, // Animation duration
+        once: true, // Animation happens only once
+    });
+</script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
     crossorigin="anonymous"></script>
@@ -116,4 +315,20 @@
     integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
     crossorigin="anonymous"></script>
 <script src="navbar.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const menuToggle = document.querySelector(".mobile-menu");
+        const navLinks = document.querySelector(".nav-links");
+
+        menuToggle.addEventListener("click", function () {
+            navLinks.classList.toggle("active");
+        });
+
+        document.addEventListener("click", function (event) {
+            if (!menuToggle.contains(event.target) && !navLinks.contains(event.target)) {
+                navLinks.classList.remove("active");
+            }
+        });
+    });
+</script>
 </html>

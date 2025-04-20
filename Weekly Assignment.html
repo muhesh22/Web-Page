@@ -3,10 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- This is the title -->
-    <title>About Me - Muheshkumar R</title>
-
-    <!-- This is the bootstrap -->
+    <title>Weekly Assignment</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
@@ -14,16 +11,78 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 
-<!-- This is the remixicon -->
-<link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 
-<!-- This is the icons8 -->
-<link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha384-u3Y6eDB2RtowlyB3N8Jsc1zftyhO9ZvToVa2LHLT0Uq8iWNFNH3PoO9GYlC7bBT/5" crossorigin="anonymous">
 
+    <link rel="shortcut icon" href="media/webicon.jpg" type="image/x-icon">
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 
-<link href="navbar.css" rel="stylesheet">
-<link href="card.css" rel="stylesheet">
+    <link href="navbar.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700');
+        .banner {
+            width: 100%;
+            height: 100vh;
+            
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+/* Make sure the nav bar stays on top */
+nav.premium-nav {
+    position: relative;
+    z-index: 100 !important; /* Keep it above the Vanta.js effect */
+}
+
+/* Ensure the mobile menu is on top */
+nav.premium-nav .mobile-menu {
+    position: relative;
+    z-index: 200 !important; /* Make it higher than the nav to ensure visibility */
+}
+
+/* Banner (background should stay behind) */
+.banner {
+    position: relative;
+    z-index: 1 !important; /* Keep the background effect behind */
+}
+
+        .banner .bcon {
+            text-align: center;
+            max-width: 800px;
+            width: 100%;
+        }
+
+        .banner .bcon h1 {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        .banner .bcon p {
+            margin-bottom: 40px;
+        }
+
+        .banner .bcon button {
+            background: transparent;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .banner .bcon button:hover {
+            background: rgba(132, 104, 4, 0.881);
+        }
+        
+    </style>
+    <link rel="stylesheet" href="card.css">
+    <link rel="stylesheet" href="navbar.css">
 </head>
 <body>
 
@@ -32,7 +91,7 @@
     <nav class="premium-nav">
         <div class="nav-container">
             <a href="index.html" class="nav-logo">
-                <span class="logo-text">Fab Academy</span>
+                <span class="logo-text">Muhesh Fab Academy '25</span>
                 <div class="logo-shine"></div>
             </a>
     
@@ -45,15 +104,15 @@
                     <i class="ri-information-line"></i>
                     <span>About</span>
                 </a>
-                <a href="Final Project.html" class="nav-link" style="text-decoration: none;">
+                <a href="final_proj.html" class="nav-link" style="text-decoration: none;">
                     <i class="ri-stack-line"></i>
                     <span>Final Project</span>
                 </a>
                 <a href="#" class="nav-link active" style="text-decoration: none;">
-                   <img width="20" height="20" src="https://img.icons8.com/windows/32/work.png" alt="work" />                 
-                    <span>Weekly Assignment</span>
+                <i class="ri-printer-cloud-line"></i>
+                    <span>Assignment</span>
                 </a> 
-                <a href="Contact.html" class="nav-link" style="text-decoration: none;">
+                <a href="#footer" class="nav-link" style="text-decoration: none;">
                     <i class="ri-mail-line"></i>
                     <span>Contact</span>
                 </a>
@@ -75,13 +134,181 @@
 
     <!-- This is the card group -->
 
-<h1 class="display-4" style="text-align: center; margin-top: 20px;">Weekly Assignments</h1>
+<h1 class="display-4 m-5" style="text-align: center;"><b>Weekly Assignments</b></h1>
 
-
-<center>
     <div class="container">
+        <section class="cards m-5">
+            <article class="card card--1" data-aos="fade-up">
+                <div class="card__info-hover">
+                    <img class="card__like" src="https://img.icons8.com/color/48/000000/google-drive.png" alt="google drive icon">
+                </div>
+                <div class="card__img"></div>
+                <a href="assigment/project_management.html" class="card_link">
+                    <div class="card__img--hover"></div>
+                </a>
+                <div class="card__info">
+                    <span class="card__category"> Week 1</span>
+                    <h3 class="card__title">Project Management</h3>
+                    <span class="card__by">by <a href="#" class="card__author" title="author">Muhesh Kumar</a></span>
+                </div>
+            </article>
+
+            <article class="card card--2" data-aos="fade-up">
+                <div class="card__info-hover">
+                    <img class="card__like" src="https://img.icons8.com/color/48/000000/google-drive.png" alt="google drive icon">
+                </div>
+                <div class="card__img"></div>
+                <a href="assigment/cad_assignment.html" class="card_link">
+                    <div class="card__img--hover"></div>
+                </a>
+                <div class="card__info">
+                    <span class="card__category"> Week 2</span>
+                    <h3 class="card__title">Computer-aided</h3>
+                    <span class="card__by">by <a href="#" class="card__author" title="author">Muhesh Kumar</a></span>
+                </div>
+            </article>
+
+            <article class="card card--3" data-aos="fade-up">
+                <div class="card__info-hover">
+                    <img class="card__like" src="https://img.icons8.com/color/48/000000/google-drive.png" alt="google drive icon">
+                </div>
+                <div class="card__img"></div>
+                <a href="assigment/CCC.html" class="card_link">
+                    <div class="card__img--hover"></div>
+                </a>
+                <div class="card__info">
+                    <span class="card__category"> Week 3</span>
+                    <h3 class="card__title">Computer Controlled Cutting</h3>
+                    <span class="card__by">by <a href="#" class="card__author" title="author">Muhesh Kumar</a></span>
+                </div>
+            </article>
+        </section>
+
+        <section class="cards m-5">
+            <article class="card card--4" data-aos="fade-up">
+                <div class="card__info-hover">
+                    <img class="card__like" src="https://img.icons8.com/color/48/000000/google-drive.png" alt="google drive icon">
+                </div>
+                <div class="card__img"></div>
+                <a href="assigment/Embedded.html" class="card_link">
+                    <div class="card__img--hover"></div>
+                </a>
+                <div class="card__info">
+                    <span class="card__category"> Week 4</span>
+                    <h3 class="card__title">Embedded Programming</h3>
+                    <span class="card__by">by <a href="#" class="card__author" title="author">Muhesh Kumar</a></span>
+                </div>
+            </article>
+
+            <article class="card card--5" data-aos="fade-up">
+                <div class="card__info-hover">
+                    <img class="card__like" src="https://img.icons8.com/color/48/000000/google-drive.png" alt="google drive icon">
+                </div>
+                <div class="card__img"></div>
+                <a href="assigment/3d_assignment.html" class="card_link">
+                    <div class="card__img--hover"></div>
+                </a>
+                <div class="card__info">
+                    <span class="card__category"> Week 5</span>
+                    <h3 class="card__title">3D Scanning and Printing</h3>
+                    <span class="card__by">by <a href="#" class="card__author" title="author">Muhesh Kumar</a></span>
+                </div>
+            </article>
+
+            <article class="card card--6" data-aos="fade-up">
+                <div class="card__info-hover">
+                    <img class="card__like" src="https://img.icons8.com/color/48/000000/google-drive.png" alt="google drive icon">
+                </div>
+                <div class="card__img"></div>
+                <a href="assigment/pcb.html" class="card_link">
+                    <div class="card__img--hover"></div>
+                </a>
+                <div class="card__info">
+                    <span class="card__category"> Week 6</span>
+                    <h3 class="card__title">Electronic Design</h3>
+                    <span class="card__by">by <a href="#" class="card__author" title="author">Muhesh Kumar</a></span>
+                </div>
+            </article>
+        </section>
+    
+
+
+<style>
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 300px;
+        margin: 10px;
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
+    }
+
+    @media (min-width: 768px) {
+        .card {
+            width: 45%;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .card {
+            width: 30%;
+        }
+    }
+</style>
     <section class="cards m-5">
-        <article class="card card--1"  style="width: 100%;">
+        <article class="card card--7" data-aos="fade-up" style="width: 100%;">
+            <div class="card__info-hover">
+                <img class="card__like" src="https://img.icons8.com/color/48/000000/google-drive.png" style="position: absolute; top: 1em; left: 1em; width: 20px; height: 20px;" alt="google drive icon">
+            </div>
+            <div class="card__img" style="width: 50%; "></div>
+            <a href="assigment/CCM.html" class="card_link">
+                <div class="card__img--hover"></div>
+            </a>
+            <div class="card__info">
+                <span class="card__category"> Week 7</span>
+                <h3 class="card__title">Computer Controlled machining</h3>
+                <span class="card__by">by <a href="#" class="card__author" title="author">Muhesh Kumar</a></span>
+            </div>
+        </article>
+    
+        <article class="card card--8" data-aos="fade-up" style="width: 100%;">
+            <div class="card__info-hover">
+                <img class="card__like" src="https://img.icons8.com/color/48/000000/google-drive.png" style="position: absolute; top: 1em; left: 1em; width: 20px; height: 20px;" alt="google drive icon">
+            </div>
+            <div class="card__img" style="width: 100%; aspect-ratio: 1/1;"></div>
+            <a href="assigment/PCB_Prod.html" class="card_link">
+                <div class="card__img--hover"></div>
+            </a>
+            <div class="card__info">
+                <span class="card__category"> Week 8</span>
+                <h3 class="card__title">Electronics Production</h3>
+                <span class="card__by">by <a href="#" class="card__author" title="author">Muhesh Kumar</a></span>
+            </div>
+        </article>
+    
+        <article class="card card--9" data-aos="fade-up" style="width: 100%;">
+            <div class="card__info-hover">
+                <img class="card__like" src="https://img.icons8.com/color/48/000000/google-drive.png" style="position: absolute; top: 1em; left: 1em; width: 20px; height: 20px;" alt="google drive icon">
+            </div>
+            <div class="card__img" style="width: 100%; aspect-ratio: 1/1;"></div>
+            <a href="assigment/IP.html" class="card_link">
+                <div class="card__img--hover"></div>
+            </a>
+            <div class="card__info">
+                <span class="card__category"> Week 9</span>
+                <h3 class="card__title">Input Devices</h3>
+                <span class="card__by">by <a href="#" class="card__author" title="author">Muhesh Kumar</a></span>
+            </div>
+        </article>
+    </section>
+    
+
+    <section class="cards m-5">
+        <article class="card card--10" data-aos="fade-up" style="width: 100%;">
             <div class="card__info-hover">
                 <img class="card__like" src="https://img.icons8.com/color/48/000000/google-drive.png" style="position: absolute; top: 1em; left: 1em; width: 20px; height: 20px;" alt="google drive icon">
             </div>
@@ -90,13 +317,13 @@
                 <div class="card__img--hover"></div>
             </a>
             <div class="card__info">
-                <span class="card__category"> Recipe</span>
-                <h3 class="card__title">Crisp Spanish tortilla Matzo brei</h3>
-                <span class="card__by">by <a href="#" class="card__author" title="author">Celeste Mills</a></span>
+                <span class="card__category"> Week 10</span>
+                <h3 class="card__title">Output Devices</h3>
+                <span class="card__by">by <a href="#" class="card__author" title="author">Muhesh Kumar</a></span>
             </div>
         </article>
     
-        <article class="card card--2" style="width: 100%;">
+        <article class="card card--11" data-aos="fade-up" style="width: 100%;">
             <div class="card__info-hover">
                 <img class="card__like" src="https://img.icons8.com/color/48/000000/google-drive.png" style="position: absolute; top: 1em; left: 1em; width: 20px; height: 20px;" alt="google drive icon">
             </div>
@@ -105,13 +332,13 @@
                 <div class="card__img--hover"></div>
             </a>
             <div class="card__info">
-                <span class="card__category"> Travel</span>
-                <h3 class="card__title">Discover the sea</h3>
-                <span class="card__by">by <a href="#" class="card__author" title="author">John Doe</a></span>
+                <span class="card__category"> Week 11</span>
+                <h3 class="card__title">Networking and Communications</h3>
+                <span class="card__by">by <a href="#" class="card__author" title="author">Muhesh Kumar</a></span>
             </div>
         </article>
-
-        <article class="card card--3" style="width: 100%;">
+    
+        <article class="card card--12" data-aos="fade-up" style="width: 100%;">
             <div class="card__info-hover">
                 <img class="card__like" src="https://img.icons8.com/color/48/000000/google-drive.png" style="position: absolute; top: 1em; left: 1em; width: 20px; height: 20px;" alt="google drive icon">
             </div>
@@ -120,15 +347,15 @@
                 <div class="card__img--hover"></div>
             </a>
             <div class="card__info">
-                <span class="card__category"> Travel</span>
-                <h3 class="card__title">Discover the sea</h3>
-                <span class="card__by">by <a href="#" class="card__author" title="author">John Doe</a></span>
+                <span class="card__category"> Week 12</span>
+                <h3 class="card__title">Mechanical Design and Machine Design</h3>
+                <span class="card__by">by <a href="#" class="card__author" title="author">Muhesh Kumar</a></span>
             </div>
         </article>
     </section>
-
+    
     <section class="cards m-5">
-        <article class="card card--1"  style="width: 100%;">
+        <article class="card card--13" data-aos="fade-up" style="width: 100%;">
             <div class="card__info-hover">
                 <img class="card__like" src="https://img.icons8.com/color/48/000000/google-drive.png" style="position: absolute; top: 1em; left: 1em; width: 20px; height: 20px;" alt="google drive icon">
             </div>
@@ -137,13 +364,13 @@
                 <div class="card__img--hover"></div>
             </a>
             <div class="card__info">
-                <span class="card__category"> Recipe</span>
-                <h3 class="card__title">Crisp Spanish tortilla Matzo brei</h3>
-                <span class="card__by">by <a href="#" class="card__author" title="author">Celeste Mills</a></span>
+                <span class="card__category"> Week 13</span>
+                <h3 class="card__title">Midterm Review</h3>
+                <span class="card__by">by <a href="#" class="card__author" title="author">Muhesh Kumar</a></span>
             </div>
         </article>
     
-        <article class="card card--2" style="width: 100%;">
+        <article class="card card--14" data-aos="fade-up" style="width: 100%;">
             <div class="card__info-hover">
                 <img class="card__like" src="https://img.icons8.com/color/48/000000/google-drive.png" style="position: absolute; top: 1em; left: 1em; width: 20px; height: 20px;" alt="google drive icon">
             </div>
@@ -152,13 +379,13 @@
                 <div class="card__img--hover"></div>
             </a>
             <div class="card__info">
-                <span class="card__category"> Travel</span>
-                <h3 class="card__title">Discover the sea</h3>
-                <span class="card__by">by <a href="#" class="card__author" title="author">John Doe</a></span>
+                <span class="card__category"> Week 14</span>
+                <h3 class="card__title">Molding and Casting</h3>
+                <span class="card__by">by <a href="#" class="card__author" title="author">Muhesh Kumar</a></span>
             </div>
         </article>
-
-        <article class="card card--3" style="width: 100%;">
+    
+        <article class="card card--15" data-aos="fade-up" style="width: 100%;">
             <div class="card__info-hover">
                 <img class="card__like" src="https://img.icons8.com/color/48/000000/google-drive.png" style="position: absolute; top: 1em; left: 1em; width: 20px; height: 20px;" alt="google drive icon">
             </div>
@@ -167,23 +394,164 @@
                 <div class="card__img--hover"></div>
             </a>
             <div class="card__info">
-                <span class="card__category"> Travel</span>
-                <h3 class="card__title">Discover the sea</h3>
-                <span class="card__by">by <a href="#" class="card__author" title="author">John Doe</a></span>
+                <span class="card__category"> Week 15</span>
+                <h3 class="card__title">System Integeration</h3>
+                <span class="card__by">by <a href="#" class="card__author" title="author">Muhesh Kumar</a></span>
             </div>
         </article>
     </section>
+    
+    <section class="cards m-5">
+        <article class="card card--16" data-aos="fade-up" style="width: 100%;">
+            <div class="card__info-hover">
+                <img class="card__like" src="https://img.icons8.com/color/48/000000/google-drive.png" style="position: absolute; top: 1em; left: 1em; width: 20px; height: 20px;" alt="google drive icon">
+            </div>
+            <div class="card__img" style="width: 50%; "></div>
+            <a href="#" class="card_link">
+                <div class="card__img--hover"></div>
+            </a>
+            <div class="card__info">
+                <span class="card__category"> Week 16</span>
+                <h3 class="card__title">Interface and Appliaction Programming</h3>
+                <span class="card__by">by <a href="#" class="card__author" title="author">Muhesh Kumar</a></span>
+            </div>
+        </article>
+    
+        <article class="card card--17" data-aos="fade-up" style="width: 100%;">
+            <div class="card__info-hover">
+                <img class="card__like" src="https://img.icons8.com/color/48/000000/google-drive.png" style="position: absolute; top: 1em; left: 1em; width: 20px; height: 20px;" alt="google drive icon">
+            </div>
+            <div class="card__img" style="width: 100%; aspect-ratio: 1/1;"></div>
+            <a href="#" class="card_link">
+                <div class="card__img--hover"></div>
+            </a>
+            <div class="card__info">
+                <span class="card__category"> Week 17</span>
+                <h3 class="card__title">System Integeration</h3>
+                <span class="card__by">by <a href="#" class="card__author" title="author">Muhesh Kumar</a></span>
+            </div>
+        </article>
+        
+        <article class="card card--18" data-aos="fade-up" style="width: 100%;">
+            <div class="card__info-hover">
+                <img class="card__like" src="https://img.icons8.com/color/48/000000/google-drive.png" style="position: absolute; top: 1em; left: 1em; width: 20px; height: 20px;" alt="google drive icon">
+            </div>
+            <div class="card__img" style="width: 100%; aspect-ratio: 1/1;"></div>
+            <a href="#" class="card_link">
+                <div class="card__img--hover"></div>
+            </a>
+            <div class="card__info">
+                <span class="card__category"> Week 18</span>
+                <h3 class="card__title">Wildcard Week</h3>
+                <span class="card__by">by <a href="#" class="card__author" title="author">Muhesh Kumar</a></span>
+            </div>
+        </article>
+    </section>
+
+    <section class="cards m-5">
+        <article class="card card--19" data-aos="fade-up" style="width: 100%;">
+            <div class="card__info-hover">
+                <img class="card__like" src="https://img.icons8.com/color/48/000000/google-drive.png" style="position: absolute; top: 1em; left: 1em; width: 20px; height: 20px;" alt="google drive icon">
+            </div>
+            <div class="card__img" style="width: 50%; "></div>
+            <a href="#" class="card_link">
+                <div class="card__img--hover"></div>
+            </a>
+            <div class="card__info">
+                <span class="card__category"> Week 19</span>
+                <h3 class="card__title">Applications and Implications, Project Development</h3>
+                <span class="card__by">by <a href="#" class="card__author" title="author">Muhesh Kumar</a></span>
+            </div>
+        </article>
+    
+        <article class="card card--20" data-aos="fade-up" style="width: 100%;">
+            <div class="card__info-hover">
+                <img class="card__like" src="https://img.icons8.com/color/48/000000/google-drive.png" style="position: absolute; top: 1em; left: 1em; width: 20px; height: 20px;" alt="google drive icon">
+            </div>
+            <div class="card__img" style="width: 100%; aspect-ratio: 1/1;"></div>
+            <a href="#" class="card_link">
+                <div class="card__img--hover"></div>
+            </a>
+            <div class="card__info">
+                <span class="card__category"> Week 20</span>
+                <h3 class="card__title">Invention, Intellectual property and Income</h3>
+                <span class="card__by">by <a href="#" class="card__author" title="author">Muhesh Kumar</a></span>
+            </div>
+        </article>
+    </section>
+
 </div>
-</center>
 
 
-<!-- This is the footer -->
 
-    <footer class="footer mt-auto py-3 bg-dark">
-        <div class="container">
-          <center><span class="text-light">&copy; 2025 Muheshskumar R </span></center>
-        </div>
-    </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+
+<!-- Footer Section with AOS Animation -->
+<footer id="footer" class="text-center" style="background-color: #1a1a1a; color: #d3d3d3 !important;"
+    data-aos="fade-up">
+    <div class="container pt-4">
+        <section class="mb-4">
+            <a class="btn btn-link btn-floating btn-lg text-light m-1" href="tel:+91 6379839123" role="button"
+                data-aos="flip-left">
+                <img src="https://img.icons8.com/ios-filled/20/ffffff/phone.png" alt="Phone" width="20" height="20" />
+            </a>
+
+            <a class="btn btn-link btn-floating btn-lg text-light m-1" href="mailto:muhesh022@gmail.com" role="button"
+                data-aos="flip-right">
+                <img src="https://img.icons8.com/ios-filled/20/ffffff/gmail.png" alt="Gmail" width="20" height="20" />
+            </a>
+
+            <a class="btn btn-link btn-floating btn-lg text-light m-1" href="https://www.linkedin.com/in/muheshkumar22"
+                target="_blank" role="button" data-aos="flip-left">
+                <img src="https://img.icons8.com/ios-filled/20/ffffff/linkedin.png" alt="LinkedIn" width="20"
+                    height="20" />
+            </a>
+
+            <a class="btn btn-link btn-floating btn-lg text-light m-1" href="https://www.instagram.com/r_muhesh_"
+                target="_blank" role="button" data-aos="flip-right">
+                <img src="https://img.icons8.com/ios-filled/20/ffffff/instagram-new.png" alt="Instagram" width="20"
+                    height="20" />
+            </a>
+
+            <a class="btn btn-link btn-floating btn-lg text-light m-1" href="https://github.com/muhesh22"
+                target="_blank" role="button" data-aos="flip-left">
+                <img src="https://img.icons8.com/ios-filled/20/ffffff/github.png" alt="GitHub" width="20" height="20" />
+            </a>
+
+            <a class="btn btn-link btn-floating btn-lg text-light m-1"
+                href="https://gitlab.fabcloud.org/academany/fabacademy/2025/labs/nellai/students/muheshkumar-r"
+                target="_blank" role="button" data-aos="flip-right">
+                <img src="https://img.icons8.com/ios-filled/20/ffffff/gitlab.png" alt="GitLab" width="20" height="20" />
+            </a>
+        </section>
+
+       
+    </div>
+
+    <div class="text-center p-3" style="background-color: rgba(255, 255, 255, 0.1); color: #d3d3d3;">
+        © 2025 Copyright
+        <p class="text-light"><a href="assigment/project_management.html" class="text-light">Student Agreement</a> </p>
+        <a class="text-light" href="#">2025 Muheshkumar R - Creative Common Attribution Non Commercial <br> Source code
+            hosted at</a>
+        <a class="text-light" href="https://gitlab.fabcloud.org/academany/fabacademy/2025/labs/nellai/students/muheshkumar-r"
+            target="_blank">gitlab.fabcloud.org</a> - <a class="text-light" href="https://fabacademy.org/" target="_blank">fabacademy.org</a>
+            target="_blank">gitlab.fabcloud.org</a>    </div>
+</footer>
+
+<!-- AOS Script -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1000, // Animation duration
+        once: true, // Animation happens only once
+    });
+</script>
+
 </body>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -194,5 +562,21 @@
     crossorigin="anonymous"></script>
 
     <script src="navbar.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuToggle = document.querySelector(".mobile-menu");
+            const navLinks = document.querySelector(".nav-links");
+
+            menuToggle.addEventListener("click", function () {
+                navLinks.classList.toggle("active");
+            });
+
+            document.addEventListener("click", function (event) {
+                if (!menuToggle.contains(event.target) && !navLinks.contains(event.target)) {
+                    navLinks.classList.remove("active");
+                }
+            });
+        });
+    </script>
 </html>
 <!-- This is the end -->

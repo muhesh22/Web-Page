@@ -1,0 +1,68 @@
+.three-column-layout {
+    display: flex;
+    margin: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.three-column-layout .left-column {
+    width: 300px;
+    position: fixed;
+    height: 100vh;
+    background-color: #fffffde5;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.three-column-layout .center-column {
+    flex: 1;
+    margin-left: 300px;
+    margin-right: 300px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    width: 500px;
+}
+
+.three-column-layout .right-column {
+    width: 250px;
+    position: fixed;
+    right: 0;
+    height: 100vh;
+    background-color: #eee;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.three-column-layout .right-column a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    border-bottom: 1px solid #ccc;
+}
+
+.three-column-layout .right-column a:hover {
+    background-color: #ddd;
+}
+
+.three-column-layout .left-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.three-column-layout .left-column li {
+    padding: 10px;
+    
+}
+
+.three-column-layout .left-column a {
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+.three-column-layout .left-column a:hover {
+    background-color: #555;
+}
+

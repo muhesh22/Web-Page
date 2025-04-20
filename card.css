@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700');
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 
-*{
-  box-sizing: border-box;
+* {
+    box-sizing: border-box;
 }
 
 .cards {
-    width: 100%;
+    width: 100% !important;
     display: flex;
     display: -webkit-flex;
     justify-content: center;
@@ -14,16 +14,45 @@
     max-width: 90%;
 }
 
-.card--1 .card__img, .card--1 .card__img--hover {
-    background-image: url('https://images.pexels.com/photos/45202/brownie-dessert-cake-sweet-45202.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+.card--1 .card__img--hover {
+    background-image: url('media/proj_man/projectmanagement.png');
 }
 
-.card--2 .card__img, .card--2 .card__img--hover {
-    background-image: url('https://images.pexels.com/photos/307008/pexels-photo-307008.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+.card--2 .card__img--hover {
+    background-image: url('media/cad/cad_img.png');
 }
-
-.card--3 .card__img, .card--3 .card__img--hover {
-    background-image: url('https://images.pexels.com/photos/307008/pexels-photo-307008.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+.card--3 .card__img--hover {
+    background-image: url('media/ccc/Lasercutter.png');
+}
+.card--4 .card__img--hover {
+    background-image: url('media/embedded/Embedded.png');
+}
+.card--5 .card__img--hover {
+    background-image: url('media/3d/3d.png');
+}
+.card--6 .card__img--hover {
+    background-image: url('media/pcb/pcb.png');
+}
+.card--7 .card__img--hover {
+    background-image: url('media/ccm/ccm.png');
+}.card--8 .card__img--hover {
+    background-image: url('media/pcb_p/pcb_p.png');
+}
+.card--9 .card__img--hover {
+        background-image: url('media/ip/ip.jpg');
+}
+.card--10 .card__img--hover,
+.card--11 .card__img--hover,
+.card--12 .card__img--hover,
+.card--13 .card__img--hover,
+.card--14 .card__img--hover,
+.card--15 .card__img--hover,
+.card--16 .card__img--hover,
+.card--17 .card__img--hover,
+.card--18 .card__img--hover,
+.card--19 .card__img--hover,
+.card--20 .card__img--hover {
+    background-image: url('media/comingsoon.png');
 }
 
 .card__like {
@@ -32,12 +61,13 @@
 
 .card__clock {
     width: 15px;
-  vertical-align: middle;
-    fill: #AD7D52;
+    vertical-align: middle;
+    fill: var(--text-color);
 }
+
 .card__time {
     font-size: 12px;
-    color: #AD7D52;
+    color: var(--text-color);
     vertical-align: middle;
     margin-left: 5px;
 }
@@ -47,59 +77,59 @@
 }
 
 .card__img {
-  visibility: hidden;
+    visibility: hidden;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
     height: 235px;
-  border-top-left-radius: 12px;
-border-top-right-radius: 12px;
-  
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
 }
 
 .card__info-hover {
     position: absolute;
     padding: 16px;
-  width: 100%;
-  opacity: 0;
-  top: 0;
+    width: 100%;
+    opacity: 0;
+    top: 0;
 }
 
 .card__img--hover {
-  transition: 0.2s all ease-out;
+    transition: 0.2s all ease-out;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-  position: absolute;
+    position: absolute;
     height: 235px;
-  border-top-left-radius: 12px;
-border-top-right-radius: 12px;
-top: 0;
-  
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    top: 0;
 }
+
 .card {
-  margin-right: 25px;
-  transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
-  background-color: #fff;
+    margin-right: 25px;
+    transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
+    background-color: var(--card-dark-mode-color);
     width: 33.3%;
-  position: relative;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0px 13px 10px -7px rgba(0, 0, 0,0.1);
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.76);
 }
+
 .card:hover {
-  box-shadow: 0px 30px 18px -8px rgba(0, 0, 0,0.1);
+    box-shadow: 0px 0px 18px rgba(242, 155, 4, 0.508);
     transform: scale(1.10, 1.10);
 }
 
 .card__info {
-z-index: 2;
-  background-color: #fff;
-  border-bottom-left-radius: 12px;
-border-bottom-right-radius: 12px;
-   padding: 16px 24px 24px 24px;
+    z-index: 2;
+    background-color: var(--card-dark-mode-color);
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    padding: 16px 24px 24px 24px;
 }
 
 .card__category {
@@ -108,25 +138,27 @@ border-bottom-right-radius: 12px;
     font-size: 13px;
     letter-spacing: 2px;
     font-weight: 500;
-  color: #868686;
+    color: var(--text-color);
 }
 
 .card__title {
     margin-top: 5px;
     margin-bottom: 10px;
     font-family: 'Roboto Slab', serif;
+    color: var(--text-color);
 }
 
 .card__by {
     font-size: 12px;
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
+    color: var(--text-color);
 }
 
 .card__author {
     font-weight: 600;
     text-decoration: none;
-    color: #AD7D52;
+    color: var(--text-color);
 }
 
 .card:hover .card__img--hover {
@@ -142,3 +174,4 @@ border-bottom-right-radius: 12px;
 .card:hover .card__info-hover {
     opacity: 1;
 }
+

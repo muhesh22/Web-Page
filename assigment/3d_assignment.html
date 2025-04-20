@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D design</title>
+    <link rel="shortcut icon" href="webicon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link href="../navbar.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <style>
+        nav.premium-nav {
+            position: relative;
+            z-index: 100 !important;
+            /* Keep it above the Vanta.js effect */
+        }
+
+        /* Ensure the mobile menu is on top */
+        nav.premium-nav .mobile-menu {
+            position: relative;
+            z-index: 200 !important;
+            /* Make it higher than the nav to ensure visibility */
+        }
+
+        /* Banner (background should stay behind) */
+        .banner {
+            position: relative;
+            z-index: 1 !important;
+            /* Keep the background effect behind */
+        }
+    </style>
+</head>
+<body>
+    <nav class="premium-nav">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">
+                <span class="logo-text">Muhesh Fab Academy '25</span>
+                <div class="logo-shine"></div>
+            </a>
+    
+            <div class="nav-links">
+                <a href="../index.html" class="nav-link " style="text-decoration: none;">
+                    <i class="ri-home-5-line"></i>
+                    <span>Home</span>
+                </a>
+                <a href="../about.html" class="nav-link" style="text-decoration: none;">
+                    <i class="ri-information-line"></i>
+                    <span>About</span>
+                </a>
+                <a href="../final_proj.html" class="nav-link " style="text-decoration: none;">
+                    <i class="ri-stack-line"></i>
+                    <span>Final Project</span>
+                </a>
+                <a href="../Weekly Assignment.html" class="nav-link active" style="text-decoration: none;">
+                    <i class="ri-printer-cloud-line"></i>
+                    <span> Assignment</span>
+                </a>
+                <a href="#footer" class="nav-link" style="text-decoration: none;">
+                    <i class="ri-mail-line"></i>
+                    <span>Contact</span>
+                </a>
+    
+            </div>
+    
+            <div class="nav-actions">
+                <button class="theme-toggle" aria-label="Toggle theme">
+                    <i class="ri-sun-line sun-icon"></i>
+                    <i class="ri-moon-line moon-icon"></i>
+                </button>
+                <button class="mobile-menu" aria-label="Menu">
+                    <i class="ri-menu-line"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+<h1 class="display-4 m-5 md-5"><b>Mobile Stand Design</b></h1> 
+
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-10">
+            <div class="image-gallery mt-4 d-flex flex-column align-items-center">
+                <div class="image-card m-2" style="width: 100%;">
+                    <img src="../media/3d/3d_1.png" class="img-fluid rounded" alt="CAD Image 1">
+                    <h5 class="mt-2">Initial Sketch</h5>
+                    <p class="text-secondary">This Initail sketch was designed using parametric modeling, where dimensions side 5mm and length of 60m and offset (5mm) were defined as adjustable parameters. This approach ensures precision, easy modifications, and scalability, allowing dynamic design updates without manual rework.</p>
+                </div>
+                <div class="image-card m-2" style="width: 100%;">
+                    <img src="../media/3d/3d_2.png" class="img-fluid rounded" alt="CAD Image 2">
+                    <h5 class="mt-2">First version</h5>
+                    <p class="text-secondary">Designed the outershell of the Mobile stand structure using the Extrusion method.</p>
+                </div>
+                <div class="image-card m-2" style="width: 100%;">
+                    <img src="../media/3d/3d_3.png" class="img-fluid rounded" alt="CAD Image 3">
+                    <h5 class="mt-2">Full Round Fillet</h5>
+                    <p class="text-secondary">Designed the outershell of the Mobile Stand using the parametric modeling method and applied full round fillet to the outer shell.</p>
+                </div>
+                <div class="image-card m-2" style="width: 100%;">
+                    <h5 class="mt-2"><b>STL Conversion</b> </h5>
+                    <img src="../media/3d/3d_4.png" class="img-fluid rounded" alt="CAD Image 4">
+                    <img src="../media/3d/3d_5.png" class="img-fluid rounded" alt="CAD Image 4">
+                    <p class="text-secondary">Exported the Design as STL format</p>
+                </div>
+
+                <div class="image-card m-2" style="width: 100%;">
+                    <h5 class="mt-2"><b>Creality Import</b> </h5>
+                    <img src="../media/3d/3d_6.png" class="img-fluid rounded" alt="CAD Image 4">
+                    
+                    <p class="text-secondary">Importing the Model to Slice</p>
+                </div>
+                <div class="image-card m-2" style="width: 100%;">
+                    <img src="../media/3d/3d_7.png" class="img-fluid rounded" alt="CAD Image 4">
+                    
+                </div>
+
+
+                <div class="image-card m-2" style="width: 100%;">
+                    <h5 class="mt-2"><b>Creality Import</b> </h5>
+                    <img src="../media/3d/3d_8.png" class="img-fluid rounded" alt="CAD Image 4">
+                    <img src="../media/3d/3d_9.png" class="img-fluid rounded" alt="CAD Image 4">
+                    <p class="text-secondary">Importing the Model to Slice</p>
+                </div>
+
+                <div class="image-card m-2" style="width: 100%;">
+                    <h5 class="mt-2"><b>Setting Configuration & Support Selection</b> </h5>
+                    <img src="../media/3d/3d_10.png" class="img-fluid rounded" alt="CAD Image 4">
+                    <img src="../media/3d/3d_11.png" class="img-fluid rounded" alt="CAD Image 4">
+                    
+                </div>
+
+                <div class="image-card m-2" style="width: 100%;">
+                    <h5 class="mt-2"><b>Exporting as Gcode</b> </h5>
+                    <img src="../media/3d/3d_12.png" class="img-fluid rounded" alt="CAD Image 4">
+                    <img src="../media/3d/3d_13.png" class="img-fluid rounded" alt="CAD Image 4">
+                </div>
+
+                <div class="image-card m-2" style="width: 100%;">
+                    <h5 class="mt-2"><b>3D Printed Model</b> </h5>
+                    <img src="../media/3d/3d_15.jpg" class="img-fluid rounded" alt="CAD Image 4">
+                    
+                </div>
+
+                <div class="image-card m-2" style="width: 100%;">
+                    <h5 class="mt-2"><b>3D Printed Model</b> </h5>
+                    <img src="../media/3d/3d_15.jpg" class="img-fluid rounded" alt="CAD Image 4">
+                    
+                </div>
+
+
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+<footer id="footer" class="text-center" style="background-color: #1a1a1a; color: #d3d3d3 !important;"
+    data-aos="fade-up">
+    <div class="container pt-4">
+        <section class="mb-4">
+            <a class="btn btn-link btn-floating btn-lg text-light m-1" href="tel:+91 6379839123" role="button"
+                data-aos="flip-left">
+                <img src="https://img.icons8.com/ios-filled/20/ffffff/phone.png" alt="Phone" width="20" height="20" />
+            </a>
+
+            <a class="btn btn-link btn-floating btn-lg text-light m-1" href="mailto:muhesh022@gmail.com" role="button"
+                data-aos="flip-right">
+                <img src="https://img.icons8.com/ios-filled/20/ffffff/gmail.png" alt="Gmail" width="20" height="20" />
+            </a>
+
+            <a class="btn btn-link btn-floating btn-lg text-light m-1" href="https://www.linkedin.com/in/muheshkumar22"
+                target="_blank" role="button" data-aos="flip-left">
+                <img src="https://img.icons8.com/ios-filled/20/ffffff/linkedin.png" alt="LinkedIn" width="20"
+                    height="20" />
+            </a>
+
+            <a class="btn btn-link btn-floating btn-lg text-light m-1" href="https://www.instagram.com/r_muhesh_"
+                target="_blank" role="button" data-aos="flip-right">
+                <img src="https://img.icons8.com/ios-filled/20/ffffff/instagram-new.png" alt="Instagram" width="20"
+                    height="20" />
+            </a>
+
+            <a class="btn btn-link btn-floating btn-lg text-light m-1" href="https://github.com/muhesh22"
+                target="_blank" role="button" data-aos="flip-left">
+                <img src="https://img.icons8.com/ios-filled/20/ffffff/github.png" alt="GitHub" width="20" height="20" />
+            </a>
+
+            <a class="btn btn-link btn-floating btn-lg text-light m-1"
+                href="https://gitlab.fabcloud.org/academany/fabacademy/2025/labs/nellai/students/muheshkumar-r"
+                target="_blank" role="button" data-aos="flip-right">
+                <img src="https://img.icons8.com/ios-filled/20/ffffff/gitlab.png" alt="GitLab" width="20" height="20" />
+            </a>
+        </section>
+
+       
+    </div>
+
+    <div class="text-center p-3" style="background-color: rgba(255, 255, 255, 0.1); color: #d3d3d3;">
+        © 2025 Copyright
+        <p class="text-light"><a href="project_management.html" class="text-light">Student Agreement</a> </p>
+        <a class="text-light" href="#">2025 Muheshkumar R - Creative Common Attribution Non Commercial <br> Source code
+            hosted at</a>
+        <a class="text-light" href="https://gitlab.fabcloud.org/academany/fabacademy/2025/labs/nellai/students/muheshkumar-r"
+            target="_blank">gitlab.fabcloud.org</a> - <a class="text-light" href="https://fabacademy.org/" target="_blank">fabacademy.org</a>
+            target="_blank">gitlab.fabcloud.org</a>    </div>
+</footer>
+<!-- AOS Script -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1000, // Animation duration
+        once: true, // Animation happens only once
+    });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+<script src="../navbar.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const menuToggle = document.querySelector(".mobile-menu");
+        const navLinks = document.querySelector(".nav-links");
+
+        menuToggle.addEventListener("click", function () {
+            navLinks.classList.toggle("active");
+        });
+
+        document.addEventListener("click", function (event) {
+            if (!menuToggle.contains(event.target) && !navLinks.contains(event.target)) {
+                navLinks.classList.remove("active");
+            }
+        });
+    });
+</script>
+
+</html>

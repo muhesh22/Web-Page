@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha384-u3Y6eDB2RtowlyB3N8Jsc1zftyhO9ZvToVa2LHLT0Uq8iWNFNH3PoO9GYlC7bBT/5" crossorigin="anonymous">
+
+    <link rel="shortcut icon" href="media/webicon.jpg" type="image/x-icon">
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <link href="navbar.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700');
+        .banner {
+            width: 100%;
+            height: 100vh;
+            
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+/* Make sure the nav bar stays on top */
+nav.premium-nav {
+    position: relative;
+    z-index: 100 !important; /* Keep it above the Vanta.js effect */
+}
+
+/* Ensure the mobile menu is on top */
+nav.premium-nav .mobile-menu {
+    position: relative;
+    z-index: 200 !important; /* Make it higher than the nav to ensure visibility */
+}
+
+/* Banner (background should stay behind) */
+.banner {
+    position: relative;
+    z-index: 1 !important; /* Keep the background effect behind */
+}
+
+        .banner .bcon {
+            text-align: center;
+            max-width: 800px;
+            width: 100%;
+        }
+
+        .banner .bcon h1 {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        .banner .bcon p {
+            margin-bottom: 40px;
+        }
+
+        .banner .bcon button {
+            background: transparent;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .banner .bcon button:hover {
+            background: rgba(132, 104, 4, 0.881);
+        }
+        
+    </style>
+</head>
+    <body>
+    <nav class="premium-nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-text">Muhesh Fab Academy '25</span>
+                <div class="logo-shine"></div>
+            </a>
+    
+            <div class="nav-links">
+                <a href="index.html" class="nav-link " style="text-decoration: none;">
+                    <i class="ri-home-5-line"></i>
+                    <span>Home</span>
+                </a>
+                <a href="about.html" class="nav-link" style="text-decoration: none;">
+                    <i class="ri-information-line"></i>
+                    <span>About</span>
+                </a>
+                <a href="final_proj.html" class="nav-link active" style="text-decoration: none;">
+                    <i class="ri-stack-line"></i>
+                    <span>Final Project</span>
+                </a>
+                <a href="Weekly Assignment.html" class="nav-link" style="text-decoration: none;">
+                <i class="ri-printer-cloud-line"></i>
+                    <span>Assignment</span>
+                </a>
+                <a href="#footer" class="nav-link" style="text-decoration: none;">
+                    <i class="ri-mail-line"></i>
+                    <span>Contact</span>
+                </a>
+    
+            </div>
+    
+            <div class="nav-actions">
+                <button class="theme-toggle" aria-label="Toggle theme">
+                    <i class="ri-sun-line sun-icon"></i>
+                    <i class="ri-moon-line moon-icon"></i>
+                </button>
+                <button class="mobile-menu" aria-label="Menu">
+                    <i class="ri-menu-line"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    
+    
+    <h1 style="text-align: center; font-weight: bold; color: var(--text-color);">
+        <span style="background-color: var(--background-color); padding: 0.5em;">Line bot</span>
+    </h1>
+    <img src="media/UGV.png" class="img-fluid" alt="Line Bot" style="border-radius: 10px; height: 300px; display: block; margin: auto;">
+    
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <h2 style="font-weight: bold; font-style: italic;">Line Bot - Smarter Than Your Average Cart</h2>
+                
+                <ul style="font-size: 1.2em">
+                    <li>This is not just another industrial robot—it’s a campus logistics revolution on wheels.</li>
+                    <li>Designed to move small loads like waste bags, supplies, or anything people are too lazy to carry.</li>
+                    <li>It glides across the campus, tackling uneven terrain with independent suspension like an off-road champion.</li>
+                    <li>No unnecessary AI here—just a PlayStation joystick and pure mechanical efficiency.</li>
+                    <li>Who needs fancy automation when you can have full manual control and actually enjoy driving it?</li>
+                    <li>Built to be rugged, reliable, and resistant to questionable student experiments.</li>
+                    <li>Designed for efficiency but guaranteed to make heads turn as it rolls by.</li>
+                    <li>Powered by engineering, controlled by common sense, and driven by necessity.</li>
+                    <li>It’s not just a robot—it’s a smarter, tougher, and way more entertaining alternative to walking.</li>
+                </ul>
+                <h2>Final Project Conceptual Sketch</h2>
+                <img src="media/final_proj_sketch.png" class="img-fluid" alt="3D model" style="border-radius: 10px; width: 50%;"> 
+                <h2>Objectives</h2>
+                <ol>
+                    <li>To design and develop a cost-effective Unmanned Guided Vehicle (UGV) for educational use.</li>
+                    <li>To provide an interactive learning tool for students to understand robotics, automation, and navigation systems.</li>
+                    <li>To enable students to program and control UGV movements in real-time.</li>
+                    <li>To integrate sensors and artificial intelligence for enhanced learning.</li>
+                </ol>
+
+                <h2>Design Considerations</h2>
+                <ul>
+                    <li>Structure: To integrate sensors and artificial intelligence for enhanced learning.</li>
+                    <li>Locomotion System: Differential drive with DC motors or stepper motors for smooth and controlled movement.</li>
+                    <li>Control System: Microcontroller-based (Arduino, Raspberry Pi) with easy-to-use programming interfaces.</li>
+                    <li>Navigation and Sensing: LiDAR, ultrasonic, or infrared sensors for obstacle detection and avoidance.</li>
+                    <li>Power Supply: Rechargeable battery with optimized power management.</li>
+                    <li>Communication & Connectivity: Bluetooth or Wi-Fi for remote control and programming.</li>
+                </ul>
+
+                <h2>Key Components</h2>
+                <ul>
+                    <li>Microcontroller (Arduino/Raspberry Pi)</li>
+                    <li>Servo or Stepper Motors</li>
+                    <li>Motor Drivers</li>
+                    <li>Power Supply Unit</li>
+                    <li>Sensors (limit switches, force sensors)</li>
+                    <li>3D-printed or metal frame</li>
+                    <li>Communication Modules (Bluetooth/Wi-Fi)</li>
+                </ul>
+
+                <h2>Software and Programming</h2>
+                <ul>
+                    <li>Programming languages: Python, C++, or Blockly (for beginner-friendly interface)</li>
+                    <li>Simulation software: ROS (Robot Operating System) or Gazebo for virtual testing</li>
+                    <li>Control methods: Manual control, pre-programmed movements, or AI-based automation navigation</li>
+                </ul>
+
+                <h2>Applications in Education</h2>
+                <ul>
+                    <li>Teaching robotics and automation concepts in schools and universities.</li>
+                    <li>Conducting experiments in inverse kinematics and motion planning.</li>
+                    <li>Demonstrating AI integration and machine learning for robotics.</li>
+                    <li>Assisting in STEM workshops and hands-on training programs.</li>
+                </ul>
+
+                <h2>Challenges and Future Scope</h2>
+                <ul>
+                    <li>Reducing cost while maintaining efficiency and precision.</li>
+                    <li>Enhancing real-time responsiveness with better control algorithms.</li>
+                    <li>Expanding compatibility with different programming languages and AI models.</li>
+                    <li>Exploring advanced applications such as human-robot collaboration.</li>
+                </ul>
+
+                <h2>Conclusion</h2>
+                <p class="text-secondary" style="text-align: justify;">An Unmanned Guided Vehicle (UGV) for educational purposes serves as a fundamental tool for hands-on learning in robotics and automation. By developing an accessible and functional model, students can gain practical experience in programming, engineering, and problem-solving. Future enhancements in AI integration and adaptability can further expand its applications in education and real-world automation.</p>
+
+                <h2>Initial Model</h2>
+                <img src="media/UGV_base.png" class="img-fluid" alt="Initial model" style="border-radius: 10px; width: 50%; margin-bottom: 20px;">
+                
+                
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<footer id="footer" class="text-center" style="background-color: #1a1a1a; color: #d3d3d3 !important;"
+    data-aos="fade-up">
+    <div class="container pt-4">
+        <section class="mb-4">
+            <a class="btn btn-link btn-floating btn-lg text-light m-1" href="tel:+91 6379839123" role="button"
+                data-aos="flip-left">
+                <img src="https://img.icons8.com/ios-filled/20/ffffff/phone.png" alt="Phone" width="20" height="20" />
+            </a>
+
+            <a class="btn btn-link btn-floating btn-lg text-light m-1" href="mailto:muhesh022@gmail.com" role="button"
+                data-aos="flip-right">
+                <img src="https://img.icons8.com/ios-filled/20/ffffff/gmail.png" alt="Gmail" width="20" height="20" />
+            </a>
+
+            <a class="btn btn-link btn-floating btn-lg text-light m-1" href="https://www.linkedin.com/in/muheshkumar22"
+                target="_blank" role="button" data-aos="flip-left">
+                <img src="https://img.icons8.com/ios-filled/20/ffffff/linkedin.png" alt="LinkedIn" width="20"
+                    height="20" />
+            </a>
+
+            <a class="btn btn-link btn-floating btn-lg text-light m-1" href="https://www.instagram.com/r_muhesh_"
+                target="_blank" role="button" data-aos="flip-right">
+                <img src="https://img.icons8.com/ios-filled/20/ffffff/instagram-new.png" alt="Instagram" width="20"
+                    height="20" />
+            </a>
+
+            <a class="btn btn-link btn-floating btn-lg text-light m-1" href="https://github.com/muhesh22"
+                target="_blank" role="button" data-aos="flip-left">
+                <img src="https://img.icons8.com/ios-filled/20/ffffff/github.png" alt="GitHub" width="20" height="20" />
+            </a>
+
+            <a class="btn btn-link btn-floating btn-lg text-light m-1"
+                href="https://gitlab.fabcloud.org/academany/fabacademy/2025/labs/nellai/students/muheshkumar-r"
+                target="_blank" role="button" data-aos="flip-right">
+                <img src="https://img.icons8.com/ios-filled/20/ffffff/gitlab.png" alt="GitLab" width="20" height="20" />
+            </a>
+        </section>
+
+       
+    </div>
+
+    <div class="text-center p-3" style="background-color: rgba(255, 255, 255, 0.1); color: #d3d3d3;">
+        © 2025 Copyright
+        <p class="text-light"><a href="assigment/project_management.html" class="text-light">Student Agreement</a> </p>
+        <a class="text-light" href="#">2025 Muheshkumar R - Creative Common Attribution Non Commercial <br> Source code
+            hosted at</a>
+        <a class="text-light" href="https://gitlab.fabcloud.org/academany/fabacademy/2025/labs/nellai/students/muheshkumar-r"
+            target="_blank">gitlab.fabcloud.org</a> <a class="text-light" href="https://fabacademy.org/" target="_blank"></a>
+</footer>
+
+<!-- AOS Script -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1000, // Animation duration
+        once: true, // Animation happens only once
+    });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+<script src="navbar.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const menuToggle = document.querySelector(".mobile-menu");
+        const navLinks = document.querySelector(".nav-links");
+
+        menuToggle.addEventListener("click", function () {
+            navLinks.classList.toggle("active");
+        });
+
+        document.addEventListener("click", function (event) {
+            if (!menuToggle.contains(event.target) && !navLinks.contains(event.target)) {
+                navLinks.classList.remove("active");
+            }
+        });
+    });
+</script>
+</html>

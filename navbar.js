@@ -17,7 +17,50 @@ themeToggle.addEventListener('click', () => {
     
     document.documentElement.setAttribute('data-theme', newTheme);
     localStorage.setItem('theme', newTheme);
+
+    // Update Vanta effect based on new theme
+    updateVantaEffect(newTheme);
 });
+
+// Function to initialize or update Vanta.js effect
+function updateVantaEffect(theme) {
+    if (theme === 'dark') {
+        // Clear existing Vanta effect before applying new one
+        if (typeof vantaEffect !== 'undefined') vantaEffect.destroy();
+
+        vantaEffect = VANTA.CLOUDS({
+            el: "#banner",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            skyColor: 0x205,
+            cloudColor: 0x576272,
+            sunColor: 0xc0c0c,
+            sunGlareColor: 0x96584b,
+            sunlightColor: 0x50404,
+            speed: 0.40
+            
+        });
+    } else {
+        // Clear existing Vanta effect before applying new one
+        if (typeof vantaEffect !== 'undefined') vantaEffect.destroy();
+
+        vantaEffect = VANTA.CLOUDS({
+            el: "#banner",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00
+            
+        });
+    }
+}
+
+// Initialize Vanta effect based on current theme
+updateVantaEffect(document.documentElement.getAttribute('data-theme'));
 
 // Enhanced mobile menu functionality
 const mobileMenuBtn = document.querySelector('.mobile-menu');
