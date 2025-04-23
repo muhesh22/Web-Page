@@ -17,27 +17,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="../styles.css">i
     <style>
         nav.premium-nav {
-            position: relative;
+            position: fixed;
             z-index: 100 !important;
             /* Keep it above the Vanta.js effect */
         }
-
-        /* Ensure the mobile menu is on top */
-        nav.premium-nav .mobile-menu {
-            position: relative;
-            z-index: 200 !important;
-            /* Make it higher than the nav to ensure visibility */
+    
+        body {
+        font-family: 'Helvetica';
         }
-
-        /* Banner (background should stay behind) */
-        .banner {
-            position: relative;
-            z-index: 1 !important;
-            /* Keep the background effect behind */
-        }
-    </style>
+</style>
 </head>
 <body>
     <nav class="premium-nav">
@@ -142,93 +133,226 @@
     }
 </style>
 
-<div class="container">
-    <h1>Arduino LCD 16x2 Display Guide</h1>
-    <p>This guide explains how to display <b>"Welcome to Fab Academy"</b> on a <b>16x2 LCD</b> using an Arduino and the <b>Adafruit_LiquidCrystal</b> library.</p>
-
-    <h2>1. Required Components</h2>
-    <ul>
-        <li>Arduino Board (Uno, Mega, etc.)</li>
-        <li>16x2 LCD Display</li>
-        <li>I2C Module (PCF8574T)</li>
-        <li>Connecting Wires</li>
-        <li>External Power Source (if needed)</li>
-    </ul>
-
-    <h2>2. Wiring Instructions</h2>
-    <table border="1" cellspacing="0" cellpadding="5">
-        <tr>
-            <th>LCD Pin</th>
-            <th>Arduino Pin</th>
-        </tr>
-        <tr>
-            <td>VCC</td>
-            <td>5V</td>
-        </tr>
-        <tr>
-            <td>GND</td>
-            <td>GND</td>
-        </tr>
-        <tr>
-            <td>SDA</td>
-            <td>A4 (Uno) / 20 (Mega)</td>
-        </tr>
-        <tr>
-            <td>SCL</td>
-            <td>A5 (Uno) / 21 (Mega)</td>
-        </tr>
-    </table>
-
-    <h2>3. Arduino Code</h2>
-    <pre class="code-block">
-#include &lt;Adafruit_LiquidCrystal.h&gt;
-
-int seconds = 0; 
-Adafruit_LiquidCrystal lcd_1(0);
-
-void setup() {
-    lcd_1.begin(16, 2);
-    lcd_1.print("Welcome to Fab");
-    lcd_1.setCursor(0, 1);
-    lcd_1.print("Academy");
-    delay(2000);
-    lcd_1.clear();
-}
-
-void loop() {
-    lcd_1.setCursor(0, 0);
-    lcd_1.print("Time (sec): ");
-    lcd_1.setCursor(11, 0);
-    lcd_1.print(seconds);
-    
-    lcd_1.setBacklight(1);
-    delay(500);
-    lcd_1.setBacklight(0);
-    delay(500);
-    
-    seconds++;
-}
-    </pre>
-
-    <h2>4. Explanation</h2>
-    <ul>
-        <li><b>lcd_1.begin(16,2);</b> – Initializes the LCD with 16 columns & 2 rows.</li>
-        <li><b>lcd_1.print("Welcome to Fab");</b> – Displays text on the first row.</li>
-        <li><b>lcd_1.setCursor(0, 1); lcd_1.print("Academy");</b> – Moves to the second row and prints "Academy".</li>
-        <li><b>delay(2000); lcd_1.clear();</b> – Keeps the message for 2 seconds and then clears the screen.</li>
-        <li><b>lcd_1.setBacklight(1);</b> – Turns ON the backlight.</li>
-        <li><b>lcd_1.setBacklight(0);</b> – Turns OFF the backlight (blinking effect).</li>
-        <li><b>seconds++;</b> – Increments the time counter.</li>
-    </ul>
-</div>
-
-<div class="container text-center mt-4">
-    <div class="image-card m-2" style="width: 100%;">
-        <img src="../media/Embedded_1.png" class="img-fluid rounded" alt="Embedded 1">
-        <h5 class="mt-2">16x2 LCD Display with Arduino</h5>
-        <p class="text-secondary">This image shows a 16x2 LCD Display connected to an Arduino, demonstrating basic display functionalities.</p>
+<div class="three-column-layout m-5 md-5">
+    <div  style="margin-top: 100px;" class="left-column">
+        <ol>   
+            <li><a href="project_management.html">  Week 1 : Project Management</a></li>
+            <li><a href="cad_assignment.html">Week 2 : Computer-aided</a></li>
+            <li><a href="CCC.html">Week 3 : Computer Controlled Cutting</a></li>
+            <li><a href="Embedded.html">Week 4 : Embedded Programming</a></li>
+            <li><a href="3d_assignment.html">Week 5 :3D Scanning and Printing</a></li>
+            <li><a href="pcb.html">Week 6 : Electronic Design</a></li>
+            <li><a href="CCM.html">Week 7 : Computer Controlled Machining</a></li>
+            <li><a href="PCB_Prod.html">Week 8 : Electronics Production</a></li>
+            <li><a href="IP.html">Week 9 : Input Devices</a></li>
+            <li><a href="OP.html">Week 10 : Output Devices</a></li>
+            <li><a href="Network.html">Week 11 : Networking and Communication</a></li>
+            <li><a href="machine_design.html">Week 12 : Mechanical Design and Machine Design</a></li>
+            <li><a href="networking_and_communication.html">Week 13 : Midterm Review</a></li>
+            <li><a href="applications_and_implications.html">Week 14 : Molding and Casting</a></li>
+            <li><a href="networking_and_communication.html">Week 15 : System Integeration/a></li>
+            <li><a href="applications_and_implications.html">Week 16 : Interface and Application Programming</a></li>
+            <li><a href="project_development.html">Week 17 : System Integeration</a></li>
+            <li><a href="project_development.html">Week 18 : Wildcard Week</a></li>
+            <li><a href="project_development.html">Week 19 : Applications and Implications, Project Development</a></li>
+            <li><a href="project_development.html">Week 20 : Invention, Intellectual property and Income</a></li>
+        </ol>
     </div>
+    <div class="center-column"> 
+            <section class="datasheet">
+              <header>
+                <h1>Arduino Uno R3 Technical Datasheet</h1>
+                <img src="../media/embedded/Arduino_uno_embedded_1.jpg" alt="Arduino Uno Pinout Diagram" width="800">
+              </header>
+          
+              <section class="specifications">
+                <h2>Board Specifications</h2>
+                <table>
+                  <tr>
+                    <th>Microcontroller</th>
+                    <td>ATmega328P</td>
+                  </tr>
+                  <tr>
+                    <th>Operating Voltage</th>
+                    <td>5V</td>
+                  </tr>
+                  <tr>
+                    <th>Input Voltage</th>
+                    <td>7-12V (recommended)</td>
+                  </tr>
+                  <tr>
+                    <th>Digital I/O Pins</th>
+                    <td>14 (6 provide PWM output)</td>
+                  </tr>
+                  <tr>
+                    <th>Analog Input Pins</th>
+                    <td>6</td>
+                  </tr>
+                  <tr>
+                    <th>Flash Memory</th>
+                    <td>32 KB (0.5 KB used by bootloader)</td>
+                  </tr>
+                  <tr>
+                    <th>SRAM</th>
+                    <td>2 KB</td>
+                  </tr>
+                  <tr>
+                    <th>EEPROM</th>
+                    <td>1 KB</td>
+                  </tr>
+                  <tr>
+                    <th>Clock Speed</th>
+                    <td>16 MHz</td>
+                  </tr>
+                  <tr>
+                    <th>Dimensions</th>
+                    <td>68.6mm × 53.4mm</td>
+                  </tr>
+                </table>
+              </section>
+          
+              <section class="communication">
+                <h2>Communication Interfaces</h2>
+                <table>
+                  <tr>
+                    <th>Interface</th>
+                    <th>Pins</th>
+                    <th>Protocol</th>
+                  </tr>
+                  <tr>
+                    <td>Serial</td>
+                    <td>0 (RX), 1 (TX)</td>
+                    <td>UART</td>
+                  </tr>
+                  <tr>
+                    <td>I2C</td>
+                    <td>A4 (SDA), A5 (SCL)</td>
+                    <td>TWI</td>
+                  </tr>
+                  <tr>
+                    <td>SPI</td>
+                    <td>10 (SS), 11 (MOSI), 12 (MISO), 13 (SCK)</td>
+                    <td>Serial Peripheral Interface</td>
+                </table>
+              </section>
+          
+              <section class="power">
+                <h2>Power Specifications</h2>
+                <div class="power-details">
+                  <div class="power-source">
+                    <h3>Power Sources</h3>
+                    <ul>
+                      <li>USB connection (5V)</li>
+                      <li>DC power jack (7-12V)</li>
+                      <li>Vin pin (7-12V)</li>
+                    </ul>
+                  </div>
+                  <div class="current-ratings">
+                    <h3>Current Ratings</h3>
+                    <ul>
+                      <li>5V pin: 500mA max</li>
+                      <li>3.3V pin: 50mA max</li>
+                      <li>I/O pins: 20mA per pin (40mA max total)</li>
+                    </ul>
+                  </div>
+                </div>
+              </section>
+          
+              <section class="documentation">
+                <h2>Additional Resources</h2>
+                <ul>
+                  <li><a href="arduino-uno-schematic.pdf">Schematic Diagram (PDF)</a></li>
+                  <li><a href="https://www.arduino.cc/en/Main/Software">Arduino IDE Download</a></li>
+                  <li><a href="https://store.arduino.cc/uno-rev3">Official Product Page</a></li>
+                </ul>
+              </section>
+            </section>
+            
+            <h1>Arduino LCD 16x2 Display Guide</h1>
+            <p>This guide explains how to display <b>"Welcome to Fab Academy"</b> on a <b>16x2 LCD</b> using an Arduino and the <b>Adafruit_LiquidCrystal</b> library.</p>
+    
+        <div class="image-card m-2" style="width: 100%;">
+            <img src="../media/Embedded_1.png" class="img-fluid rounded" alt="Embedded 1">
+            <h5 class="mt-2">16x2 LCD Display with Arduino</h5>
+            <p class="text-secondary">This image shows a 16x2 LCD Display connected to an Arduino, demonstrating basic display functionalities.</p>
+        </div>
+        <h2>1. Required Components</h2>
+        <ul>
+            <li>Arduino Board (Uno, Mega, etc.)</li>
+            <li>16x2 LCD Display</li>
+            <li>I2C Module (PCF8574T)</li>
+            <li>Connecting Wires</li>
+            <li>External Power Source (if needed)</li>
+        </ul>
+    
+        <h2>2. Wiring Instructions</h2>
+        <table border="1" cellspacing="0" cellpadding="5">
+            <tr>
+                <th>LCD Pin</th>
+                <th>Arduino Pin</th>
+            </tr>
+            <tr>
+                <td>VCC</td>
+                <td>5V</td>
+            </tr>
+            <tr>
+                <td>GND</td>
+                <td>GND</td>
+            </tr>
+            <tr>
+                <td>SDA</td>
+                <td>A4 (Uno) / 20 (Mega)</td>
+            </tr>
+            <tr>
+                <td>SCL</td>
+                <td>A5 (Uno) / 21 (Mega)</td>
+            </tr>
+        </table>
+    
+        <h2>3. Arduino Code</h2>
+        <pre class="code-block">
+            #include &lt;Adafruit_LiquidCrystal.h&gt;
+            int seconds = 0; 
+        Adafruit_LiquidCrystal lcd_1(0);
+    
+        void setup() {
+            lcd_1.begin(16, 2);
+            lcd_1.print("Welcome to Fab");
+            lcd_1.setCursor(0, 1);
+            lcd_1.print("Academy");
+            delay(2000);
+            lcd_1.clear();
+            }
+    
+        void loop() {
+            lcd_1.setCursor(0, 0);
+            lcd_1.print("Time (sec): ");
+            lcd_1.setCursor(11, 0);
+            lcd_1.print(seconds);
+        
+            lcd_1.setBacklight(1);
+            delay(500);
+            lcd_1.setBacklight(0);
+            delay(500);
+        
+            seconds++;
+        }
+        </pre>
+    
+        <h2>4. Explanation</h2>
+        <ul>
+            <li><b>lcd_1.begin(16,2);</b> – Initializes the LCD with 16 columns & 2 rows.</li>
+            <li><b>lcd_1.print("Welcome to Fab");</b> – Displays text on the first row.</li>
+            <li><b>lcd_1.setCursor(0, 1); lcd_1.print("Academy");</b> – Moves to the second row and prints "Academy".</li>
+            <li><b>delay(2000); lcd_1.clear();</b> – Keeps the message for 2 seconds and then clears the screen.</li>
+            <li><b>lcd_1.setBacklight(1);</b> – Turns ON the backlight.</li>
+            <li><b>lcd_1.setBacklight(0);</b> – Turns OFF the backlight (blinking effect).</li>
+            <li><b>seconds++;</b> – Increments the time counter.</li>
+        </ul>
+    </div>
+    
 </div>
+    
 
 
 </body>
@@ -275,12 +399,12 @@ void loop() {
 
     <div class="text-center p-3" style="background-color: rgba(255, 255, 255, 0.1); color: #d3d3d3;">
         © 2025 Copyright
-        <p class="text-light"><a href="project_management.html" class="text-light">Student Agreement</a> </p>
+        <p class="text-light"><a href="assigment/project_management.html" class="text-light">Student Agreement</a> </p>
         <a class="text-light" href="#">2025 Muheshkumar R - Creative Common Attribution Non Commercial <br> Source code
             hosted at</a>
         <a class="text-light" href="https://gitlab.fabcloud.org/academany/fabacademy/2025/labs/nellai/students/muheshkumar-r"
             target="_blank">gitlab.fabcloud.org</a> - <a class="text-light" href="https://fabacademy.org/" target="_blank">fabacademy.org</a>
-            target="_blank">gitlab.fabcloud.org</a>    </div>
+    </div>
 </footer>
 <!-- AOS Script -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>

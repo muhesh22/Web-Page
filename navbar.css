@@ -36,14 +36,19 @@ body {
 .premium-nav {
     position: fixed;
     top: 0;
-    left: 0;
     right: 0;
-    z-index: 1000;
+    left: 0;
+    width: 100%; /* Ensure full width */
+    z-index: 100; /* High enough to stay on top */
     backdrop-filter: blur(10px);
     background: var(--nav-bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     border-bottom: 1px solid var(--nav-border);
     height: var(--nav-height);
     box-shadow: var(--nav-shadow);
+    height: 10vh;
 }
 
 

@@ -23,69 +23,21 @@
     <link href="navbar.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
     
-    <style>
-        @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700');
-        .banner {
-            width: 100%;
-            height: 100vh;
-            
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+   
+<style>
+        nav.premium-nav {
+            position: fixed;
+            z-index: 100 !important;
+            /* Keep it above the Vanta.js effect */
         }
-/* Make sure the nav bar stays on top */
-nav.premium-nav {
-    position: relative;
-    z-index: 100 !important; /* Keep it above the Vanta.js effect */
-}
-
-/* Ensure the mobile menu is on top */
-nav.premium-nav .mobile-menu {
-    position: relative;
-    z-index: 200 !important; /* Make it higher than the nav to ensure visibility */
-}
-
-/* Banner (background should stay behind) */
-.banner {
-    position: relative;
-    z-index: 1 !important; /* Keep the background effect behind */
-}
-
-        .banner .bcon {
-            text-align: center;
-            max-width: 800px;
-            width: 100%;
+      
+        body {
+        font-family: 'Helvetica';
         }
-
-        .banner .bcon h1 {
-            font-size: 50px;
-            margin-bottom: 20px;
-        }
-
-        .banner .bcon p {
-            margin-bottom: 40px;
-        }
-
-        .banner .bcon button {
-            background: transparent;
-            border: none;
-            outline: none;
-            cursor: pointer;
-            padding: 10px 20px;
-            border-radius: 5px;
-            transition: all 0.3s ease;
-        }
-
-        .banner .bcon button:hover {
-            background: rgba(132, 104, 4, 0.881);
-        }
-        
-    </style>
+</style>
 </head>
     <body>
-    <nav class="premium-nav">
+    <nav class="premium-nav ">
         <div class="nav-container">
             <a href="index.html" class="nav-logo">
                 <span class="logo-text">Muhesh Fab Academy '25</span>
@@ -129,6 +81,7 @@ nav.premium-nav .mobile-menu {
     </nav>
 
     
+    <div style="height: 10vh;"></div>
     
     <h1 style="text-align: center; font-weight: bold; color: var(--text-color);">
         <span style="background-color: var(--background-color); padding: 0.5em;">Line bot</span>
@@ -136,74 +89,61 @@ nav.premium-nav .mobile-menu {
     <img src="media/UGV.png" class="img-fluid" alt="Line Bot" style="border-radius: 10px; height: 300px; display: block; margin: auto;">
     
 
-    <div class="container mt-5">
+    <div class="container mt-5 ">
         <div class="row justify-content-center">
             <div class="col-md-10">
                 <h2 style="font-weight: bold; font-style: italic;">Line Bot - Smarter Than Your Average Cart</h2>
                 
-                <ul style="font-size: 1.2em">
-                    <li>This is not just another industrial robot—it’s a campus logistics revolution on wheels.</li>
-                    <li>Designed to move small loads like waste bags, supplies, or anything people are too lazy to carry.</li>
-                    <li>It glides across the campus, tackling uneven terrain with independent suspension like an off-road champion.</li>
-                    <li>No unnecessary AI here—just a PlayStation joystick and pure mechanical efficiency.</li>
-                    <li>Who needs fancy automation when you can have full manual control and actually enjoy driving it?</li>
-                    <li>Built to be rugged, reliable, and resistant to questionable student experiments.</li>
-                    <li>Designed for efficiency but guaranteed to make heads turn as it rolls by.</li>
-                    <li>Powered by engineering, controlled by common sense, and driven by necessity.</li>
-                    <li>It’s not just a robot—it’s a smarter, tougher, and way more entertaining alternative to walking.</li>
-                </ul>
-                <h2>Final Project Conceptual Sketch</h2>
-                <img src="media/final_proj_sketch.png" class="img-fluid" alt="3D model" style="border-radius: 10px; width: 50%;"> 
                 <h2>Objectives</h2>
-                <ol>
-                    <li>To design and develop a cost-effective Unmanned Guided Vehicle (UGV) for educational use.</li>
-                    <li>To provide an interactive learning tool for students to understand robotics, automation, and navigation systems.</li>
-                    <li>To enable students to program and control UGV movements in real-time.</li>
-                    <li>To integrate sensors and artificial intelligence for enhanced learning.</li>
-                </ol>
-
+                <ul>
+                  <li>Design and develop a cost-effective UGV for educational use.</li>
+                  <li>Provide an interactive learning tool for students to understand robotics, automation, and navigation systems.</li>
+                  <li>Enable students to program and control UGV movements in real-time.</li>
+                  <li>Integrate sensors and artificial intelligence for enhanced learning.</li>
+                </ul>
+            
                 <h2>Design Considerations</h2>
                 <ul>
-                    <li>Structure: To integrate sensors and artificial intelligence for enhanced learning.</li>
-                    <li>Locomotion System: Differential drive with DC motors or stepper motors for smooth and controlled movement.</li>
-                    <li>Control System: Microcontroller-based (Arduino, Raspberry Pi) with easy-to-use programming interfaces.</li>
-                    <li>Navigation and Sensing: LiDAR, ultrasonic, or infrared sensors for obstacle detection and avoidance.</li>
-                    <li>Power Supply: Rechargeable battery with optimized power management.</li>
-                    <li>Communication & Connectivity: Bluetooth or Wi-Fi for remote control and programming.</li>
+                  <li><strong>Structure:</strong> Compact and modular, supporting sensor and AI integration.</li>
+                  <li><strong>Locomotion System:</strong> Differential drive using DC or stepper motors for smooth movement.</li>
+                  <li><strong>Control System:</strong> Microcontroller-based (Arduino, Raspberry Pi) with beginner-friendly interfaces.</li>
+                  <li><strong>Navigation & Sensing:</strong> Equipped with LiDAR, ultrasonic, or infrared sensors for obstacle detection and avoidance.</li>
+                  <li><strong>Power Supply:</strong> Rechargeable batteries with efficient power management circuitry.</li>
+                  <li><strong>Communication & Connectivity:</strong> Supports Bluetooth or Wi-Fi for remote access and programming.</li>
                 </ul>
-
+            
                 <h2>Key Components</h2>
                 <ul>
-                    <li>Microcontroller (Arduino/Raspberry Pi)</li>
-                    <li>Servo or Stepper Motors</li>
-                    <li>Motor Drivers</li>
-                    <li>Power Supply Unit</li>
-                    <li>Sensors (limit switches, force sensors)</li>
-                    <li>3D-printed or metal frame</li>
-                    <li>Communication Modules (Bluetooth/Wi-Fi)</li>
+                  <li>Microcontroller (Arduino / Raspberry Pi)</li>
+                  <li>Servo or Stepper Motors</li>
+                  <li>Motor Drivers</li>
+                  <li>Rechargeable Power Supply Unit</li>
+                  <li>Sensors (limit switches, force sensors, etc.)</li>
+                  <li>3D-printed or metal frame</li>
+                  <li>Communication Modules (Bluetooth / Wi-Fi)</li>
                 </ul>
-
+            
                 <h2>Software and Programming</h2>
                 <ul>
-                    <li>Programming languages: Python, C++, or Blockly (for beginner-friendly interface)</li>
-                    <li>Simulation software: ROS (Robot Operating System) or Gazebo for virtual testing</li>
-                    <li>Control methods: Manual control, pre-programmed movements, or AI-based automation navigation</li>
+                  <li><strong>Languages:</strong> Python, C++, Blockly (beginner-friendly)</li>
+                  <li><strong>Simulation Tools:</strong> ROS (Robot Operating System), Gazebo</li>
+                  <li><strong>Control Methods:</strong> Manual, pre-programmed, or AI-based automation</li>
                 </ul>
-
+            
                 <h2>Applications in Education</h2>
                 <ul>
-                    <li>Teaching robotics and automation concepts in schools and universities.</li>
-                    <li>Conducting experiments in inverse kinematics and motion planning.</li>
-                    <li>Demonstrating AI integration and machine learning for robotics.</li>
-                    <li>Assisting in STEM workshops and hands-on training programs.</li>
+                  <li>Teaching robotics and automation in schools and universities.</li>
+                  <li>Experimenting with inverse kinematics and motion planning.</li>
+                  <li>Demonstrating AI and machine learning integration in robotics.</li>
+                  <li>Facilitating STEM workshops and hands-on training programs.</li>
                 </ul>
-
-                <h2>Challenges and Future Scope</h2>
+            
+                <h2>Challenges & Future Scope</h2>
                 <ul>
-                    <li>Reducing cost while maintaining efficiency and precision.</li>
-                    <li>Enhancing real-time responsiveness with better control algorithms.</li>
-                    <li>Expanding compatibility with different programming languages and AI models.</li>
-                    <li>Exploring advanced applications such as human-robot collaboration.</li>
+                  <li>Reducing cost without compromising performance and precision.</li>
+                  <li>Improving real-time responsiveness through optimized algorithms.</li>
+                  <li>Supporting more programming languages and AI models.</li>
+                  <li>Exploring human-robot collaboration and advanced AI applications.</li>
                 </ul>
 
                 <h2>Conclusion</h2>
@@ -213,6 +153,109 @@ nav.premium-nav .mobile-menu {
                 <img src="media/UGV_base.png" class="img-fluid" alt="Initial model" style="border-radius: 10px; width: 50%; margin-bottom: 20px;">
                 
                 
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <style>
+                    .table > thead > tr > th {
+                        background-color: #c7a304;
+                        color: white;
+                    }
+                    .table > tbody > tr:nth-child(odd) {
+                        background-color: #f2f2f2;
+                    }
+                    .table > tbody > tr:nth-child(even) {
+                        background-color: #e6e6e6;
+                    }
+                    .table > tbody > tr > td:nth-child(5) {
+                        background-color: yellow;
+                    }
+                    .table > tbody > tr > td:nth-child(5)[data-status="Completed"] {
+                        background-color: green;
+                    }
+                    .table > tbody > tr > td:nth-child(5)[data-status="In Progress"] {
+                        background-color: #ffff00;
+                    }
+                </style>
+                <style>
+                    table {
+                        border: 5px solid #ddd;
+                    }
+                </style>
+                <h1><b>Project Timeline</b></h1>
+                <table class="table table-striped table-bordered">
+                    <thead>
+                      <tr>
+                        <th>S.No</th>
+                        <th>From Date</th>
+                        <th>To Date</th>
+                        <th>Work Description</th>
+                        <th data-status="Pending">Status</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr><td>1</td><td>Feb 17</td><td>Feb 20</td><td>Project definition, objectives, requirement analysis</td><td data-status="Completed">Completed</td></tr>
+                      <tr><td>2</td><td>Feb 21</td><td>Feb 24</td><td>Literature survey and benchmarking similar robots</td><td data-status="Completed">Completed</td></tr>
+                      <tr><td>3</td><td>Feb 25</td><td>Feb 28</td><td>Finalize components and tools needed</td><td data-status="Completed">Completed</td></tr>
+                      <tr><td>4</td><td>Mar 1</td><td>Mar 5</td><td>Component procurement and inventory check</td><td data-status="In Progress">In Progress</td></tr>
+                      <tr><td>5</td><td>Mar 6</td><td>Mar 10</td><td>IR sensor testing and calibration</td><td data-status="Pending">Pending</td></tr>
+                      <tr><td>6</td><td>Mar 11</td><td>Mar 15</td><td>Motor driver testing (e.g., L298N, BTS7960)</td><td data-status="Pending">Pending</td></tr>
+                      <tr><td>7</td><td>Mar 16</td><td>Mar 20</td><td>Basic movement logic (forward, left, right, stop)</td><td data-status="Pending">Pending</td></tr>
+                      <tr><td>8</td><td>Mar 21</td><td>Mar 25</td><td>Basic line following algorithm (black/white detection)</td><td data-status="Pending">Pending</td></tr>
+                      <tr><td>9</td><td>Mar 26</td><td>Mar 30</td><td>Chassis assembly and motor mounting</td><td data-status="Pending">Pending</td></tr>
+                      <tr><td>10</td><td>Apr 1</td><td>Apr 5</td><td>Microcontroller integration and sensor-motor interface</td><td data-status="Pending">Pending</td></tr>
+                      <tr><td>11</td><td>Apr 6</td><td>Apr 10</td><td>Full robot integration and wiring</td><td data-status="Pending">Pending</td></tr>
+                      <tr><td>12</td><td>Apr 11</td><td>Apr 15</td><td>PID tuning and path accuracy improvement</td><td data-status="Pending">Pending</td></tr>
+                      <tr><td>13</td><td>Apr 16</td><td>Apr 20</td><td>Advanced features (e.g., turn detection, intersections)</td><td data-status="Pending">Pending</td></tr>
+                      <tr><td>14</td><td>Apr 21</td><td>Apr 24</td><td>PCB design (optional) and simulation</td><td data-status="Pending">Pending</td></tr>
+                      <tr><td>15</td><td>Apr 25</td><td>Apr 28</td><td>Fabrication of custom PCB (if needed)</td><td data-status="Pending">Pending</td></tr>
+                      <tr><td>16</td><td>Apr 29</td><td>May 3</td><td>Final testing, debugging, and iteration</td><td data-status="Pending">Pending</td></tr>
+                      <tr><td>17</td><td>May 4</td><td>May 8</td><td>Enclosure design and robot body finishing</td><td data-status="Pending">Pending</td></tr>
+                      <tr><td>18</td><td>May 9</td><td>May 13</td><td>Report writing and documentation</td><td data-status="Pending">Pending</td></tr>
+                      <tr><td>19</td><td>May 14</td><td>May 18</td><td>Final presentation preparation and dry run</td><td data-status="Pending">Pending</td></tr>
+                      <tr><td>20</td><td>May 19</td><td>May 25</td><td>Final review, polishing, and submission</td><td data-status="Pending">Pending</td></tr>
+                    </tbody>
+                  </table>
+
+                  <h1><b>Bill of Materials in $</b></h1>
+                  <table  class="table table-striped table-bordered">
+                    <thead>
+                      <tr>
+                        <th>S.No</th>
+                        <th>Component</th>
+                        <th>Quantity</th>
+                        <th>Fixed Cost (USD)</th>
+                        <th>Notes</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr><td>1</td><td>Seeeduino XIAO</td><td>1</td><td>$8</td><td>Compact, 3.3V logic MCU</td></tr>
+                      <tr><td>2</td><td>IR Line Sensor Array (QTR-8RC)</td><td>1</td><td>$12</td><td>Line sensing</td></tr>
+                      <tr><td>3</td><td>Gear DC Motors (200RPM)</td><td>4</td><td>$16</td><td>BO-type motors</td></tr>
+                      <tr><td>4</td><td>Custom Fabricated PCB</td><td>1</td><td>$12</td><td>From JLCPCB</td></tr>
+                      <tr><td>5</td><td>Motor Driver ICs (BTS7960 on PCB)</td><td>1 set</td><td>$6</td><td>Integrated in PCB</td></tr>
+                      <tr><td>6</td><td>Robot Chassis (Acrylic)</td><td>1</td><td>$15</td><td>4WD support</td></tr>
+                      <tr><td>7</td><td>Wheels (65mm)</td><td>4</td><td>$6</td><td>Plastic + rubber grip</td></tr>
+                      <tr><td>8</td><td>7.4V Li-ion Battery Pack + Charger</td><td>1 set</td><td>$22</td><td>2200mAh</td></tr>
+                      <tr><td>9</td><td>Voltage Regulator (MP1584)</td><td>1</td><td>$2</td><td>5V step-down</td></tr>
+                      <tr><td>10</td><td>SMD Passive Components (R, C, headers)</td><td>1 set</td><td>$6</td><td>General use</td></tr>
+                      <tr><td>11</td><td>USB to Serial Programmer</td><td>1</td><td>$4</td><td>For uploading code</td></tr>
+                      <tr><td>12</td><td>Switches, Connectors, Screws</td><td>Various</td><td>$4</td><td>Assembly support</td></tr>
+                      <tr><td>13</td><td>Enclosure/Robot Body Shell (optional)</td><td>1</td><td>$8</td><td>3D printed or acrylic</td></tr>
+                      <tr><td>14</td><td>Misc. Cables & Wires</td><td>1 set</td><td>$3</td><td>Power + signal</td></tr>
+                      <tr><td>15</td><td>PCB Shipping & Customs</td><td>1 set</td><td>$10</td><td>JLCPCB or similar</td></tr>
+                      <tr>
+                        <td colspan="3"><strong>Total Estimated Cost</strong></td>
+                        <td><strong>$134</strong></td>
+                        <td><strong> $200 budget overall</strong></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  
             </div>
         </div>
     </div>
@@ -266,7 +309,8 @@ nav.premium-nav .mobile-menu {
         <a class="text-light" href="#">2025 Muheshkumar R - Creative Common Attribution Non Commercial <br> Source code
             hosted at</a>
         <a class="text-light" href="https://gitlab.fabcloud.org/academany/fabacademy/2025/labs/nellai/students/muheshkumar-r"
-            target="_blank">gitlab.fabcloud.org</a> <a class="text-light" href="https://fabacademy.org/" target="_blank"></a>
+            target="_blank">gitlab.fabcloud.org</a> - <a class="text-light" href="https://fabacademy.org/" target="_blank">fabacademy.org</a>
+    </div>
 </footer>
 
 <!-- AOS Script -->

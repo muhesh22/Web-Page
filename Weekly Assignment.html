@@ -25,7 +25,8 @@
         @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700');
         .banner {
             width: 100%;
-            height: 100vh;
+            height: 20
+            0vh;
             
             background-size: cover;
             background-position: center;
@@ -34,22 +35,23 @@
             align-items: center;
         }
 /* Make sure the nav bar stays on top */
-nav.premium-nav {
-    position: relative;
-    z-index: 100 !important; /* Keep it above the Vanta.js effect */
-}
 
-/* Ensure the mobile menu is on top */
-nav.premium-nav .mobile-menu {
-    position: relative;
-    z-index: 200 !important; /* Make it higher than the nav to ensure visibility */
-}
+        nav.premium-nav {
+            position: fixed;
+            z-index: 100 !important;
+            /* Keep it above the Vanta.js effect */
+        }
+      
+        body {
+        font-family: 'Helvetica';
+        height: 100vh;
+        }
 
 /* Banner (background should stay behind) */
-.banner {
-    position: relative;
-    z-index: 1 !important; /* Keep the background effect behind */
-}
+        .banner {
+            position: relative;
+            z-index: 1 !important; /* Keep the background effect behind */
+        }
 
         .banner .bcon {
             text-align: center;
@@ -133,8 +135,8 @@ nav.premium-nav .mobile-menu {
 
 
     <!-- This is the card group -->
-
-<h1 class="display-4 m-5" style="text-align: center;"><b>Weekly Assignments</b></h1>
+<div style="height: 50px;"></div>
+<h1 class="display-4 m-5 md-10" style="text-align: center;"><b>Weekly Assignments</b></h1>
 
     <div class="container">
         <section class="cards m-5">
@@ -540,7 +542,7 @@ nav.premium-nav .mobile-menu {
             hosted at</a>
         <a class="text-light" href="https://gitlab.fabcloud.org/academany/fabacademy/2025/labs/nellai/students/muheshkumar-r"
             target="_blank">gitlab.fabcloud.org</a> - <a class="text-light" href="https://fabacademy.org/" target="_blank">fabacademy.org</a>
-            target="_blank">gitlab.fabcloud.org</a>    </div>
+    </div>
 </footer>
 
 <!-- AOS Script -->

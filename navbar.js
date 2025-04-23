@@ -22,6 +22,7 @@ themeToggle.addEventListener('click', () => {
     updateVantaEffect(newTheme);
 });
 
+
 // Function to initialize or update Vanta.js effect
 function updateVantaEffect(theme) {
     if (theme === 'dark') {

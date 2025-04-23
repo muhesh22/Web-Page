@@ -19,17 +19,13 @@
     <link href="../styles.css" rel="stylesheet">
     <style>
         nav.premium-nav {
-            position: relative;
+            position: fixed;
             z-index: 100 !important;
             /* Keep it above the Vanta.js effect */
         }
 
         /* Ensure the mobile menu is on top */
-        nav.premium-nav .mobile-menu {
-            position: relative;
-            z-index: 200 !important;
-            /* Make it higher than the nav to ensure visibility */
-        }
+      
 
         /* Banner (background should stay behind) */
         .banner {
@@ -43,6 +39,7 @@
     </style>
 </head>
 <body>
+
     <nav class="premium-nav">
         <div class="nav-container">
             <a href="../index.html" class="nav-logo">
@@ -85,14 +82,32 @@
             </div>
         </div>
     </nav>
+    <div style="height: 10vh;"></div>
 
     <div class="three-column-layout">
-        <div class="left-column">
+        <div style="margin-top: 100px;" class="left-column">
             <ol>
-                <li>Week 1 : Project Management</li>
-                <li>Week 2 : CAD Assignment</li>
-                <li>Week 3 : Computer Controlled Cutting</li>
-                <li>Week 4 : 3D Printing</li>
+                
+                <li><a href="project_management.html">  Week 1 : Project Management</a></li>
+                <li><a href="cad_assignment.html">Week 2 : Computer-aided</a></li>
+                <li><a href="CCC.html">Week 3 : Computer Controlled Cutting</a></li>
+                <li><a href="Embedded.html">Week 4 : Embedded Programming</a></li>
+                <li><a href="3d_assignment.html">Week 5 :3D Scanning and Printing</a></li>
+                <li><a href="pcb.html">Week 6 : Electronic Design</a></li>
+                <li><a href="CCM.html">Week 7 : Computer Controlled Machining</a></li>
+                <li><a href="PCB_Prod.html">Week 8 : Electronics Production</a></li>
+                <li><a href="IP.html">Week 9 : Input Devices</a></li>
+                <li><a href="OP.html">Week 10 : Output Devices</a></li>
+                <li><a href="Network.html">Week 11 : Networking and Communication</a></li>
+                <li><a href="machine_design.html">Week 12 : Mechanical Design and Machine Design</a></li>
+                <li><a href="networking_and_communication.html">Week 13 : Midterm Review</a></li>
+                <li><a href="applications_and_implications.html">Week 14 : Molding and Casting</a></li>
+                <li><a href="networking_and_communication.html">Week 15 : System Integeration/a></li>
+                <li><a href="applications_and_implications.html">Week 16 : Interface and Application Programming</a></li>
+                <li><a href="project_development.html">Week 17 : System Integeration</a></li>
+                <li><a href="project_development.html">Week 18 : Wildcard Week</a></li>
+                <li><a href="project_development.html">Week 19 : Applications and Implications, Project Development</a></li>
+                <li><a href="project_development.html">Week 20 : Invention, Intellectual property and Income</a></li>
             </ol>
         </div>
 
@@ -145,17 +160,18 @@
             </div>
 
             
-            <h1 class="display-3 mb-5">Git_Tutorial</h1>
+            <div style="height: 5rem;"></div>
+            <h1 class="display-3 mb-5 ">Git_Tutorial</h1>
             <img src="../media/proj_man/git_logo.png" class="img-fluid mb-4" alt="Description of Image" style="max-width: 100%; height: auto;">
 
             <h1 class="display-5">What’s Git?</h1>
   
             <p class="lead mt-3 text-secondary">Git is a version control software that allows developers to develop the same project. It allows developers to track the
             changes to a set of files which is called “repository” or “repo”. Install Git.</p>
-        <h1 class="display-5">How to install Git:</h1>
+             <h1 class="display-5">How to install Git:</h1>
 
-        <pre style="background-color: #fceded2a;border-radius: 5px;">
-            <code class="language-bash">
+             <pre style="background-color: #fceded2a;border-radius: 5px;">
+             <code class="language-bash">
                 # install git via winget on windows
                 winget install --id Git.Git -e --source winget
             
@@ -236,14 +252,15 @@
             # Pull the latest changes from the remote repository
             git pull
         </code>
-    </pre>
-    <p class="lead text-secondary mt-3"><a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git" target="_blank">Git Installation reference</a></p>
+        </pre>
+        <p class="lead text-secondary mt-3"><a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git" target="_blank">Git Installation reference</a></p>
 
-    <h1 class="display-5 mt-5">Image Resizing</h1>
+        <h1 class="display-5 mt-5">Image Resizing</h1>
 
-    <h1 class="display-5 mt-5">About Xnconvert Installation</h1>
-    <p class="lead text-secondary mt-3">Xnconvert is a free software for converting and resizing images. To install Xnconvert, go to the <a href="https://www.xnview.com/en/xnconvert/" target="_blank">download page</a> and download the appropriate version for your operating system. Follow the installation instructions to install Xnconvert on your computer.</p>
-    <div class="container mt-5">
+        <h1 class="display-5 mt-5">About Xnconvert Installation</h1>
+        <p class="lead text-secondary mt-3">Xnconvert is a free software for converting and resizing images. To install Xnconvert, go to the 
+        <a href="https://www.xnview.com/en/xnconvert/" target="_blank">download page</a> and download the appropriate version for your operating system. Follow the installation instructions to install Xnconvert on your computer.</p>
+        <div class="container mt-5">
         <!-- Bootstrap Carousel -->
         <div id="imageSlider" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <!-- Indicators/dots -->
@@ -287,9 +304,9 @@
                 <span class="carousel-control-next-icon"></span>
                 <span class="visually-hidden">Next</span>
             </button>
+            </div>
         </div>
-    </div>
-    <style>
+        <style>
         /* Custom fade animation */
         .carousel-item {
             transition: opacity 1s ease-in-out !important;
@@ -341,12 +358,12 @@
                 padding: 15px;
             }
         }
-    </style>
+        </style>
 
-    <!-- Bootstrap JS Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Bootstrap JS Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     
-    <script>
+        <script>
         // Customize the slider behavior
         document.addEventListener('DOMContentLoaded', function() {
             var myCarousel = document.getElementById('imageSlider');
@@ -356,30 +373,30 @@
                 wrap: true // Continuously cycle
             });
         });
-    </script>
+        </script>
 
-    <h1 class="display-5 mt-5">Importing and Resizing</h1>
-    <p>Use Xnconvert to resize images</p>
-    <p>Import the images into Xnconvert and change the resolution to 800px in width</p>
-    <div class="image-container">
+        <h1 class="display-5 mt-5">Importing and Resizing</h1>
+        <p>Use Xnconvert to resize images</p>
+        <p>Import the images into Xnconvert and change the resolution to 800px in width</p>
+        <div class="image-container">
         <img src="../media/proj_man/pm_10.png" class="img-fluid" alt="Description of Image" style="max-width: 100%; height: auto;">
         <img src="../media/proj_man/pm_11.png" class="img-fluid" alt="Description of Image" style="max-width: 100%; height: auto;">
-    </div>
+        </div>
 
-    <h1 class="display-5 mt-5">Exporting</h1>
-    <p>Export the resized images to the folder with image containers</p>
-    <p>For adding images, use the image container provided</p>
+        <h1 class="display-5 mt-5">Exporting</h1>
+        <p>Export the resized images to the folder with image containers</p>
+        <p>For adding images, use the image container provided</p>
 
-    <div class="image-container">
+        <div class="image-container">
         <img src="../media/proj_man/pm_12.png" class="img-fluid" alt="Description of Image" style="max-width: 100%; height: auto;">
-    </div>
-    <div class="container">
-        <h1 class="display-5 mt-5">Website Creation</h1>
+        </div>
+        <div class="container">
+            <h1 class="display-5 mt-5">Website Creation</h1>
     
-        <h3 class="mt-5">A New beginning on HTML and CSS</h3>
-        <p>Learmed many languages first time stepping into the HTML and CSS.</p>
-        <p>Learned by Experience, made many mistakes initially afterwards rectified those</p>
-        <p>Let me through the process</p>
+            <h3 class="mt-5">A New beginning on HTML and CSS</h3>
+            <p>Learmed many languages first time stepping into the HTML and CSS.</p>
+            <p>Learned by Experience, made many mistakes initially afterwards rectified those</p>
+            <p>Let me through the process</p>
     
         <div class="step">
             <h3 class="mt-5">Step 1: Installing VS Code</h3>
@@ -447,25 +464,7 @@
         </div>
         <div class="image-container">
             <img src="../media/proj_man/pm_23.jpg" class="img-fluid" alt="Description of Image" style="max-width: 100%; height: auto;">
-        </div>
-    
-        <div class="step">
-            <h3 class="mt-5">Step 4: Design the Content</h3>
-            <p>Create the content for your website using HTML and CSS:</p>
-            <ul>
-                <li>Create a new folder for your website and create the necessary files such as index.html, style.css, and script.js.</li>
-                <li>Write the basic structure of HTML including the doctype, head, and body tags.</li>
-                <li>Write the basic structure of CSS including the selectors, properties, and values.</li>
-                <li>Write the basic structure of JavaScript including the variables, functions, and events.</li>
-            </ul>
-            <div class="d-flex flex-wrap justify-content-center">
-                <img src="../media/proj_man/pm_4.png" class="img-fluid m-2" alt="Description of Image" style="max-width: 100%; height: auto;">
-                <img src="../media/proj_man/pm_5.png" class="img-fluid m-2" alt="Description of Image" style="max-width: 100%; height: auto;">
-                <img src="../media/proj_man/pm_6.png" class="img-fluid m-2" alt="Description of Image" style="max-width: 100%; height: auto;">
-                <img src="../media/proj_man/pm_7.png" class="img-fluid m-2" alt="Description of Image" style="max-width: 100%; height: auto;">
-                <img src="../media/proj_man/pm_8.png" class="img-fluid m-2" alt="Description of Image" style="max-width: 100%; height: auto;">
-w            </div>
-        </div>
+        </div> 
     
         <div class="step">
             <h3 class="mt-5">Step 5: Add the Footer</h3>
@@ -492,7 +491,10 @@ w            </div>
     
         <div class="step">
             <h3 class="mt-5">Step 7: Deploy the Website Using Git</h3>
+            <p>I already mentioned about git in the previous step</p>
             <p>Deploy your website to a hosting platform:</p>
+            <p>Learn more about <a href="https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F" target="_blank">Git</a>.</p>
+            
             <ul>
                 <li>Choose a hosting service that supports Git deployment, like GitHub Pages or Netlify.</li>
                 <li>Push your local repository to the remote server using Git commands.</li>
@@ -502,13 +504,10 @@ w            </div>
     
     
         
-        </div>
-    
-    
-
-
-    
+    </div>
+      
 </body>
+
 <footer id="footer" class="text-center" style="background-color: #1a1a1a; color: #d3d3d3 !important;"
     data-aos="fade-up">
     <div class="container pt-4">
@@ -545,19 +544,17 @@ w            </div>
                 target="_blank" role="button" data-aos="flip-right">
                 <img src="https://img.icons8.com/ios-filled/20/ffffff/gitlab.png" alt="GitLab" width="20" height="20" />
             </a>
-        </section>
-
-       
+        </section>  
     </div>
 
     <div class="text-center p-3" style="background-color: rgba(255, 255, 255, 0.1); color: #d3d3d3;">
         © 2025 Copyright
-        <p class="text-light"><a href="project_management.html" class="text-light">Student Agreement</a> </p>
+        <p class="text-light"><a href="assigment/project_management.html" class="text-light">Student Agreement</a> </p>
         <a class="text-light" href="#">2025 Muheshkumar R - Creative Common Attribution Non Commercial <br> Source code
             hosted at</a>
         <a class="text-light" href="https://gitlab.fabcloud.org/academany/fabacademy/2025/labs/nellai/students/muheshkumar-r"
             target="_blank">gitlab.fabcloud.org</a> - <a class="text-light" href="https://fabacademy.org/" target="_blank">fabacademy.org</a>
-            target="_blank">gitlab.fabcloud.org</a>    </div>
+    </div>
 </footer>
 <!-- AOS Script -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
