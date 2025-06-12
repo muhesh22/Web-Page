@@ -1,66 +1,80 @@
 .three-column-layout {
     display: flex;
+    flex-direction: column;
     margin: 0;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     background-color: var(--bg-color);
     color: var(--text-color);
 }
 
-.three-column-layout .left-column {
-    width: 300px;
-    position: fixed;
-    height: 200vh;
-    left: 0;
-    top: 0;
-    background-color: var(--bg-color);
-    padding: 20px;
+.three-column-layout .left-column,
+.three-column-layout .right-column {
+    width: 100%;
+    height: auto;
+    position: static;
+    padding: 10px;
     overflow-y: auto;
+    
 }
 
 .three-column-layout .center-column {
     flex: 1;
-    margin-left: 300px;
-    margin-right: 300px;
     padding: 20px;
     background-color: var(--bg-color);
-    width: 500px;
-}
-
-.three-column-layout .right-column {
-    width: 250px;
-    position: fixed;
-    right: 0;
-    height: 100vh;
-    background-color: var(--bg-color);
-    padding: 20px;
-    overflow-y: auto;
+    width: 100%;
 }
 
 .three-column-layout .right-column a {
-    display: block;
+    display: inline;
     padding: 10px;
+    font-size: 0.7em;
     text-decoration: none;
-    color: #333;
-    border-bottom: 1px solid #ccc;
+    color: var(--text-color);
+    
 }
 
 .three-column-layout .right-column a:hover {
-    background-color: #ddd;
+    background-color: #6d651a;
 }
 
 .three-column-layout .left-column ul {
-    list-style: none;
+    list-style-type: none;
     margin: 0;
-    background-color: #1a1a1a;
-    data-aos: fade-up;
+    
 }
-
-
 
 .three-column-layout .left-column a {
     display: block;
     text-decoration: none;
     color: var(--text-color);
+    font-size: 0.5em;
+    font-weight: bold;
+}
+
+@media (min-width: 768px) {
+    .three-column-layout {
+        flex-direction: row;
+    }
+
+    .three-column-layout .left-column {
+        width: 300px;
+        height: 200vh;
+        position: fixed;
+        left: 60px;
+        top: -10px;
+    }
+
+    .three-column-layout .center-column {
+        margin-left: 350px;
+        margin-right: 300px;
+    }
+
+    .three-column-layout .right-column {
+        width: 250px;
+        position: fixed;
+        right: 0;
+        height: 100vh;
+    }
 }
 
 

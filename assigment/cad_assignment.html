@@ -74,11 +74,9 @@
         </div>
     </nav>
 
-
     <div class="three-column-layout m-5">
         <div style="margin-top: 100px;" class="left-column">
-            <ol>
-            
+            <ol style="list-style-type: none;">
                 <li><a href="project_management.html">  Week 1 : Project Management</a></li>
                 <li><a href="cad_assignment.html">Week 2 : Computer-aided</a></li>
                 <li><a href="CCC.html">Week 3 : Computer Controlled Cutting</a></li>
@@ -89,44 +87,193 @@
                 <li><a href="PCB_Prod.html">Week 8 : Electronics Production</a></li>
                 <li><a href="IP.html">Week 9 : Input Devices</a></li>
                 <li><a href="OP.html">Week 10 : Output Devices</a></li>
-                <li><a href="Network.html">Week 11 : Networking and Communication</a></li>
+                <li><a href="Networking_Communications.html">Week 11 : Networking and Communication</a></li>
                 <li><a href="machine_design.html">Week 12 : Mechanical Design and Machine Design</a></li>
-                <li><a href="networking_and_communication.html">Week 13 : Midterm Review</a></li>
-                <li><a href="applications_and_implications.html">Week 14 : Molding and Casting</a></li>
-                <li><a href="networking_and_communication.html">Week 15 : System Integeration/a></li>
-                <li><a href="applications_and_implications.html">Week 16 : Interface and Application Programming</a></li>
-                <li><a href="project_development.html">Week 17 : System Integeration</a></li>
-                <li><a href="project_development.html">Week 18 : Wildcard Week</a></li>
-                <li><a href="project_development.html">Week 19 : Applications and Implications, Project Development</a></li>
-                <li><a href="project_development.html">Week 20 : Invention, Intellectual property and Income</a></li>
+                <li><a href="Midterm_Review.html">Week 13 : Midterm Review</a></li>
+                <li><a href="Molding_Casting.html">Week 14 : Molding and Casting</a></li>
+                <li><a href="Interface_application.html">Week 15 : Interface and Application Programming</li>
+                <li><a href="System_Integeration.html">Week 16 : System Integeration</a></li>
+                <li><a href="Wildcard_week.html">Week 17 : Wildcard Week</a></li>
+                <li><a href="Wildcard_week.html">Week 18 : Applications and Implications, Project Development</a></li>
+                <li><a href="project_development.html">Week 19 : Invention, Intellectual property and Income</a></li>
+                <li><a href="final_project_requirements.html">Week 20 : FInal Project Requirements</a></li>
             </ol>
         </div>
+        <div class="center-column ">
+            <h1 class="md-5"><b>Raster Vs Vector</b></h1>
+            <p style="text-align: justify;">
+                When it comes to digital images, two main types are commonly used: raster and vector graphics. Understanding the difference between these two can help you choose the right format for your project. Raster graphics, made up of tiny pixels, are ideal for detailed and colorful images like photographs.
 
-        <div class="center-column">
-            <h1 class="display-4 m-5 md-5"><b>2D Drafting of Spanner</b></h1> 
-            <img src="../media/cad/cad_5.png" class="img-fluid mt-3 mx-auto d-block" alt="2D Design Image">
+                On the other hand, vector graphics use mathematical paths, making them perfect for designs that need to be scaled without losing quality, like logos and illustrations. Both have their own strengths and weaknesses, and knowing when to use each can make a big difference in your design work.
+            </p>
+            <img src="../media/cad/cad_6.jpg" alt="raster">
+            <p style="text-align: justify;">
+               <a href="https://www.geeksforgeeks.org/raster-graphics-vs-vector-graphics/">GeeksForGeeks webpage</a>
+            </p>
 
-            <h1 class="display-4 m-5 md-5"><b>3D design - fidget spinner</b></h1> 
+            <p style="text-align: justify;">
+                <h3><b>Pixel</b></h3>
+                <p>In Computer graphics, a pixel, dot, or picture element is a physical point in a picture. A pixel is simply the smallest addressable element of a picture represented on a screen. A majority of pictures that we see on our computer screen are raster images. The selfie that you click with your mobile phone is another example of a raster image. An image is made up using a collection of pixels referred to as a bitmap.</p>
+
+                <p><h3><b>Bitmap</b></h3></p>
+                <p>In computer graphics, a bitmap is a mapping from some domain (for example, a range of integers) to bits, that is, values which are zero or one. It is also called a bit array or bitmap index. The more general term pixmap refers to a map of pixels, where each one may store more than two colors, thus using more than one bit per pixel.</p>
+                <p>Often bitmap is used for this as well. In some contexts, the term bitmap implies one bit per pixel, while pixmap is used for images with multiple bits per pixel.</p>
+
+                <h3><b>Raster Graphics</b></h3>
+                <p>Raster images use bit maps to store information. This means a large file needs a large bitmap. The larger the image, the more disk space the image file will take up. As an example, a 640 x 480 image requires information to be stored for 307,200 pixels, while a 3072 x 2048 image (from a 6.3 Megapixel digital camera) needs to store information for a whopping 6,291,456 pixels.</p>
+                <p>We use algorithms that compress images to help reduce these file sizes. Image formats like jpeg and gif are common compressed image formats. Scaling down these images is easy but enlarging a bitmap makes it pixelated or simply blurred. Hence for images that need to scale to different sizes, we use vector graphics. </p>
+
+                <p>File extensions: .BMP, .TIF, .GIF, .JPG</p>
+                <p>For the Raster Image development we are using GIMP software to generate</p>
+                <h4><b>GIMP</b></h4>
+                <p>GIMP stands for the GNU Image Manipulation Program. It is a free and open source raster graphics editor used for image editing. GIMP is available for various operating systems like Windows, Mac OS X and Linux. It is widely used for editing or manipulating images. GIMP is a popular alternative to Adobe Photoshop.</p>
+                <div class="container md-5">
+                    <!-- Bootstrap Carousel -->
+                    <div id="imageSlider2" class="carousel slide carousel-fade" data-bs-ride="carousel"
+                        style="border: 5px solid #868585; border-radius: 10px;">
+                         <!-- Indicators/dots -->
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#imageSlider2" data-bs-slide-to="0" class="active"></button>
+                            <button type="button" data-bs-target="#imageSlider2" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#imageSlider2" data-bs-slide-to="2"></button>
+                            <button type="button" data-bs-target="#imageSlider2" data-bs-slide-to="3"></button>
+                            <button type="button" data-bs-target="#imageSlider2" data-bs-slide-to="4"></button>
+                            <button type="button" data-bs-target="#imageSlider2" data-bs-slide-to="5"></button>
+                        </div>
+                    
+                        <!-- The slideshow/carousel -->
+                        <div class="carousel-inner rounded">
+                            <div class="carousel-item active">
+                                <img src="../media/cad/Gimp/g1.png" class="d-block" alt="GIMP Image 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../media/cad/Gimp/g2.png" class="d-block" alt="GIMP Image 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../media/cad/Gimp/g3.png" class="d-block" alt="GIMP Image 3">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../media/cad/Gimp/g4.png" class="d-block" alt="GIMP Image 4">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../media/cad/Gimp/g5.png" class="d-block" alt="GIMP Image 5">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../media/cad/Gimp/g6.png" class="d-block" alt="GIMP Image 6">
+                            </div>
+                        </div>
+                    
+                        <!-- Left and right controls/icons -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#imageSlider2" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#imageSlider2" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <br><br>
+                <h2 class="md-5"><b>Final output of Raster image</b></h2>
+                <img src="../media/cad/Gimp/g10.png" class="img-fluid rounded" alt="CAD Image 1">
+
+                <h3><b>Vector Graphics</b></h3>
+                <p>Making use of sequential commands or mathematical statements or programs which place lines or shapes in a 2-D or 3-D environment is referred to as Vector Graphics. Vector graphics are best for printing since it is composed of a series of mathematical curves. As a result vector graphics print crisply even when they are enlarged.</p>
+
+                <h3><b>In physics</b></h3>
+                <p>A vector is something that has a magnitude and direction. In vector graphics, the file is created and saved as a sequence of vector statements. Rather than having a bit in the file for each bit of line drawing, we use commands which describe a series of points to be connected. As a result, a much smaller file is obtained. </p>
+
+                <p>File extensions: SVG, EPS, PDF, AI, DXF</p>
+                <h3><b>Inkscape</b></h3>
+                <p>Inkscape is professional quality vector graphics software which runs on Windows, Mac OS X and Linux. It is used by design professionals and hobbyists worldwide, for creating a wide variety of graphics such as:</p>
+                <ul>
+                    <li>Illustrations</li>
+                    <li>Logos</li>
+                    <li>Icons</li>
+                    <li>Business cards</li>
+                    <li>Brochures</li>
+                    <li>Technical drawings</li>
+                    <li>Web graphics</li>
+                    <li>Animated SVG graphics</li>
+                </ul>
+
+            <div id="imageSlider4" class="carousel slide carousel-fade" data-bs-ride="carousel"
+                style="border: 5px solid #868585; border-radius: 10px;">
+                 <!-- Indicators/dots -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#imageSlider4" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#imageSlider4" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#imageSlider4" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#imageSlider4" data-bs-slide-to="3"></button>
+                    <button type="button" data-bs-target="#imageSlider4" data-bs-slide-to="4"></button>
+                    <button type="button" data-bs-target="#imageSlider4" data-bs-slide-to="5"></button>
+                </div>
+            
+                <!-- The slideshow/carousel -->
+                <div class="carousel-inner rounded">
+                    <div class="carousel-item active">
+                        <img src="../media/cad/Vec/v1.png" class="d-block" alt="GIMP Image 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../media/cad/Vec/v2.png" class="d-block" alt="GIMP Image 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../media/cad/Vec/v3.png" class="d-block" alt="GIMP Image 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../media/cad/Vec/v4.png" class="d-block" alt="GIMP Image 4">
+                    </div>
+                </div>
+
+            
+                <!-- Left and right controls/icons -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#imageSlider4" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#imageSlider4" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <h2 class="md-5"><b>Final output of Vector image</b></h2>
+                <img src="../media/cad/Vec/v5.png" class="img-fluid rounded" alt="CAD Image 1">
+
+            <br>
+            <br>
+
+                <h3><b>Conversions</b></h3>
+                <h4 style="font-weight: bold;">Vector to Raster</h4>
+                <p>Printers and display devices are raster devices. As a result, we need to convert vector images to raster format before they can be used i.e displayed or printed. The required resolution plays a vital role in determining the size of the raster file generated. Here it is important to note that the size of the vector image to be converted always remains the same. It is convenient to convert a vector file to a range of bitmap/raster file formats but going down the opposite paths is harder. ( because at times we need to edit the image while converting from raster to vector)</p>
+
+                <h4 style="font-weight: bold;">Raster to Vector</h4>
+                <p>Image tracing in computing can be referred to as vectorization and it’s simply the conversion of raster images to vector images. An interesting application of vectorization is to update images and recover work. Vectorization can be used to retrieve information that we have lost. Paint in Microsoft Windows produces a bitmap output file. It is easy to notice jagged lines in Paint. In this kind of conversion, the image size reduces drastically. As a result, an exact conversion is not possible in this scenario. Due to various approximations and editing that are done in the process of conversion the converted images are not of good quality.
+            </p>
+            
+
+            <h1 class="md-5"><b>3D design - fidget spinner</b></h1> 
 
             <div class="image-card m-2" style="width: 100%;">
                 <img src="../media/cad/cad_1.png" class="img-fluid rounded" alt="CAD Image 1">
-                <h5 class="mt-2">Parametric Modelling</h5>
-                <p class="text-secondary">This fidget spinner was designed using parametric modeling, where dimensions like diameter (22mm) and offset (5mm) were defined as adjustable parameters. This approach ensures precision, easy modifications, and scalability, allowing dynamic design updates without manual rework.</p>
+                <h5 class="mt-2"><b>Parametric Modelling</b></h5>
+                <p>This fidget spinner was designed using parametric modeling, where dimensions like diameter (22mm) and offset (5mm) were defined as adjustable parameters. This approach ensures precision, easy modifications, and scalability, allowing dynamic design updates without manual rework.</p>
             </div>
             <div class="image-card m-2" style="width: 100%;">
                 <img src="../media/cad/cad_2.png" class="img-fluid rounded" alt="CAD Image 2">
-                <h5 class="mt-2">First version</h5>
-                <p class="text-secondary">Designed the outershell of the fidget spinner using the parametric modeling method.</p>
+                <h5 class="mt-2"><b>First version</b></h5>
+                <p>Designed the outershell of the fidget spinner using the parametric modeling method.</p>
             </div>
             <div class="image-card m-2" style="width: 100%;">
                 <img src="../media/cad/cad_3.png" class="img-fluid rounded" alt="CAD Image 3">
-                <h5 class="mt-2">Full Round Fillet</h5>
-                <p class="text-secondary">Designed the outershell of the fidget spinner using the parametric modeling method and applied full round fillet to the outer shell.</p>
+                <h5 class="mt-2"><b>Full Round Fillet</b></h5>
+                <p>Designed the outershell of the fidget spinner using the parametric modeling method and applied full round fillet to the outer shell.</p>
             </div>
             <div class="image-card m-2" style="width: 100%;">
                 <img src="../media/cad/cad_4.png" class="img-fluid rounded" alt="CAD Image 4">
-                <h5 class="mt-2">McMASTER-CARR</h5>
-                <p class="text-secondary">Imported the ballbearing 608 with McMASTER-CARR and assembled it with outershell</p>
+                <h5 class="mt-2"><b>McMASTER-CARR</b></h5>
+                <p>Imported the ballbearing 608 with McMASTER-CARR and assembled it with outershell</p>
             </div>
             
             <iframe title="Fidget Spinner v3" width="500" height="500" frameborder="0" allowfullscreen
@@ -140,13 +287,354 @@
                     Download the Model
                 </a>
             </p>
+
+            <h1 class="md-5"><b>Image Resizing</b></h1>
+            <br>
+            <h2 class="md-5"><b>About Xnconvert Installation</b></h2>
+            <p class="mt-3">Xnconvert is a free software for converting and resizing images. To install Xnconvert, go to the 
+            <a href="https://www.xnview.com/en/xnconvert/" target="_blank">download page</a> and download the appropriate version for your operating system. Follow the installation instructions to install Xnconvert on your computer.</p>
+            <div class="container md-5">
+                <!-- Bootstrap Carousel -->
+                <div id="imageSlider1" class="carousel slide carousel-fade" data-bs-ride="carousel"
+                    style="border: 5px solid #868585; border-radius: 10px;">
+                     <!-- Indicators/dots -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#imageSlider1" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#imageSlider1" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#imageSlider1" data-bs-slide-to="2"></button>
+                        <button type="button" data-bs-target="#imageSlider1" data-bs-slide-to="3"></button>
+                        <button type="button" data-bs-target="#imageSlider1" data-bs-slide-to="4"></button>
+                        <button type="button" data-bs-target="#imageSlider1" data-bs-slide-to="5"></button>
+                    </div>
+                
+                    <!-- The slideshow/carousel -->
+                    <div class="carousel-inner rounded">
+                        <div class="carousel-item active">
+                            <img src="../media/proj_man/pm_4.png" class="d-block" alt="Project Management Image 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../media/proj_man/pm_5.png" class="d-block" alt="Project Management Image 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../media/proj_man/pm_6.png" class="d-block" alt="Project Management Image 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../media/proj_man/pm_7.png" class="d-block" alt="Project Management Image 4">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../media/proj_man/pm_8.png" class="d-block" alt="Project Management Image 5">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../media/proj_man/pm_9.png" class="d-block" alt="Project Management Image 6">
+                        </div>
+                    </div>
+                
+                    <!-- Left and right controls/icons -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#imageSlider1" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#imageSlider1" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
             
+            <br>
+            <br>
+            <h2 class="md-5"><b>Importing and Resizing</b></h2>
+            <p>Use Xnconvert to resize images</p>
+            <p>Import the images into Xnconvert and change the resolution to 800px in width</p>
+            <div class="image-container">
+                <img src="../media/proj_man/pm_10.png" class="img-fluid" alt="Description of Image" style="max-width: 100%; height: auto;">
+                <img src="../media/proj_man/pm_11.png" class="img-fluid" alt="Description of Image" style="max-width: 100%; height: auto;">
+            </div>
+            <br>
+            <br>
+            <h2 class="md-5"><b>Exporting</b></h2>
+            <p>Export the resized images to the folder with image containers</p>
+            <p>For adding images, use the image container provided</p>
+
+            <div class="image-container">
+            <img src="../media/proj_man/pm_12.png" class="img-fluid" alt="Description of Image" style="max-width: 100%; height: auto;">
+            </div>
+            <br><br>
+            <h2 class="md-5"><b>Final output</b></h2>
+            
+            <h4><b>Before the Compression</b></h4>
+            <div style="display: flex; align-items: center; justify-content: center;">
+                <img src="../media/cad/before.png" class="img-fluid" alt="Description of Image" style="max-width: auto; height: auto;">
+            </div>
+            
+            <br>
+            <h4><b>After the Compression</b></h4>
+            <div style="display: flex; align-items: center; justify-content: center;">
+                <img src="../media/cad/after.png" class="img-fluid" alt="Description of Image" style="max-width: auto; height: auto;">
+            </div>
+            
+            <br><br>
+
+            <h1 class="md-5"><b>Video Compression</b></h1>
+            <h2 class="md-5"><b>About HandBrake</b></h2>
+            <p class="mt-3">HandBrake is a free and open-source tool for converting and compressing video files. To install HandBrake, visit the 
+                <a href="https://www.xnview.com/en/xnconvert/" target="_blank">download page</a> and download the appropriate version for your operating system. Follow the installation instructions to install HandBrake on your computer.</p>
+                <P>Before Installing the HandBrake, Make sure you have the .NET framework installed</P>
+            <div class="container md-5">
+                <!-- Bootstrap Carousel -->
+                <div id="imageSlider3" class="carousel slide carousel-fade" data-bs-ride="carousel"
+                    style="border: 5px solid #868585; border-radius: 10px;">
+                     <!-- Indicators/dots -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#imageSlider3" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#imageSlider3" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#imageSlider3" data-bs-slide-to="2"></button>
+                        <button type="button" data-bs-target="#imageSlider3" data-bs-slide-to="3"></button>
+                        <button type="button" data-bs-target="#imageSlider3" data-bs-slide-to="4"></button>
+                        <button type="button" data-bs-target="#imageSlider3" data-bs-slide-to="5"></button>
+                    </div>
+                
+                    <!-- The slideshow/carousel -->
+                    <div class="carousel-inner rounded">
+                        <div class="carousel-item active">
+                            <img src="../media/cad/hb_1.png" class="d-block" alt="Project Management Image 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../media/cad/hb_2.png" class="d-block" alt="Project Management Image 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../media/cad/hb_3.png" class="d-block" alt="Project Management Image 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../media/cad/hb_4.png" class="d-block" alt="Project Management Image 4">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../media/cad/hb_5.png" class="d-block" alt="Project Management Image 5">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../media/cad/hb_6.png" class="d-block" alt="Project Management Image 6">
+                        </div>
+                    </div>
+                
+                    <!-- Left and right controls/icons -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#imageSlider3" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#imageSlider3" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <style>
+                /* Custom fade animation */
+                .carousel-item {
+                    transition: opacity 1s ease-in-out !important;
+                }
+                .carousel-fade .active.carousel-item-start,
+                .carousel-fade .active.carousel-item-end {
+                    transition: opacity 0s 1s !important;
+                }
+                
+                /* Fixed image size container */
+                .carousel-inner {
+                    height: 400px; /* Fixed height for all slides */
+                }
+                
+                .carousel-item img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain; /* Maintain aspect ratio */
+                    background-color: #000; /* Black background for consistency */
+                }
+                
+                /* Black navigation arrows */
+                .carousel-control-prev-icon,
+                .carousel-control-next-icon {
+                    background-color: rgba(0, 0, 0, 0.7);
+                    border-radius: 50%;
+                    padding: 20px;
+                    background-size: 50% 50%;
+                }
+                
+                .carousel-control-prev,
+                .carousel-control-next {
+                    width: 8%;
+                }
+                
+                @media (max-width: 768px) {
+                    .carousel-inner {
+                        height: 400px;
+                    }
+                }
+                
+                @media (max-width: 576px) {
+                    .carousel-inner {
+                        height: 300px;
+                    }
+                    
+                    .carousel-control-prev-icon,
+                    .carousel-control-next-icon {
+                        padding: 15px;
+                    }
+                }
+            </style>
+            <!-- Bootstrap JS Bundle with Popper -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        
+            <script>
+            // Customize the slider behavior
+            document.addEventListener('DOMContentLoaded', function() {
+                var myCarousel = document.getElementById('imageSlider');
+                var carousel = new bootstrap.Carousel(myCarousel, {
+                    interval: 3000, // Change slide every 2 seconds
+                    pause: 'hover', // Pause on hover
+                    wrap: true // Continuously cycle
+                });
+            });
+            </script>
+
+            <script>
+            // Customize the slider behavior
+            document.addEventListener('DOMContentLoaded', function() {
+                var myCarousel = document.getElementById('imageSlider1');
+                var carousel = new bootstrap.Carousel(myCarousel, {
+                    interval: 3000, // Change slide every 2 seconds
+                    pause: 'hover', // Pause on hover
+                    wrap: true // Continuously cycle
+                });
+            });
+            </script>
+             <script>
+                // Customize the slider behavior
+                document.addEventListener('DOMContentLoaded', function() {
+                    var myCarousel = document.getElementById('imageSlider2');
+                    var carousel = new bootstrap.Carousel(myCarousel, {
+                        interval: 3000, // Change slide every 2 seconds
+                        pause: 'hover', // Pause on hover
+                        wrap: true // Continuously cycle
+                    });
+                });
+                </script>
+            <script>
+                // Customize the slider behavior
+                document.addEventListener('DOMContentLoaded', function() {
+                    var myCarousel = document.getElementById('imageSlider3');
+                    var carousel = new bootstrap.Carousel(myCarousel, {
+                        interval: 3000, // Change slide every 2 seconds
+                        pause: 'hover', // Pause on hover
+                        wrap: true // Continuously cycle
+                    });
+                });
+                </script>
+
+            <script>
+                // Customize the slider behavior
+                document.addEventListener('DOMContentLoaded', function() {
+                    var myCarousel = document.getElementById('imageSlider4');
+                    var carousel = new bootstrap.Carousel(myCarousel, {
+                        interval: 3000, // Change slide every 2 seconds
+                        pause: 'hover', // Pause on hover
+                        wrap: true // Continuously cycle
+                    });
+                });
+            </script>
+            <br>
+            <br>
+            <h2 class="md-5"><b>Importing and Encoding</b></h2>
+            <p>Use HandBrake to encode the video</p>
+            <p>Import the Videos into HandBrake and change the settings to according to your need</p>
+
+            <div class="container md-5">
+                <!-- Bootstrap Carousel -->
+                <div id="imageSlider" class="carousel slide carousel-fade" data-bs-ride="carousel"
+                    style="border: 5px solid #868585; border-radius: 10px;">
+                     <!-- Indicators/dots -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#imageSlider" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#imageSlider" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#imageSlider" data-bs-slide-to="2"></button>
+                        <button type="button" data-bs-target="#imageSlider" data-bs-slide-to="3"></button>
+                        <button type="button" data-bs-target="#imageSlider" data-bs-slide-to="4"></button>
+                        <button type="button" data-bs-target="#imageSlider" data-bs-slide-to="5"></button>
+                    </div>
+                
+                    <!-- The slideshow/carousel -->
+                    <div class="carousel-inner rounded">
+                        <div class="carousel-item active">
+                            <img src="../media/cad/hb_7.png" class="d-block" alt="Project Management Image 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../media/cad/hb_8.png" class="d-block" alt="Project Management Image 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../media/cad/hb_9.png" class="d-block" alt="Project Management Image 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../media/cad/hb_10.png" class="d-block" alt="Project Management Image 4">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../media/cad/hb_11.png" class="d-block" alt="Project Management Image 5">
+                        </div>
+                    </div>
+                
+                    <!-- Left and right controls/icons -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#imageSlider" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#imageSlider" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br><br>
+            <h2 class="md-5"><b>Final output</b></h2>
+            
+            <h4><b>Before Encoding</b></h4>
+            <div style="display: flex; align-items: center; justify-content: center;">
+                <img src="../media/cad/before_v.png" class="img-fluid" alt="Description of Image" style="max-width: auto; height: auto;">
+            </div>
+            
+            <br>
+            <h4><b>After Encoding</b></h4>
+            <div style="display: flex; align-items: center; justify-content: center;">
+                <img src="../media/cad/after_v.png" class="img-fluid" alt="Description of Image" style="max-width: auto; height: auto;">
+            </div>
+            <br><br>
+
+        <h2><b>Key Takeaways and Learnings</b></h2>
+        <ul>
+            <li>Learning on Raster Vs Vector</li>
+            <li>2D design Software</li>
+            <li>3D Design Software</li>
+            <li>Image Compression - Xn Convert</li>
+            <li>Video Compression - HandBrake</li>
+            <li>The importance of saving the model in a suitable format</li>
+        </ul>
+
+        <h2><b>Download the files</b></h2>
+        <p>You can download the encoded model by clicking on the following links.</p>
+        <ul>
+            <li><a href="../media/cad/Gimp.bz2" download>Raster.xcf</a></li>
+            <li><a href="../media/cad/bitmap.png" download>Vector.png</a></li>
+            <li><a href="../media/cad/Fidget_Spinner_v5.7z" download>FidgetSpinner.STL</a></li>
+            <!-- <li><a href="../media/cad/hb_4_encoded.x_b" download>Compressed.jpg</a></li>
+            <li><a href="../media/cad/hb_5_encoded.step" download>Encoded.MP4</a></li> -->
+        </ul>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
 </body>
 <footer id="footer" class="text-center" style="background-color: #1a1a1a; color: #d3d3d3 !important;"
     data-aos="fade-up">
-    <div class="container pt-4">
+    <div class="container pt-2">
         <section class="mb-4">
             <a class="btn btn-link btn-floating btn-lg text-light m-1" href="tel:+91 6379839123" role="button"
                 data-aos="flip-left">

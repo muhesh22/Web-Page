@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>  Output Devices </title>
+    <link rel="shortcut icon" href="webicon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link href="../navbar.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="../styles.css">i
+    <style>
+        nav.premium-nav {
+            position: fixed;
+            z-index: 100 !important;
+            /* Keep it above the Vanta.js effect */
+        }
+    
+        body {
+        font-family: 'Helvetica';
+        }
+</style>
+</head>
+<body>
+    <nav class="premium-nav">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">
+                <span class="logo-text" style="font-size: 1.3rem;">Muhesh Fab Academy '25</span>
+                <div class="logo-shine"></div>
+            </a>
+    
+            <div class="nav-links">
+                <a href="../index.html" class="nav-link " style="text-decoration: none;">
+                    <i class="ri-home-5-line"></i>
+                    <span>Home</span>
+                </a>
+                <a href="../about.html" class="nav-link" style="text-decoration: none;">
+                    <i class="ri-information-line"></i>
+                    <span>About</span>
+                </a>
+                <a href="../final_proj.html" class="nav-link " style="text-decoration: none;">
+                    <i class="ri-stack-line"></i>
+                    <span>Final Project</span>
+                </a>
+                <a href="../Weekly Assignment.html" class="nav-link active" style="text-decoration: none;">
+                    <i class="ri-printer-cloud-line"></i>
+                    <span> Assignment</span>
+                </a>
+                <a href="#footer" class="nav-link" style="text-decoration: none;">
+                    <i class="ri-mail-line"></i>
+                    <span>Contact</span>
+                </a>
+    
+            </div> 
+    
+            <div class="nav-actions">
+                <button class="theme-toggle" aria-label="Toggle theme">
+                    <i class="ri-sun-line sun-icon"></i>
+                    <i class="ri-moon-line moon-icon"></i>
+                </button>
+                <button class="mobile-menu" aria-label="Menu">
+                    <i class="ri-menu-line"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+
+
+<style>
+    .container {
+        max-width: 80%;
+        margin: 40px auto;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+
+    p,
+  
+    table.table-striped,
+    table.table-bordered {
+        width: 100%;
+        border: 3px solid var(--table-border-color); /* Updated border outline */
+        background-color: var(--table-bg-color);
+
+    }
+
+    th,
+    td {
+        padding: 0.5rem;
+        text-align: left;
+    }
+
+    th {
+        background-color: var(--table-th-bg-color);
+    }
+
+    tr:nth-child(even) {
+        background-color: var(--table-tr-bg-color);
+    }
+
+    pre {
+        background-color: var(--table-pre-bg-color);
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    @media screen and (max-width: 600px) {
+        .container {
+            max-width: 90%;
+        }
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        p,
+        li {
+            font-size: auto;
+        }
+    }
+</style>
+
+<div class="three-column-layout m-5 md-5">
+     <div style="margin-top: 100px;" class="left-column">
+            <ol style="list-style-type: none;">
+                <li><a href="project_management.html">  Week 1 : Project Management</a></li>
+                <li><a href="cad_assignment.html">Week 2 : Computer-aided</a></li>
+                <li><a href="CCC.html">Week 3 : Computer Controlled Cutting</a></li>
+                <li><a href="Embedded.html">Week 4 : Embedded Programming</a></li>
+                <li><a href="3d_assignment.html">Week 5 :3D Scanning and Printing</a></li>
+                <li><a href="pcb.html">Week 6 : Electronic Design</a></li>
+                <li><a href="CCM.html">Week 7 : Computer Controlled Machining</a></li>
+                <li><a href="PCB_Prod.html">Week 8 : Electronics Production</a></li>
+                <li><a href="IP.html">Week 9 : Input Devices</a></li>
+                <li><a href="OP.html">Week 10 : Output Devices</a></li>
+                <li><a href="Networking_Communications.html">Week 11 : Networking and Communication</a></li>
+                <li><a href="machine_design.html">Week 12 : Mechanical Design and Machine Design</a></li>
+                <li><a href="Midterm_Review.html">Week 13 : Midterm Review</a></li>
+                <li><a href="Molding_Casting.html">Week 14 : Molding and Casting</a></li>
+                <li><a href="Interface_application.html">Week 15 : Interface and Application Programming</li>
+                <li><a href="System_Integeration.html">Week 16 : System Integeration</a></li>
+                <li><a href="Wildcard_week.html">Week 17 : Wildcard Week</a></li>
+                <li><a href="Wildcard_week.html">Week 18 : Applications and Implications, Project Development</a></li>
+                <li><a href="project_development.html">Week 19 : Invention, Intellectual property and Income</a></li>
+                <li><a href="final_project_requirements.html">Week 20 : FInal Project Requirements</a></li>
+            </ol>
+        </div>
+    <div class="center-column"> 
+
+      <h1><b>Week 10 : Output Devices</b></h1>
+      <h2><b>Objectives of the Week</b></h2>
+      <h5>
+        <ul>
+            <li>Linked to the group assignment page.</li>
+            <li>Documented how you determined power consumption of an output device with your group.</li>
+            <li>Documented what you learned from interfacing output device(s) to microcontroller and controlling the device(s).</li>
+            <li>Linked to the board you made in a previous assignment or documented your design and fabrication process if you made it.</li>
+            <li>Explained the programming process/es you used.</li>
+            <li>Explained any problems you encountered and how you fixed them.</li>
+            <li>Included original source code and any new design files.</li>
+            <li>Included a 'hero shot' of your board.</li>
+        </ul>
+
+      </h5>
+      <br>
+
+      <h2><b>Group Assignment Contribution</b></h2>
+      
+      <p>
+        <a href="https://fabacademy.org/2025/labs/nellai/">For More about Group Assignment</a>
+      <br><br>
+      <h2><b>Individual Assignment Contribution</b></h2>
+      <h3><b>LCD Display 16*2</b></h3>
+      <img src="../media/op/op_1.jpg" alt="">
+      <br>
+      <br>
+      <a href="https://circuitdigest.com/article/16x2-lcd-display-module-pinout-datasheet" target="_blank">16x2 LCD Display Datasheet</a>
+
+        <h3><b>Usage</b></h3>
+        <p>
+        Liquid Crystal Displays (LCDs) are widely used in electronic projects, embedded systems, consumer electronics, industrial equipment, and automotive dashboards. These displays work by using liquid crystals that align to block or allow light through. Common LCD types include character LCDs (like 16x2) and graphic LCDs. They are often controlled using microcontrollers like Arduino, Raspberry Pi, or STM32 and are suitable for displaying text, menus, and basic graphics.
+        </p>
+
+        <h3><b>Advantages</b></h3>
+        <ul>
+          <li><strong>Low Power Consumption:</strong> LCDs consume less power, making them ideal for battery-operated devices.</li>
+          <li><strong>Wide Availability:</strong> Available in various sizes and formats (character, graphic, TFT).</li>
+          <li><strong>Readable in Sunlight:</strong> Many LCDs have good visibility under direct light.</li>
+          <li><strong>Cost-Effective:</strong> Affordable and widely used in educational and industrial settings.</li>
+          <li><strong>Simple Interface:</strong> Easy to interface with most microcontrollers using parallel or I2C communication.</li>
+        </ul>
+
+        <h3><b>Disadvantages</b></h3>
+        <ul>
+          <li><strong>Limited Viewing Angles:</strong> LCDs tend to have narrow viewing angles compared to newer technologies.</li>
+          <li><strong>Lower Contrast:</strong> Not as vibrant or sharp as OLED displays.</li>
+          <li><strong>Slow Response Time:</strong> May not be suitable for fast-refresh applications like gaming or animations.</li>
+          <li><strong>Backlight Dependency:</strong> Requires a backlight for visibility in the dark, increasing power consumption.</li>
+        </ul>
+
+      <h3><b>OLED Display</b></h3>
+      <br>
+      <img src="../media/op/op_2.jpg" alt="">
+      <br>
+      <br>
+      <a href="../media/op/oled.pdf">OLED Datasheet</a>
+      <br>
+      <br>
+      <h3><b>Usage</b></h3>
+      <p>
+      Organic Light Emitting Diode (OLED) displays are modern, energy-efficient screens used in smartphones, smartwatches, embedded systems, and premium consumer electronics. OLEDs emit light directly from the pixels, eliminating the need for a backlight. Common types include 0.96" and 1.3" I2C OLEDs, frequently used with microcontrollers for displaying text, icons, and small graphics.
+      </p>
+
+      <h3><b>Advantages</b></h3>
+      <ul>
+        <li><strong>High Contrast Ratio:</strong> Displays true black by turning off pixels entirely.</li>
+        <li><strong>Wide Viewing Angles:</strong> Maintains visibility and clarity from multiple angles.</li>
+        <li><strong>Thin and Lightweight:</strong> Extremely compact, ideal for space-constrained applications.</li>
+        <li><strong>Faster Response Time:</strong> Excellent for animations and real-time interfaces.</li>
+        <li><strong>Low Power for Dark Themes:</strong> Consumes less power when displaying black or fewer lit pixels.</li>
+      </ul>
+
+      <h3><b>Disadvantages</b></h3>
+      <ul>
+        <li><strong>Cost:</strong> Generally more expensive than LCD displays of similar size.</li>
+        <li><strong>Burn-in Risk:</strong> Static images over long periods may cause pixel burn-in.</li>
+        <li><strong>Lower Brightness in Sunlight:</strong> Can be less readable under direct sunlight than LCDs.</li>
+        <li><strong>Limited Lifespan:</strong> Organic compounds degrade over time, especially blue pixels.</li>
+      </ul>
+    
+    <h3><b>MG995 Servo Motor</b></h3>
+    <br>
+    <img src="../media/op/op_3.jpg" alt="">
+    <br>
+    <br>
+  
+    <a href="../media/op/Mg995.pdf">MG995R datasheet</a>
+    <h3><b>Usage</b></h3>
+    <p>
+    The MG995 is a popular high-torque digital servo motor commonly used in robotics, RC cars, automation systems, and DIY mechanical projects. It provides precise control over angular position using PWM signals and is compatible with microcontrollers like Arduino. It's ideal for controlling joints, arms, and mechanisms in robotic applications requiring torque and durability.
+    </p>
+
+    <h3><b>Advantages</b></h3>
+    <ul>
+      <li><strong>High Torque Output:</strong> Offers up to 10 kg-cm of torque, suitable for heavy mechanical loads.</li>
+      <li><strong>Metal Gears:</strong> Durable gear assembly ensures longer operational life and resistance to wear.</li>
+      <li><strong>Wide Compatibility:</strong> Easily integrated with Arduino, Raspberry Pi, and other platforms.</li>
+      <li><strong>Digital Control:</strong> Provides precise angle control using PWM.</li>
+      <li><strong>Affordable:</strong> Budget-friendly for hobbyists and educational use.</li>
+    </ul>
+
+    <h3><b>Disadvantages</b></h3>
+    <ul>
+      <li><strong>No Continuous Rotation:</strong> Limited to 180° movement, not suitable for full rotation tasks.</li>
+      <li><strong>Power Hungry:</strong> Requires a stable 5–6V power supply with sufficient current.</li>
+      <li><strong>Vibration and Noise:</strong> Can be noisy and jittery under load or incorrect signal.</li>
+      <li><strong>Weight:</strong> Slightly bulky for very compact applications.</li>
+    </ul>
+
+      <br>
+      <br>
+
+    <h3><b>Making Interface with Microcontroller</b></h3>
+    <p>From the last week, we have done a Input board that used for controlling the Joystick with microcontroller</p>
+    <p>Now in thie week, we have done a Output board that used for controlling the Oled with microcontroller</p>
+    <img src="../media/pcb_p/pcb_p36.jpg" alt="">
+    <p>We have used this board for our Electronic production now we are gonna use the same for the Output device by attaching it with OLed Display</p>
+    <a href="../assigment/PCB_Prod.html">Click here to how I made this Board</a>
+
+    <br>
+    <br>
+    <section id="code-block">
+        <h3><b>Programming Processs</b>
+        </h3>
+        <P>First we have to include the necessary libraries from the Arduino IDE</P>
+        <pre style="border: 2px solid;"><code>#include &lt;WiFi.h&gt;</code></pre>
+        <p>This includes the WiFi library necessary for ESP32 to connect to a wireless network.</p>
+        <pre style="border: 2px solid;"><code>#include &lt;Wire.h&gt;</code></pre>
+
+        <p>This includes the I2C communication library, which is used for interfacing with the OLED display.</p>
+        <pre style="border: 2px solid;"><code>#include &lt;Adafruit_GFX.h&gt;</code></pre>
+
+        <p>This is the core graphics library from Adafruit used for drawing text, shapes, and images on displays.</p>
+        <pre style="border: 2px solid;"><code>#include &lt;Adafruit_SSD1306.h&gt;</code></pre>
+
+        <p>This library is specifically for the SSD1306-based OLED displays to control how content is displayed.</p>
+        <pre style="border: 2px solid;"><code>#include &lt;time.h&gt;</code></pre>
+
+        <p>This includes time-related functions, especially for syncing and formatting time from the internet using NTP (Network Time Protocol).</p>
+        <pre style="border: 2px solid;"><code>#define SCREEN_WIDTH 128<br>#define SCREEN_HEIGHT 64</code></pre>
+
+        <p>Defines the width and height of the OLED display in pixels.</p>
+        <pre style="border: 2px solid;"><code>Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, -1);</code></pre>
+
+        <p>Initializes the OLED display object with defined width, height, I2C communication using Wire, and no reset pin (-1).</p>
+        <pre style="border: 2px solid;"><code>const char* ssid = "Muhesh";<br>const char* password = "876543219";</code></pre>
+
+        <p>Stores the WiFi network name (SSID) and password as constant character pointers.</p>
+        <pre style="border: 2px solid;"><code>int currentScreen = 0;<br>unsigned long lastSlideTime = 0;<br>const int slideInterval = 3000;</code></pre>
+
+        <p>Variables used to manage screen transitions: the current screen index, the last time the screen changed, and the slide interval (3 seconds).</p>
+        <pre style="border: 2px solid;"><code>void connectToWiFi()</code></pre>
+
+        <p>This function attempts to connect the ESP32 to the specified WiFi network.</p>
+        <pre style="border: 2px solid;"><code>WiFi.begin(ssid, password);</code></pre>
+
+        <p>Starts the WiFi connection using the given SSID and password.</p>
+        <pre style="border: 2px solid;"><code>while (WiFi.status() != WL_CONNECTED && retry &lt; 40)</code></pre>
+
+        <p>Retries the connection 40 times with a 500ms delay between each attempt.</p>
+        <pre style="border: 2px solid;"><code>void setupTime()</code></pre>
+
+        <p>This function sets up internet time using NTP servers with GMT offset for IST (19800 seconds).</p>
+        <pre style="border: 2px solid;"><code>configTime(19800, 0, "pool.ntp.org", "time.nist.gov");</code></pre>
+
+        <p>Configures the ESP32 to get the time from internet time servers with Indian Standard Time offset.</p>
+        <pre style="border: 2px solid;"><code>void setup()</code></pre>
+
+        <p>This is the main setup function which runs once. It initializes the serial monitor, OLED display, WiFi connection, and time sync.</p>
+        <pre style="border: 2px solid;"><code>Serial.begin(115200);</code></pre>
+
+        <p>Begins serial communication at 115200 baud rate for debugging purposes.</p>
+        <pre style="border: 2px solid;"><code>if (!display.begin(SSD1306_SWITCHCAPVCC, 0x3C))</code></pre>
+
+        <p>Initializes the OLED screen with I2C address 0x3C. If it fails, it prints an error message and enters an infinite loop.</p>
+        <pre style="border: 2px solid;"><code>display.clearDisplay();<br>display.display();</code></pre>
+
+        <p>Clears the OLED screen and refreshes it to make it blank initially.</p>
+        <pre style="border: 2px solid;"><code>String getTimeString()</code></pre>
+
+        <p>Fetches the current time from the ESP32's internal clock and formats it as HH:MM:SS.</p>
+        <pre style="border: 2px solid;"><code>String getDateString()</code></pre>
+
+        <p>Returns the current date in DD-MM-YYYY format.</p>
+        <pre style="border: 2px solid;"><code>String getDayString()</code></pre>
+
+        <p>Returns the current day of the week (e.g., Monday, Tuesday).</p>
+        <pre style="border: 2px solid;"><code>void drawIndicators(int activeIndex)</code></pre>
+
+        <p>Draws three indicator dots at the bottom of the screen to show which screen (time, date, or day) is currently active. The active screen dot is drawn larger.</p>
+        <pre style="border: 2px solid;"><code>void loop()</code></pre>
+
+        <p>This is the main loop function that runs continuously. It updates the OLED screen every 3 seconds to show either the time, date, or day.</p>
+        <pre style="border: 2px solid;"><code>if (currentMillis - lastSlideTime &gt;= slideInterval)</code></pre>
+
+        <p>Checks if 3 seconds have passed since the last screen change to proceed with the next screen.</p>
+        <pre style="border: 2px solid;"><code>switch (currentScreen)</code></pre>
+
+        <p>Determines which data (time, date, or day) to display based on the current screen index.</p>
+        <pre style="border: 2px solid;"><code>display.setTextSize(2);</code></pre>
+
+        <p>Sets the size of the text to be drawn on the OLED screen.</p>
+        <pre style="border: 2px solid;"><code>display.setCursor((SCREEN_WIDTH - (textToShow.length() * 12)) / 2, yPos);</code></pre>
+
+        <p>Calculates the horizontal position to center the text on the screen and sets the cursor position accordingly.</p>
+        <pre style="border: 2px solid;"><code>display.print(textToShow);</code></pre>
+
+        <p>Displays the selected string (time, date, or day) on the OLED screen.</p>
+        <pre style="border: 2px solid;"><code>drawIndicators(currentScreen);</code></pre>
+
+        <p>Displays the current screen indicator dots to indicate the active screen visually.</p>
+        <pre style="border: 2px solid;"><code>currentScreen = (currentScreen + 1) % 3;</code></pre>
+
+        <p>Cycles the screen index between 0, 1, and 2 repeatedly to rotate through time, date, and day.</p>
+
+        <h2><b>Complete Code</b></h2>
+        <pre><code>
+        #include &lt;WiFi.h&gt;
+        #include &lt;Wire.h&gt;
+        #include &lt;Adafruit_GFX.h&gt;
+        #include &lt;Adafruit_SSD1306.h&gt;
+        #include &lt;time.h&gt;
+
+        #define SCREEN_WIDTH 128
+        #define SCREEN_HEIGHT 64
+        Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, -1);
+
+        const char* ssid = "Muhesh";
+        const char* password = "876543219";
+
+        int currentScreen = 0;
+        unsigned long lastSlideTime = 0;
+        const int slideInterval = 3000;
+
+        void connectToWiFi() {
+        Serial.print("Connecting to WiFi");
+        WiFi.begin(ssid, password);
+        int retry = 0;
+        while (WiFi.status() != WL_CONNECTED && retry < 40) {
+            delay(500);
+            Serial.print(".");
+            retry++;
+        }
+        if (WiFi.status() == WL_CONNECTED) {
+            Serial.println("\nWiFi connected");
+            Serial.print("IP: ");
+            Serial.println(WiFi.localIP());
+        } else {
+            Serial.println("\nFailed to connect WiFi");
+        }
+        }
+
+        void setupTime() {
+        configTime(19800, 0, "pool.ntp.org", "time.nist.gov");
+        struct tm timeinfo;
+        if (!getLocalTime(&timeinfo)) {
+            Serial.println("Failed to get time");
+        } else {
+            Serial.println("Time synced");
+        }
+        }
+
+        void setup() {
+        Serial.begin(115200);
+
+        if (!display.begin(SSD1306_SWITCHCAPVCC, 0x3C)) {
+            Serial.println("OLED init failed");
+            while (true);
+        }
+        display.clearDisplay();
+        display.display();
+
+        connectToWiFi();
+        setupTime();
+        }
+
+        String getTimeString() {
+        struct tm timeinfo;
+        if (!getLocalTime(&timeinfo)) return "No Time";
+        char buf[10];
+        strftime(buf, sizeof(buf), "%H:%M:%S", &timeinfo);
+        return String(buf);
+        }
+
+        String getDateString() {
+        struct tm timeinfo;
+        if (!getLocalTime(&timeinfo)) return "No Date";
+        char buf[12];
+        strftime(buf, sizeof(buf), "%d-%m-%Y", &timeinfo);
+        return String(buf);
+        }
+
+        String getDayString() {
+        struct tm timeinfo;
+        if (!getLocalTime(&timeinfo)) return "No Day";
+        char buf[12];
+        strftime(buf, sizeof(buf), "%A", &timeinfo);
+        return String(buf);
+        }
+
+        void drawIndicators(int activeIndex) {
+        int dotY = SCREEN_HEIGHT - 10;
+        int startX = (SCREEN_WIDTH - (3 * 16)) / 2;
+
+        for (int i = 0; i < 3; i++) {
+            if (i == activeIndex) {
+            display.fillCircle(startX + i * 16, dotY, 5, SSD1306_WHITE);
+            } else {
+            display.fillCircle(startX + i * 16, dotY, 2, SSD1306_WHITE);
+            }
+        }
+        }
+
+        void loop() {
+        unsigned long currentMillis = millis();
+
+        if (currentMillis - lastSlideTime >= slideInterval) {
+            lastSlideTime = currentMillis;
+
+            String textToShow;
+            switch (currentScreen) {
+            case 0: textToShow = getTimeString(); break;
+            case 1: textToShow = getDateString(); break;
+            case 2: textToShow = getDayString(); break;
+            }
+
+            display.clearDisplay();
+            display.setTextSize(2);
+            display.setTextColor(SSD1306_WHITE);
+            int yPos = (SCREEN_HEIGHT - 16) / 2;
+            display.setCursor((SCREEN_WIDTH - (textToShow.length() * 12)) / 2, yPos);
+            display.print(textToShow);
+
+            drawIndicators(currentScreen);
+
+            display.display();
+
+            currentScreen = (currentScreen + 1) % 3;
+        }
+        }
+        </code></pre>
+
+
+    </section>
+    <h3><b>Interfaceing the OLED Display with PCB board</b></h3>
+    <img src="../media/pcb_p/pcb_p37.jpg" alt="">
+    <br>
+    <br>
+    <p>After uploading the code to Esp32c3 I have determined to to show it like a watch so I have planned to show time date and day in the OLED display like a sliding with dealy of 3 seconds
+    <p>This can be done by doing the wifi connect with the online interface and then syncing the time from the NTP server</p>
+    <br>
+    <h1><b>Heroshot</b></h1>
+    <h3><b>Initial run without connecting to wifi</b></h3>
+    <div style="padding:57.5% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1091590894?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Before_wifi_Output"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+    <br>
+    <br>
+    <h3><b>After connecting to wifi</b></h3>
+    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1091591634?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="OLeD_output_wifi"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+    <br>
+  <h2><b>Finally Leaving my files here</b></h2>
+
+    <p><a href="/media/op/op/op.ino" target="_blank"> Source Code</a></p>
+    </div>
+
+</div>
+
+    
+</body>
+</html>
+
+<footer id="footer" class="text-center py-0" style="background-color: #1a1a1a; color: #d3d3d3 !important;"
+    data-aos="fade-up">
+    <div class="container">
+        <section class="mb-1">
+            <a class="btn btn-link btn-floating btn-lg text-light " href="tel:+91 6379839123" role="button"
+                data-aos="flip-left">
+                <img src="https://img.icons8.com/ios-filled/20/ffffff/phone.png" alt="Phone" width="20" height="20" />
+            </a>
+
+            <a class="btn btn-link btn-floating btn-lg text-light " href="mailto:muhesh022@gmail.com" role="button"
+                data-aos="flip-right">
+                <img src="https://img.icons8.com/ios-filled/20/ffffff/gmail.png" alt="Gmail" width="20" height="20" />
+            </a>
+
+            <a class="btn btn-link btn-floating btn-lg text-light" href="https://www.linkedin.com/in/muheshkumar22"
+                target="_blank" role="button" data-aos="flip-left">
+                <img src="https://img.icons8.com/ios-filled/20/ffffff/linkedin.png" alt="LinkedIn" width="20"
+                    height="20" />
+            </a>
+
+            <a class="btn btn-link btn-floating btn-lg text-light " href="https://www.instagram.com/r_muhesh_"
+                target="_blank" role="button" data-aos="flip-right">
+                <img src="https://img.icons8.com/ios-filled/20/ffffff/instagram-new.png" alt="Instagram" width="20"
+                    height="20" />
+            </a>
+
+            <a class="btn btn-link btn-floating btn-lg text-light" href="https://github.com/muhesh22"
+                target="_blank" role="button" data-aos="flip-left">
+                <img src="https://img.icons8.com/ios-filled/20/ffffff/github.png" alt="GitHub" width="20" height="20" />
+            </a>
+
+            <a class="btn btn-link btn-floating btn-lg text-light"
+                href="https://gitlab.fabcloud.org/academany/fabacademy/2025/labs/nellai/students/muheshkumar-r"
+                target="_blank" role="button" data-aos="flip-right">
+                <img src="https://img.icons8.com/ios-filled/20/ffffff/gitlab.png" alt="GitLab" width="20" height="20" />
+            </a>
+        </section>
+
+       
+    </div>
+
+    <div class="text-center p-2" style="background-color: rgba(255, 255, 255, 0.1); color: #d3d3d3;">
+        © 2025 Copyright
+        <p class="text-light"><a href="assigment/project_management.html" class="text-light">Student Agreement</a> </p>
+        <a class="text-light" href="#">2025 Muheshkumar R - Creative Common Attribution Non Commercial <br> Source code
+            hosted at</a>
+        <a class="text-light" href="https://gitlab.fabcloud.org/academany/fabacademy/2025/labs/nellai/students/muheshkumar-r"
+            target="_blank">gitlab.fabcloud.org</a> - <a class="text-light" href="https://fabacademy.org/" target="_blank">fabacademy.org</a>
+    </div>
+</footer>
+<!-- AOS Script -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1000, // Animation duration
+        once: true, // Animation happens only once
+    });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+<script src="../navbar.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const menuToggle = document.querySelector(".mobile-menu");
+        const navLinks = document.querySelector(".nav-links");
+
+        menuToggle.addEventListener("click", function () {
+            navLinks.classList.toggle("active");
+        });
+
+        document.addEventListener("click", function (event) {
+            if (!menuToggle.contains(event.target) && !navLinks.contains(event.target)) {
+                navLinks.classList.remove("active");
+            }
+        });
+    });
+</script>
+
+</html>

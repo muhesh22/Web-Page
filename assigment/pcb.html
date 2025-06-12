@@ -17,6 +17,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="../styles.css">
     <style>
         nav.premium-nav {
             position: fixed;
@@ -109,7 +110,7 @@
     }
 
     pre {
-        background-color: #f2f2f2;
+        background-color: --var(--bg-color);
         padding: 1rem;
         font-size: 1rem;
     }
@@ -131,21 +132,166 @@
 </style>
 <body>
 
-    <div class="container mt-5">
-        <div class="d-flex align-items-center">
-                <!-- <img src="../media/proj_man/git_logo.png" class="img-fluid me-3" alt="Description of Image" style="max-width: 50px; height: auto;"> -->
-                <h1 class="display-3 mb-0">Week 5: Electroics Design</h1>
+    <div class="three-column-layout m-5 md-5">
+         <div style="margin-top: 100px;" class="left-column">
+            <ol style="list-style-type: none;">
+                <li><a href="project_management.html">  Week 1 : Project Management</a></li>
+                <li><a href="cad_assignment.html">Week 2 : Computer-aided</a></li>
+                <li><a href="CCC.html">Week 3 : Computer Controlled Cutting</a></li>
+                <li><a href="Embedded.html">Week 4 : Embedded Programming</a></li>
+                <li><a href="3d_assignment.html">Week 5 :3D Scanning and Printing</a></li>
+                <li><a href="pcb.html">Week 6 : Electronic Design</a></li>
+                <li><a href="CCM.html">Week 7 : Computer Controlled Machining</a></li>
+                <li><a href="PCB_Prod.html">Week 8 : Electronics Production</a></li>
+                <li><a href="IP.html">Week 9 : Input Devices</a></li>
+                <li><a href="OP.html">Week 10 : Output Devices</a></li>
+                <li><a href="Networking_Communications.html">Week 11 : Networking and Communication</a></li>
+                <li><a href="machine_design.html">Week 12 : Mechanical Design and Machine Design</a></li>
+                <li><a href="Midterm_Review.html">Week 13 : Midterm Review</a></li>
+                <li><a href="Molding_Casting.html">Week 14 : Molding and Casting</a></li>
+                <li><a href="Interface_application.html">Week 15 : Interface and Application Programming</li>
+                <li><a href="System_Integeration.html">Week 16 : System Integeration</a></li>
+                <li><a href="Wildcard_week.html">Week 17 : Wildcard Week</a></li>
+                <li><a href="Wildcard_week.html">Week 18 : Applications and Implications, Project Development</a></li>
+                <li><a href="project_development.html">Week 19 : Invention, Intellectual property and Income</a></li>
+                <li><a href="final_project_requirements.html">Week 20 : FInal Project Requirements</a></li>
+            </ol>
         </div>
-        <p class="lead mt-2 text-secondary">
+        <div class="center-column md-5">
+            <h1>Week 5: Electroics Design</h1>
+        <p>
             This week describes my understanding of how to use KICAD for electronics design. It also includes how to create a project, how to draw a schematic, how to create a PCB layout, and how to export the Gerber files.
         </p>
-    </div>
-    <div class="container mt-5" ></div>
-         <h1 style="text-align: center;">PCB Design using KICAD</h1>
-        <div style="margin-left: 10em;">
-            <div class="image-card m-2" style="width: 100%;">
-                <h3 class="mt-2"></h3>
-            <div class="image-card m-2" style="width: 100%;">
+
+        <h2><b>Objectives of the Week</b></h2>
+        <h5>
+            <li>Linked to the Group Assignment</li>
+            <li>Document What you have learned in the Electronic Design</li>
+            <li>Check your board can be fabricated</li>
+            <li>Explained Problems and how you fixed them</li>
+            <li>Included Original Design Files</li>
+            <li>Include a Hero Shot</li>
+        </h5>
+        <br>
+
+
+      <h3><b>Group Assignment Contribution</b></h3>
+    <p>This time, let’s learn about Electronics Design.
+        Electronic design is the process that allows us to develop integrated circuits for a specific function, using electronic components. use the following.
+        <li><b>EasyEDA</b></li>
+        <li>MonoFab SRM-20</li>
+        <li>Mods CE</li>
+        <li><b>KICAD 8.0</b></li>
+    </p>
+    <a href="https://fabacademy.org/2025/labs/nellai/assets/assignments/Electronic_Design.html">For more about Group Assignment</a>
+    <br>
+    <h1 style="font-weight: bold;">Interpret a Signal</h1>
+            <p>We generate an analog output (PWM) using pin 9. A LED is connected to see the signal effect, and the oscilloscope and multimeter are used for analysis.</p>
+       
+            <img src="../media/ip/ip_1.jpg" class="img-fluid rounded" alt="Description of Image" style="max-width: 100%; height: auto;">
+       
+        <br><br><br>
+                <div class="section">
+                    <h2 style="font-weight: bold;"><strong>1. Understanding DSO Components</strong></h2>
+                    <ul>
+                        <li><strong>Power Button:</strong> Turns the DSO ON/OFF.</li>
+                        <li><strong>Display Screen:</strong> Shows the waveform.</li>
+                        <li><strong>Probe Inputs (CH1, CH2):</strong> Connect the oscilloscope probes here.</li>
+                        <li><strong>Time/Div Knob:</strong> Adjusts the time scale (horizontal axis).</li>
+                        <li><strong>Volts/Div Knob:</strong> Adjusts the voltage scale (vertical axis).</li>
+                        <li><strong>Trigger Controls:</strong> Helps stabilize the waveform.</li>
+                    </ul>
+                </div>
+                
+                <div class="section">
+                    <h2 style="font-weight: bold;"><strong>2. Connecting the Oscilloscope to Arduino</strong></h2>
+                    <h3 style="font-weight: bold;">A. Connect the Probe Correctly</h3>
+                    <ul>
+                        <li>Turn OFF the oscilloscope before connecting anything.</li>
+                        <li>Take one oscilloscope probe and connect:</li>
+                        <ul>
+                            <li><strong>Probe Tip:</strong> To Arduino PWM Pin 9 (or any analog pin you are testing).</li>
+                            <li><strong>Probe Ground (Clip):</strong> To Arduino GND (Ground).</li>
+                        </ul>
+                        <li>Power up the Arduino and DSO.</li>
+                    </ul>
+                </div>
+                
+                <div class="section">
+                    <h2 style="font-weight: bold;"><strong>3. Configuring the Oscilloscope for Basic Signal Viewing</strong></h2>
+                    <h3 style="font-weight: bold;">A. Set the Channel</h3>
+                    <ul>
+                        <li>Press the CH1 button to activate Channel 1 (where we connected the probe).</li>
+                        <li>If using two probes, press CH2 for the second channel.</li>
+                    </ul>
+                    <h3 style="font-weight: bold;">B. Adjust the Voltage Scale (Vertical Setting)</h3>
+                    <ul>
+                        <li>Use the Volts/Div knob to set the voltage range.</li>
+                        <li>Start with 1V/div and increase if needed.</li>
+                        <li>For a 5V Arduino signal, set it around 2V/div for better viewing.</li>
+                    </ul>
+                    <h3 style="font-weight: bold;">C. Adjust the Time Scale (Horizontal Setting)</h3>
+                    <ul>
+                        <li>Use the Time/Div knob to set the time range.</li>
+                        <li>If measuring PWM signals (~500Hz), start with 1ms/div.</li>
+                        <li>If measuring fast signals (above 1kHz), use 100µs/div.</li>
+                    </ul>
+                    <h3 style="font-weight: bold;">D. Set the Trigger for a Stable Display</h3>
+                    <ul>
+                        <li>Press the Trigger Menu and set:</li>
+                        <ul>
+                            <li><strong>Mode:</strong> Edge</li>
+                            <li><strong>Source:</strong> CH1</li>
+                            <li><strong>Slope:</strong> Rising Edge</li>
+                            <li><strong>Level:</strong> Adjust until the waveform stabilizes</li>
+                        </ul>
+                    </ul>
+                </div>
+                
+                <div class="section">
+                    <h2 style="font-weight: bold;"><strong>4. Running the Oscilloscope & Viewing the Waveform</strong></h2>
+                    <ul>
+                        <li>Press <strong>AUTOSET</strong> (if available) to let the DSO automatically adjust settings.</li>
+                        <li>If AUTOSET doesn’t work well, manually tweak Volts/Div and Time/Div.</li>
+                        <li>Observe the waveform:</li>
+                        <ul>
+                            <li>If using PWM output, you should see a square wave.</li>
+                            <li>If using an analog sensor, the waveform may look more irregular.</li>
+                        </ul>
+                        <li>Use <strong>Cursors or Measurements</strong> (if your DSO has them) to check signal values.</li>
+                    </ul>
+                </div>
+                
+                <div class="section">
+                    <h2 style="font-weight: bold;"><strong>5. Capturing & Analyzing the Waveform</strong></h2>
+                    <ul>
+                        <li>If your oscilloscope has a Save function, take a screenshot of the waveform.</li>
+                        <li>Compare the output with the expected Arduino signal.</li>
+                        <li>Adjust your Arduino code if needed to modify the signal.</li>
+                    </ul>
+                </div>
+            <pre><code>
+                void setup() {
+                pinMode(9, OUTPUT);
+                }
+
+                void loop() {
+                for (int u = 0; u < 255; u++){
+                    analogWrite(9, u);
+                    delay(50);
+                }
+                }
+            </code></pre>
+                    
+            <h2 style="font-weight: bold;"><strong>Video Demonstration</strong></h2>
+            <div class="video-container">     
+                <iframe src="https://drive.google.com/file/d/1Gl2Ir4gY5cMTqI0fo6Va6bBTkCqNabAo/preview" width="700px" height="400px" allowfullscreen></iframe>
+            </div>    
+        <br>
+        <h1><b>PCB Design using KICAD</b></h1>
+        
+            
+            <div style="width: 100%;">
                 <h3 class="mt-2">Adding symbols</h3>
                 <img src="../media/pcb/pcb_1.png" class="img-fluid rounded" alt="PCB Design using KICAD 1">
                 <p class="text-secondary">Added symbols in the schematic editor. The symbols are the virtual representation of the components used in the circuit. The symbols can be edited and modified according to the requirements.</p>
@@ -157,7 +303,7 @@
             </div>
             <div class="image-card m-2" style="width: 100%;">
                 <h3 class="mt-2">Schematic Editor</h3>
-                <img src="../media/pcb/pcb_3.png" class="img-fluid rounded" alt="PCB Design using KICAD 3">
+                <img src="../media/pcb/pcb_3.jpg" class="img-fluid rounded" alt="PCB Design using KICAD 3">
                 <p class="text-secondary">The schematic editor is used to create the virtual representation of the circuit. The editor can be used to add symbols, connect symbols, add labels and add attributes.</p>
             </div>
             <div class="image-card m-2" style="width: 100%;">
@@ -187,30 +333,83 @@
             </div>
             <div class="image-card m-2" style="width: 100%;">
                 <h3 class="mt-2">Update PCB from Schematic Editor</h3>
-                <img src="../media/pcb/pcb_9.png" class="img-fluid rounded" alt="PCB Design using KICAD 9">
+                <img src="../media/pcb/pcb_9.jpg" class="img-fluid rounded" alt="PCB Design using KICAD 9">
                 <p class="text-secondary">The PCB can be updated from the schematic editor. The update can be used to add new components, remove components and modify the layout of the PCB.</p>
             </div>
             <div class="image-card m-2" style="width: 100%;">
                 <h3 class="mt-2">PCB Editor</h3>
-                <img src="../media/pcb/pcb_10.png" class="img-fluid rounded" alt="PCB Design using KICAD 10">
+                <img src="../media/pcb/pcb_10.jpg" class="img-fluid rounded" alt="PCB Design using KICAD 10">
                 <p class="text-secondary">The PCB editor is used to create the physical representation of the circuit. The editor can be used to add tracks, add vias, add footprints and add attributes.</p>
             </div>
-            <div class="image-card m-2" style="width: 100%;">
-                <h3 class="mt-2">DRC</h3>
-                <img src="../media/pcb/pcb_11.png" class="img-fluid rounded" alt="PCB Design using KICAD 11">
-                <p class="text-secondary">DRC (Design Rule Check) is used to check for errors in the PCB. The DRC can be used to check for errors such as short circuits, open circuits and mismatched pins.</p>
-            </div>
-            <div class="image-card m-2" style="width: 100%;">
+             <div class="image-card m-2" style="width: 100%;">
                 <h3 class="mt-2">Symbols in PCB editor
                 </h3>
                 <img src="../media/pcb/pcb_12.png" class="img-fluid rounded" alt="PCB Design using KICAD 12">
                 <p class="text-secondary"></p>
             </div>
+            <br>
+             <h3>Step 1: Open Your PCB Layout</h3>
+            <p>Once your schematic is complete, click on "Convert to PCB" to switch to the PCB Editor.</p>
+            <p>Ensure all components are placed inside the board outline and are not overlapping.</p>
+            <br>
+            <h3>Step 2: Arrange Components</h3>
+            <p>Drag and place components in an optimal layout:</p>
+            <ul>
+                <li>Keep traces as short as possible.</li>
+                <li>Place high-power components away from sensitive signals.</li>
+                <li>Ensure proper spacing between components.</li>
+                <li>Use snap-to-grid for better alignment.</li>
+            </ul>
+
+            <h3>Step 3: Route the PCB</h3>
+            <p>There are two ways to route your PCB:</p>
+            <ul>
+                <li>Manual Routing (Recommended): Use the "Route Tool" to manually draw traces.</li>
+                <li>Auto Router (Optional): Click "Route → Auto Router" (adjust settings for better performance).</li>
+            </ul>
+            <p class="important">Tip: Use wider traces (e.g., 0.8mm) for power lines and ground connections.</p>
+            <div class="image-container">
+                <img src="../media/pcb_p/pcb_p5.jpg" class="img-fluid rounded" alt="PCB Design using EasyEDA P4">
+            </div>
+            <br>
+            <br>
+            <h3>Step 4: Add Ground Plane</h3>
+            <p>For better signal stability, add a ground plane:</p>
+            <ul>
+                <li>Select "Polygon Pour" tool.</li>
+                <li>Choose GND as the net and apply it across the board.</li>
+                <li>This reduces noise and improves performance.</li>
+            </ul>
+            <br>
+            <br>
+            <div class="image-container">
+                <img src="../media/pcb_p/pcb_p3.jpg" class="img-fluid rounded" alt="PCB Design using EasyEDA P3">
+            </div>
+            <br>
+            <br>
+            <h3>Step 5: Run Design Rule Check (DRC)</h3>
+            <p>Before exporting, run a Design Rule Check (DRC) to identify errors:</p>
+            <ul>
+                <li>Click "Design Manager" → "Check DRC".</li>
+                <li>Fix any clearance or routing issues.</li>
+            </ul>
+            <br>
+            <br>
+            <div class="image-container">
+                <<img src="../media/pcb/pcb_11.png" class="img-fluid rounded" alt="PCB Design using KICAD 11">
+            </div>
+            <br>
+            <br>
+            <h5><b><a href="PCB_Prod.html">Mentioned that needs to be done before fabricated</a></b></h5>
+            <br>
+            <br>
+           
             <div class="image-card m-2" style="width: 100%;">
-                <h3 class="mt-2">3d Viewer</h3>
-                <img src="../media/pcb/pcb_13.png" class="img-fluid rounded" alt="PCB Design using KICAD 13">
+                <h3 class="mt-2"><b>3D Viewer</b></h3>
+                <img src="../media/pcb/pcb_13.jpg" class="img-fluid rounded" alt="PCB Design using KICAD 13">
                 <p class="text-secondary">The 3d viewer is used to view the PCB in 3d. The viewer can be used to rotate, zoom and pan the PCB.</p>
             </div>
+
             <div class="image-card m-2" style="width: 100%;">
                 <h3 class="mt-2">More works</h3>
                 <img src="../media/pcb/pcb_14.png" class="img-fluid rounded" alt="PCB Design using KICAD 14">
@@ -226,8 +425,15 @@
                 <img src="../media/pcb/pcb_16.png" class="img-fluid rounded" alt="PCB Design using KICAD 16">
                 
             </div>
-           
+        <h2><b>Finally Leaving my files here</b></h2>
+        <p><a href="../media/pcb/Electonics_Production.kicad_sch" target="_blank">Schematic Files</a></p>
+        <p><a href="../media/pcb/Electonics_Production.kicad_pcb" target="_blank">PCB Board Files</a></p>
+        
+
+        
+
         </div>
+    </div>
 </body>
 
 

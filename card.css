@@ -7,10 +7,10 @@
 
 .cards {
     width: 100% !important;
-    display: flex;
     display: -webkit-flex;
-    justify-content: center;
+    display: flex;
     -webkit-justify-content: center;
+    justify-content: center;
     max-width: 90%;
 }
 
@@ -41,19 +41,40 @@
 .card--9 .card__img--hover {
         background-image: url('media/ip/ip.jpg');
 }
-.card--10 .card__img--hover,
-.card--11 .card__img--hover,
-.card--12 .card__img--hover,
-.card--13 .card__img--hover,
-.card--14 .card__img--hover,
-.card--15 .card__img--hover,
-.card--16 .card__img--hover,
-.card--17 .card__img--hover,
-.card--18 .card__img--hover,
-.card--19 .card__img--hover,
+.card--10 .card__img--hover {
+    background-image: url('media/op/opimg.jpg');
+}
+.card--11 .card__img--hover {
+    background-image: url('media/Networking_communications/netjpg.png');
+}
+.card--12 .card__img--hover {
+    background-image: url('media/machine_design/m_d_img.jpg');
+}
+.card--13 .card__img--hover {
+    background-image: url('media/mid_term/mid.png');
+}
+.card--14 .card__img--hover {
+    background-image: url('media/molding/m_c_img.jpg');
+}
+.card--15 .card__img--hover {
+    background-image: url('media/api/api.jpg');
+}
+.card--16 .card__img--hover {
+    background-image: url('media/Sys_ing/sys.jpg');
+}
+.card--17 .card__img--hover {
+    background-image: url('media/wildcard_week/leaf.jpg');
+}
+.card--18 .card__img--hover {
+    background-image: url('media/UGV_base.png');
+}
+.card--19 .card__img--hover {
+    background-image: url('media/Intellectual.jpg');
+}
 .card--20 .card__img--hover {
     background-image: url('media/comingsoon.png');
 }
+
 
 .card__like {
     width: 18px;

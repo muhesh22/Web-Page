@@ -79,6 +79,11 @@ nav.premium-nav .mobile-menu {
         .banner .bcon button:hover {
             background: rgba(132, 104, 4, 0.881);
         }
+
+        .banner .bcon button a {
+            text-decoration: none;
+            color: #fff;
+        }
         
     </style>
 </head>
@@ -87,7 +92,7 @@ nav.premium-nav .mobile-menu {
 <nav class="premium-nav" data-aos="fade-down">
     <div class="nav-container">
         <a href="index.html" class="nav-logo">
-            <span class="logo-text">Muhesh Fab Academy '25</span>
+            <span class="logo-text" style="font-size: 1.2rem;">Muhesh Fab Academy '25</span>
             <div class="logo-shine"></div>
         </a>
 
@@ -133,15 +138,20 @@ nav.premium-nav .mobile-menu {
             <h1 data-aos="fade-up" data-aos-delay="500">Welcome to <span class="text-warning"> <b>Muheskumar R</b> </span><br>Fab Academy Site!</h1>
             <p data-aos="fade-up" data-aos-delay="700">Learn and Grow with Fab Academy!</p>
             <div>
-                <button class="text-light" type="button" data-aos="fade-up" data-aos-delay="900"><a href="about.html" style="text-decoration: none;color: #fff;"><b>About Me</b></a> </button>
-                <button class="text-light" type="button" data-aos="fade-up" data-aos-delay="1100"><a href="#footer" style="text-decoration: none;color: #fff;"><b>Contact</b></a></button>
+                <button class="text-light" type="button" data-aos="fade-up" data-aos-delay="900"><a href="about.html"><b>About Me</b></a> </button>
+                <button class="text-light" type="button" data-aos="fade-up" data-aos-delay="1100"><a href="#footer" ><b>Contact</b></a></button>
             </div>
         </div>
     </div>
 </div>
-
+<style>
+    footer {
+        background-color: #1a1a1a;
+        color: #d3d3d3 !important;
+    }
+</style>
 <!-- Footer Section with AOS Animation -->
-<footer id="footer" class="text-center" style="background-color: #1a1a1a; color: #d3d3d3 !important;"
+<footer id="footer" class="text-center" 
     data-aos="fade-up">
     <div class="container pt-4">
         <section class="mb-4">
@@ -181,8 +191,13 @@ nav.premium-nav .mobile-menu {
 
        
     </div>
+    <style>
+        div.text-center.p-3 {
+            background-color: #1a1a1a; color: #d3d3d3 !important;
+        }
+    </style>
 
-    <div class="text-center p-3" style="background-color: rgba(255, 255, 255, 0.1); color: #d3d3d3;">
+    <div class="text-center p-3" >
         © 2025 Copyright
         <p class="text-light"><a href="assigment/project_management.html" class="text-light">Student Agreement</a> </p>
         <a class="text-light" href="#">2025 Muheshkumar R - Creative Common Attribution Non Commercial <br> Source code

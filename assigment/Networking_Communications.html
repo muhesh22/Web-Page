@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>  Networking & Communications </title>
+    <link rel="shortcut icon" href="webicon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link href="../navbar.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="../styles.css">i
+    <style>
+        nav.premium-nav {
+            position: fixed;
+            z-index: 100 !important;
+            /* Keep it above the Vanta.js effect */
+        }
+    
+        body {
+        font-family: 'Helvetica';
+        }
+</style>
+</head>
+<body>
+    <nav class="premium-nav">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">
+                <span class="logo-text" style="font-size: 1.3rem;">Muhesh Fab Academy '25</span>
+                <div class="logo-shine"></div>
+            </a>
+    
+            <div class="nav-links">
+                <a href="../index.html" class="nav-link " style="text-decoration: none;">
+                    <i class="ri-home-5-line"></i>
+                    <span>Home</span>
+                </a>
+                <a href="../about.html" class="nav-link" style="text-decoration: none;">
+                    <i class="ri-information-line"></i>
+                    <span>About</span>
+                </a>
+                <a href="../final_proj.html" class="nav-link " style="text-decoration: none;">
+                    <i class="ri-stack-line"></i>
+                    <span>Final Project</span>
+                </a>
+                <a href="../Weekly Assignment.html" class="nav-link active" style="text-decoration: none;">
+                    <i class="ri-printer-cloud-line"></i>
+                    <span> Assignment</span>
+                </a>
+                <a href="#footer" class="nav-link" style="text-decoration: none;">
+                    <i class="ri-mail-line"></i>
+                    <span>Contact</span>
+                </a>
+    
+            </div> 
+    
+            <div class="nav-actions">
+                <button class="theme-toggle" aria-label="Toggle theme">
+                    <i class="ri-sun-line sun-icon"></i>
+                    <i class="ri-moon-line moon-icon"></i>
+                </button>
+                <button class="mobile-menu" aria-label="Menu">
+                    <i class="ri-menu-line"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+
+
+<style>
+    .container {
+        max-width: 80%;
+        margin: 40px auto;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+
+    p,
+  
+    table.table-striped,
+    table.table-bordered {
+        width: 100%;
+        border: 3px solid var(--table-border-color); /* Updated border outline */
+        background-color: var(--table-bg-color);
+
+    }
+
+    th,
+    td {
+        padding: 0.5rem;
+        text-align: left;
+    }
+
+    th {
+        background-color: var(--table-th-bg-color);
+    }
+
+    tr:nth-child(even) {
+        background-color: var(--table-tr-bg-color);
+    }
+
+    pre {
+        background-color: var(--table-pre-bg-color);
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    @media screen and (max-width: 600px) {
+        .container {
+            max-width: 90%;
+        }
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        p,
+        li {
+            font-size: auto;
+        }
+    }
+</style>
+
+<div class="three-column-layout m-5 md-5">
+     <div style="margin-top: 100px;" class="left-column">
+            <ol style="list-style-type: none;">
+                <li><a href="project_management.html">  Week 1 : Project Management</a></li>
+                <li><a href="cad_assignment.html">Week 2 : Computer-aided</a></li>
+                <li><a href="CCC.html">Week 3 : Computer Controlled Cutting</a></li>
+                <li><a href="Embedded.html">Week 4 : Embedded Programming</a></li>
+                <li><a href="3d_assignment.html">Week 5 :3D Scanning and Printing</a></li>
+                <li><a href="pcb.html">Week 6 : Electronic Design</a></li>
+                <li><a href="CCM.html">Week 7 : Computer Controlled Machining</a></li>
+                <li><a href="PCB_Prod.html">Week 8 : Electronics Production</a></li>
+                <li><a href="IP.html">Week 9 : Input Devices</a></li>
+                <li><a href="OP.html">Week 10 : Output Devices</a></li>
+                <li><a href="Networking_Communications.html">Week 11 : Networking and Communication</a></li>
+                <li><a href="machine_design.html">Week 12 : Mechanical Design and Machine Design</a></li>
+                <li><a href="Midterm_Review.html">Week 13 : Midterm Review</a></li>
+                <li><a href="Molding_Casting.html">Week 14 : Molding and Casting</a></li>
+                <li><a href="Interface_application.html">Week 15 : Interface and Application Programming</li>
+                <li><a href="System_Integeration.html">Week 16 : System Integeration</a></li>
+                <li><a href="Wildcard_week.html">Week 17 : Wildcard Week</a></li>
+                <li><a href="Wildcard_week.html">Week 18 : Applications and Implications, Project Development</a></li>
+                <li><a href="project_development.html">Week 19 : Invention, Intellectual property and Income</a></li>
+                <li><a href="final_project_requirements.html">Week 20 : FInal Project Requirements</a></li>
+            </ol>
+        </div>
+    <div class="center-column"> 
+
+      <h1><b>Week 11: Networking and Communications </b></h1>
+      <h2><b>Objectives of the Week</b></h2>
+      <h5>
+
+        <li>Linked to the group assignment page</li>
+        <li>Documented your project and what you have learned from implementing networking and/or communication protocols.</li>
+        <li>Explained the programming process(es) you used.</li>
+        <li>Ensured and documented that your addressing for boards works</li>
+        <li>Outlined problems and how you fixed them.</li>
+        <li>Included design files (or linked to where they are located if you are using a board you have designed and fabricated earlier) and original source code.</li>
+        <li>Included a 'hero shot' of your network and/or communications setup</li>
+      </h5>
+      <br>
+
+      <h3><b>Group Assignment Contribution</b></h3>
+      
+      <p>
+        <a href="https://fabacademy.org/2025/labs/nellai/">For More about Group Assignment</a>
+      </p>
+      <br><br>
+      <div class="image-container">
+        <img src="../media/embedded/esp32.png" alt="Sample image" width="700">
+      </div>
+      <br>
+      <br>
+      <h1>Individual Assignment Contribution</h1>
+
+        <p>This project involved building an interactive control interface using a joystick, an OLED display, and LEDs, all managed through the XIAO ESP32-C3 microcontroller. The primary goal was to learn and demonstrate how analog input from a joystick can be interpreted and translated into real-time feedback through both digital (LED) and graphical (OLED) outputs. The project successfully simulates a basic Human-Machine Interface (HMI), where directional movement of a joystick is used to provide multi-channel output response.</p>
+        <p>The joystick module provides two degrees of analog motion (X and Y) along with an optional button press. These inputs are connected to analog pins of the ESP32-C3 and sampled using analogRead() to detect direction. Based on the tilt or displacement, the microcontroller determines whether the joystick is being pushed up, down, left, or right.</p>
+        <p>Each direction corresponds to a separate LED output. When the joystick is pushed up, for example, the UP LED lights up. The OLED display complements this by showing the current direction in text form—providing visual feedback for user input. This kind of dual-output design reinforces the concept of multi-modal feedback in embedded systems.</p>
+        <p>The OLED display operates via the I2C protocol, meaning it requires only two wires (SDA and SCL), making it ideal for compact designs like the XIAO ESP32-C3, which has limited pins. Using the Adafruit_SSD1306 and Adafruit_GFX libraries, the OLED was programmed to dynamically update text whenever the joystick is moved.</p>
+        <p>One important concept learned during the implementation was signal thresholding. Joystick analog values can fluctuate even when idle, which may result in false direction readings. To address this, center dead-zones were implemented in code to avoid noise-based misreads. If the X-axis is within ±300 of center (2048 on 12-bit ADC), it's considered idle. The same logic is applied to the Y-axis.</p>
+        <p>Another important lesson was understanding pin mapping and addressing, especially with the GPIO pins of the XIAO ESP32-C3, which can behave differently than traditional ESP32 or Arduino Uno boards. Using a pin mapping table specific to the XIAO ESP32-C3 was crucial for correct setup.</p>
+        <p>Overall, this project helped me gain practical experience in:</p>
+        <ul>
+            <li>Handling analog and digital I/O</li>
+            <li>Interfacing with I2C-based peripherals</li>
+            <li>Designing basic user interfaces on embedded displays</li>
+            <li>Using conditionals and thresholds to filter input noise</li>
+            <li>Synchronous control of hardware peripherals using real-time data</li>
+        </ul>
+        <p>By integrating multiple components into a unified setup, I improved my understanding of embedded systems design and the synergy between input devices, microcontrollers, and output interfaces.</p>
+
+        <h2>Programming Process Used</h2>
+
+        <p>The programming for this joystick-based control system follows a modular structure, beginning with hardware setup and then focusing on logic implementation and output synchronization. The programming process was executed using the <span class="highlight">Arduino IDE</span>, with the XIAO ESP32-C3 board selected from the board manager and libraries installed for OLED and I2C communication.</p>
+
+        <p>The first part of the program involves setting up the necessary libraries:</p>
+        <div class="code-block">
+          <pre>
+            <code>
+              #include &lt;Wire.h&gt;
+              #include &lt;Adafruit_GFX.h&gt;
+              #include &lt;Adafruit_SSD1306.h&gt;
+            </code>
+          </pre>
+       
+        <p>These handle I2C communication and graphics rendering on the OLED. After defining the display size and initializing the display object, pin definitions were made for both the joystick analog pins and the digital pins connected to LEDs.</p>
+
+        <p>The setup() function initializes serial communication for debugging, the OLED display using display.begin(), and sets the LED pins as outputs using pinMode(). The joystick pins are left as analog inputs by default.</p>
+
+        <p>The loop() function is where the bulk of the logic occurs. First, analog readings are taken from the joystick's X and Y axes:</p>
+        <div class="code-block">
+            <pre>
+              <code>
+                int xVal = analogRead(A0);
+                int yVal = analogRead(A1);</code></pre>
+        </div>
+        <p>Using calibrated thresholds, the code determines which direction the joystick is pointing. For example, if xVal > 3000, it's considered "Right". These conditions are used to trigger the corresponding LED and update the OLED display. Before every new update, display.clearDisplay() is called to avoid overlapping frames.</p>
+
+        <p>The direction is then printed to the OLED using:</p>
+        <div class="code-block">
+            <pre>
+              <code>
+                display.setCursor(0, 20);
+                display.print("Direction: RIGHT");
+                display.display();</code></pre>
+        </div>
+        <p>The corresponding LED is also activated using digitalWrite().</p>
+
+        <p>To add a sliding effect, a global variable xOffset can be used to shift the cursor position across frames. This adds UI flair and simulates text scrolling across the screen.</p>
+
+        <p>One challenge in the programming process was creating a responsive interface without flicker or delay. OLEDs can flicker when content is cleared and redrawn too quickly. To address this, frame updates were optimized, and redraws were done only when the direction changed.</p>
+
+        <p>Debouncing logic was added to prevent rapid LED flicker when the joystick was near the center threshold. Flags were used to track direction changes and update outputs only when a transition occurred.</p>
+
+        <p>Modularity was emphasized through use of functions like updateDisplay(direction) and setLED(direction), which made debugging and scalability easier.</p>
+
+        <p>In summary, the programming involved:</p>
+        <ul>
+            <li>Pin configuration</li>
+            <li>Threshold-based analog input handling</li>
+            <li>Conditional direction detection</li>
+            <li>I2C communication with OLED</li>
+            <li>Dynamic UI updates</li>
+            <li>LED output synchronization</li>
+            <li>Debounce and state change logic</li>
+        </ul>
+        <p>This structured approach made the entire system responsive and reliable.</p>
+      
+      <h1>Hardware Addressing and Problem Solving</h1>
+
+        <p>A critical part of this project was ensuring proper **hardware addressing**, especially because multiple peripherals were used: an **OLED screen** (using I2C) and four **LEDs** (using GPIO). The **XIAO ESP32-C3** has a unique pin mapping structure compared to traditional Arduino boards, and confirming pin assignments and communication addresses was essential to achieving reliable operation.</p>
+
+        <h2>OLED I2C Addressing</h2>
+        <p>The OLED display used in this project operates on the **I2C protocol**. I2C devices require a unique 7-bit address to communicate with the microcontroller. The common address for most SSD1306 OLED displays is **0x3C**, but it can vary depending on the module's configuration. To confirm this:</p>
+        <ul>
+            <li>I uploaded an **I2C scanner sketch** (available online) to the XIAO ESP32-C3.</li>
+            <li>This scanner detected the OLED at address **0x3C**, confirming communication.</li>
+        </ul>
+        <div class="code-block">
+            <pre>
+              <code>
+                #include &lt;Wire.h&gt;
+                void setup() {
+                  Wire.begin();
+                  Serial.begin(115200);
+                  while (!Serial); // wait for serial monitor
+                  Serial.println("I2C Scanner");
+                }
+
+                void loop() {
+                  byte error, address;
+                  for (address = 1; address < 127; address++) {
+                    Wire.beginTransmission(address);
+                    error = Wire.endTransmission();
+                    if (error == 0) {
+                      Serial.print("I2C device found at 0x");
+                      Serial.println(address, HEX);
+                    }
+                  }
+                  delay(1000);
+                }
+              </code>
+            </pre>
+          </div>
+        <p>This verified that my OLED module was correctly wired to the default I2C pins:</p>
+        <ul>
+            <li>SDA &rarr; GPIO5 (D5)</li>
+            <li>SCL &rarr; GPIO4 (D4)</li>
+        </ul>
+        <p>These are default hardware I2C pins on the XIAO ESP32-C3. While it's possible to use Wire.begin(SDA, SCL), sticking with default pins ensured library compatibility.</p>
+
+        <h2>LED GPIO Addressing</h2>
+        <p>The LEDs were assigned to digital GPIO pins on the microcontroller. The following assignments were used:</p>
+        <table class="table table-striped table-bordered">
+            <thead>
+                <tr>
+                    <th>Direction</th>
+                    <th>Function</th>
+                    <th>Pin Label</th>
+                    <th>GPIO Number</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>UP</td>
+                    <td>UP_LED</td>
+                    <td>D0</td>
+                    <td>GPIO0</td>
+                </tr>
+                <tr>
+                    <td>DOWN</td>
+                    <td>DOWN_LED</td>
+                    <td>D2</td>
+                    <td>GPIO2</td>
+                </tr>
+                <tr>
+                    <td>LEFT</td>
+                    <td>LEFT_LED</td>
+                    <td>D3</td>
+                    <td>GPIO3</td>
+                </tr>
+                <tr>
+                    <td>RIGHT</td>
+                    <td>RIGHT_LED</td>
+                    <td>D9</td>
+                    <td>GPIO9</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>To avoid any hardware confusion:</p>
+        <ul>
+            <li>I double-checked the XIAO ESP32-C3 pinout diagram.</li>
+            <li>Used digitalWrite() after setting pinMode(pin, OUTPUT) in setup().</li>
+            <li>Verified each LED connection by writing a test program to blink them individually.</li>
+        </ul>
+
+        <h2><b>Joystick Analog Input Addressing</b></h2>
+        <p>The joystick's X and Y axes were connected to analog pins:</p>
+        <ul>
+            <li>X &rarr; A0 (GPIO1)</li>
+            <li>Y &rarr; A1 (GPIO2)</li>
+        </ul>
+        <p>These inputs were confirmed using `analogRead()` and `Serial.print()` to verify the response to physical joystick movement. I also ensured the analog resolution matched the ESP32's default 12-bit ADC range (0 to 4095).</p>
+
+        <h2>Conclusion</h2>
+        <p>By verifying the I2C address using an I2C scanner, confirming GPIO pin mappings via official documentation, and testing each peripheral in isolation, I ensured the full addressing scheme worked correctly. This step was crucial to avoid overlapping resources and debugging conflicts. Proper addressing is foundational in embedded systems, especially when multiple input/output devices share the same communication bus or pin bank.</p>
+
+        
+
+        <h2><b>Joystick Analog Input Addressing</b></h2>
+        <p>Every embedded project introduces a set of technical challenges, and this joystick-OLED-LED interface was no exception. Through iterative testing and debugging, I encountered several problems related to communication, flickering displays, unstable readings, and wiring misconfigurations. Here is a breakdown of the major problems and how they were fixed:</p>
+
+        <h3><b>Problem 1: OLED Not Displaying Anything</b></h3>
+        <ul>
+            <li>Issue: The OLED screen remained blank on startup even though the code compiled successfully.</li>
+            <li>Cause: The I2C address was either incorrect or the OLED wasn’t connected to the expected pins.</li>
+            <li>Fix: I uploaded an I2C scanner sketch to the board and verified the OLED was connected at 0x3C. I had initially misconnected SDA/SCL to the wrong GPIOs. After correcting them to GPIO5 (SDA) and GPIO4 (SCL), the display worked.</li>
+        </ul>
+
+        <h3><b>Problem 2: Flickering Text on OLED</b></h3>
+        <ul>
+            <li>Issue: The OLED flickered every time a new direction was printed.</li>
+            <li>Cause: This was due to the frequent use of `display.clearDisplay()` and redrawing everything on every loop iteration.</li>
+            <li>Fix: I implemented a simple optimization where the OLED is only updated when the direction changes. I used a string variable `prevDirection` to store the last displayed value and compared it with the current one before updating the display.</li>
+        </ul>
+
+        <h3>Lessons Learned</h3>
+        <p>These problems taught me the importance of:</p>
+        <ul>
+            <li>Proper hardware debugging through test sketches</li>
+            <li>Using serial debugging to isolate problems</li>
+            <li>Understanding noise and debounce in analog signals</li>
+            <li>Verifying I2C wiring and address settings</li>
+            <li>Consulting board-specific documentation (especially for non-standard pin maps)</li>
+        </ul>
+        <p>By systematically tackling each issue, I was able to build a stable, real-time UI interface driven by joystick input.</p>
+    </div>
+      
+  <h2><b>Finally Leaving my files here</b></h2>
+    <p><a href="https://www.alldatasheet.com/datasheet-pdf/download/1943445/ARDUINO/ARDUINO-UNO.html" target="_blank">Arduino Uno Datasheet</a></p>
+    <p><a href="https://wiki.seeedstudio.com/XIAO_ESP32C3_Getting_Started/" target="_blank">Xiao ESP32C3 Datasheet</a></p>
+    <p><a href="/media/embedded/Arduino_lcd.ino" target="_blank"> Source Code</a></p>
+    </div>
+
+</div>
+
+    
+</body>
+</html>
+
+<footer id="footer" class="text-center py-0" style="background-color: #1a1a1a; color: #d3d3d3 !important;"
+    data-aos="fade-up">
+    <div class="container">
+        <section class="mb-1">
+            <a class="btn btn-link btn-floating btn-lg text-light " href="tel:+91 6379839123" role="button"
+                data-aos="flip-left">
+                <img src="https://img.icons8.com/ios-filled/20/ffffff/phone.png" alt="Phone" width="20" height="20" />
+            </a>
+
+            <a class="btn btn-link btn-floating btn-lg text-light " href="mailto:muhesh022@gmail.com" role="button"
+                data-aos="flip-right">
+                <img src="https://img.icons8.com/ios-filled/20/ffffff/gmail.png" alt="Gmail" width="20" height="20" />
+            </a>
+
+            <a class="btn btn-link btn-floating btn-lg text-light" href="https://www.linkedin.com/in/muheshkumar22"
+                target="_blank" role="button" data-aos="flip-left">
+                <img src="https://img.icons8.com/ios-filled/20/ffffff/linkedin.png" alt="LinkedIn" width="20"
+                    height="20" />
+            </a>
+
+            <a class="btn btn-link btn-floating btn-lg text-light " href="https://www.instagram.com/r_muhesh_"
+                target="_blank" role="button" data-aos="flip-right">
+                <img src="https://img.icons8.com/ios-filled/20/ffffff/instagram-new.png" alt="Instagram" width="20"
+                    height="20" />
+            </a>
+
+            <a class="btn btn-link btn-floating btn-lg text-light" href="https://github.com/muhesh22"
+                target="_blank" role="button" data-aos="flip-left">
+                <img src="https://img.icons8.com/ios-filled/20/ffffff/github.png" alt="GitHub" width="20" height="20" />
+            </a>
+
+            <a class="btn btn-link btn-floating btn-lg text-light"
+                href="https://gitlab.fabcloud.org/academany/fabacademy/2025/labs/nellai/students/muheshkumar-r"
+                target="_blank" role="button" data-aos="flip-right">
+                <img src="https://img.icons8.com/ios-filled/20/ffffff/gitlab.png" alt="GitLab" width="20" height="20" />
+            </a>
+        </section>
+
+       
+    </div>
+
+    <div class="text-center p-2" style="background-color: rgba(255, 255, 255, 0.1); color: #d3d3d3;">
+        © 2025 Copyright
+        <p class="text-light"><a href="assigment/project_management.html" class="text-light">Student Agreement</a> </p>
+        <a class="text-light" href="#">2025 Muheshkumar R - Creative Common Attribution Non Commercial <br> Source code
+            hosted at</a>
+        <a class="text-light" href="https://gitlab.fabcloud.org/academany/fabacademy/2025/labs/nellai/students/muheshkumar-r"
+            target="_blank">gitlab.fabcloud.org</a> - <a class="text-light" href="https://fabacademy.org/" target="_blank">fabacademy.org</a>
+    </div>
+</footer>
+<!-- AOS Script -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1000, // Animation duration
+        once: true, // Animation happens only once
+    });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+<script src="../navbar.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const menuToggle = document.querySelector(".mobile-menu");
+        const navLinks = document.querySelector(".nav-links");
+
+        menuToggle.addEventListener("click", function () {
+            navLinks.classList.toggle("active");
+        });
+
+        document.addEventListener("click", function (event) {
+            if (!menuToggle.contains(event.target) && !navLinks.contains(event.target)) {
+                navLinks.classList.remove("active");
+            }
+        });
+    });
+</script>
+
+</html>

@@ -17,6 +17,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="../styles.css">
     <style>
         nav.premium-nav {
             position: fixed;
@@ -103,17 +104,19 @@
     }
 
     th {
-        background-color: #f1f1f1;
+        background-color: --var(--bg-color);
     }
 
     tr:nth-child(even) {
-        background-color: #f2f2f2;
+        background-color: --var(--bg-color);
     }
 
     pre {
-        background-color: #f2f2f2;
+        background-color: --var(--bg-color);
         padding: 1rem;
-        font-size: 1rem;
+        font-size: 1 rem;
+        border: 1px solid var(--text-color);
+        width: 700px;
     }
 
     @media screen and (max-width: 600px) {
@@ -132,211 +135,375 @@
     }
 </style>
 
-<div class="container mt-5">
-    <div class="d-flex align-items-center">
-            <!-- <img src="../media/proj_man/git_logo.png" class="img-fluid me-3" alt="Description of Image" style="max-width: 50px; height: auto;"> -->
-            <h1 class="display-3 mb-0">Week 9:Input Devices</h1>
-    </div><s></s>
-    <p class="lead mt-2 text-secondary">
-        This week describes my understanding of how to use Input Devices. It also includes how to generate an analog output (PWM) using pin 9, how to use an oscilloscope and multimeter for analysis, and how to integrate different sesnor with the microcontroller.
-    </p>
-</div>
-
-<div class="container">
-    <h1>Interpret a Signal</h1>
-    <p>We generate an analog output (PWM) using pin 9. A LED is connected to see the signal effect, and the oscilloscope and multimeter are used for analysis.</p>
-<div class="image-container">
-    <img src="../media/ip/ip_1.jpg" class="img-fluid rounded" alt="Description of Image" style="max-width: 100%; height: auto;">
-</div>
-<br><br><br>
-        <div class="section">
-            <h2><strong>1. Understanding DSO Components</strong></h2>
-            <ul>
-                <li><strong>Power Button:</strong> Turns the DSO ON/OFF.</li>
-                <li><strong>Display Screen:</strong> Shows the waveform.</li>
-                <li><strong>Probe Inputs (CH1, CH2):</strong> Connect the oscilloscope probes here.</li>
-                <li><strong>Time/Div Knob:</strong> Adjusts the time scale (horizontal axis).</li>
-                <li><strong>Volts/Div Knob:</strong> Adjusts the voltage scale (vertical axis).</li>
-                <li><strong>Trigger Controls:</strong> Helps stabilize the waveform.</li>
-            </ul>
+    <div class="three-column-layout m-5 md-5">
+         <div style="margin-top: 100px;" class="left-column">
+            <ol style="list-style-type: none;">
+                <li><a href="project_management.html">  Week 1 : Project Management</a></li>
+                <li><a href="cad_assignment.html">Week 2 : Computer-aided</a></li>
+                <li><a href="CCC.html">Week 3 : Computer Controlled Cutting</a></li>
+                <li><a href="Embedded.html">Week 4 : Embedded Programming</a></li>
+                <li><a href="3d_assignment.html">Week 5 :3D Scanning and Printing</a></li>
+                <li><a href="pcb.html">Week 6 : Electronic Design</a></li>
+                <li><a href="CCM.html">Week 7 : Computer Controlled Machining</a></li>
+                <li><a href="PCB_Prod.html">Week 8 : Electronics Production</a></li>
+                <li><a href="IP.html">Week 9 : Input Devices</a></li>
+                <li><a href="OP.html">Week 10 : Output Devices</a></li>
+                <li><a href="Networking_Communications.html">Week 11 : Networking and Communication</a></li>
+                <li><a href="machine_design.html">Week 12 : Mechanical Design and Machine Design</a></li>
+                <li><a href="Midterm_Review.html">Week 13 : Midterm Review</a></li>
+                <li><a href="Molding_Casting.html">Week 14 : Molding and Casting</a></li>
+                <li><a href="Interface_application.html">Week 15 : Interface and Application Programming</li>
+                <li><a href="System_Integeration.html">Week 16 : System Integeration</a></li>
+                <li><a href="Wildcard_week.html">Week 17 : Wildcard Week</a></li>
+                <li><a href="Wildcard_week.html">Week 18 : Applications and Implications, Project Development</a></li>
+                <li><a href="project_development.html">Week 19 : Invention, Intellectual property and Income</a></li>
+                <li><a href="final_project_requirements.html">Week 20 : FInal Project Requirements</a></li>
+            </ol>
         </div>
+        <div class="center-column md-5">
+            <h1 style="font-weight: bold;">Week 9:Input Devices</h1>
+            <p>
+                This week describes my understanding of how to use Input Devices. It also includes how to generate an analog output (PWM) using pin 9, how to use an oscilloscope and multimeter for analysis, and how to integrate different sesnor with the microcontroller.
+            </p>
+            <a href="https://fabacademy.org/2025/labs/nellai/assets/assignments/input_devices.html">For More About group Assignment</a>
+            <h1 style="font-weight: bold;">Interpret a Signal</h1>
+            <p>We generate an analog output (PWM) using pin 9. A LED is connected to see the signal effect, and the oscilloscope and multimeter are used for analysis.</p>
+       
+            <img src="../media/ip/ip_1.jpg" class="img-fluid rounded" alt="Description of Image" style="max-width: 100%; height: auto;">
+       
+        <br><br><br>
+                <div class="section">
+                    <h2 style="font-weight: bold;"><strong>1. Understanding DSO Components</strong></h2>
+                    <ul>
+                        <li><strong>Power Button:</strong> Turns the DSO ON/OFF.</li>
+                        <li><strong>Display Screen:</strong> Shows the waveform.</li>
+                        <li><strong>Probe Inputs (CH1, CH2):</strong> Connect the oscilloscope probes here.</li>
+                        <li><strong>Time/Div Knob:</strong> Adjusts the time scale (horizontal axis).</li>
+                        <li><strong>Volts/Div Knob:</strong> Adjusts the voltage scale (vertical axis).</li>
+                        <li><strong>Trigger Controls:</strong> Helps stabilize the waveform.</li>
+                    </ul>
+                </div>
+                
+                <div class="section">
+                    <h2 style="font-weight: bold;"><strong>2. Connecting the Oscilloscope to Arduino</strong></h2>
+                    <h3 style="font-weight: bold;">A. Connect the Probe Correctly</h3>
+                    <ul>
+                        <li>Turn OFF the oscilloscope before connecting anything.</li>
+                        <li>Take one oscilloscope probe and connect:</li>
+                        <ul>
+                            <li><strong>Probe Tip:</strong> To Arduino PWM Pin 9 (or any analog pin you are testing).</li>
+                            <li><strong>Probe Ground (Clip):</strong> To Arduino GND (Ground).</li>
+                        </ul>
+                        <li>Power up the Arduino and DSO.</li>
+                    </ul>
+                </div>
+                
+                <div class="section">
+                    <h2 style="font-weight: bold;"><strong>3. Configuring the Oscilloscope for Basic Signal Viewing</strong></h2>
+                    <h3 style="font-weight: bold;">A. Set the Channel</h3>
+                    <ul>
+                        <li>Press the CH1 button to activate Channel 1 (where we connected the probe).</li>
+                        <li>If using two probes, press CH2 for the second channel.</li>
+                    </ul>
+                    <h3 style="font-weight: bold;">B. Adjust the Voltage Scale (Vertical Setting)</h3>
+                    <ul>
+                        <li>Use the Volts/Div knob to set the voltage range.</li>
+                        <li>Start with 1V/div and increase if needed.</li>
+                        <li>For a 5V Arduino signal, set it around 2V/div for better viewing.</li>
+                    </ul>
+                    <h3 style="font-weight: bold;">C. Adjust the Time Scale (Horizontal Setting)</h3>
+                    <ul>
+                        <li>Use the Time/Div knob to set the time range.</li>
+                        <li>If measuring PWM signals (~500Hz), start with 1ms/div.</li>
+                        <li>If measuring fast signals (above 1kHz), use 100µs/div.</li>
+                    </ul>
+                    <h3 style="font-weight: bold;">D. Set the Trigger for a Stable Display</h3>
+                    <ul>
+                        <li>Press the Trigger Menu and set:</li>
+                        <ul>
+                            <li><strong>Mode:</strong> Edge</li>
+                            <li><strong>Source:</strong> CH1</li>
+                            <li><strong>Slope:</strong> Rising Edge</li>
+                            <li><strong>Level:</strong> Adjust until the waveform stabilizes</li>
+                        </ul>
+                    </ul>
+                </div>
+                
+                <div class="section">
+                    <h2 style="font-weight: bold;"><strong>4. Running the Oscilloscope & Viewing the Waveform</strong></h2>
+                    <ul>
+                        <li>Press <strong>AUTOSET</strong> (if available) to let the DSO automatically adjust settings.</li>
+                        <li>If AUTOSET doesn’t work well, manually tweak Volts/Div and Time/Div.</li>
+                        <li>Observe the waveform:</li>
+                        <ul>
+                            <li>If using PWM output, you should see a square wave.</li>
+                            <li>If using an analog sensor, the waveform may look more irregular.</li>
+                        </ul>
+                        <li>Use <strong>Cursors or Measurements</strong> (if your DSO has them) to check signal values.</li>
+                    </ul>
+                </div>
+                
+                <div class="section">
+                    <h2 style="font-weight: bold;"><strong>5. Capturing & Analyzing the Waveform</strong></h2>
+                    <ul>
+                        <li>If your oscilloscope has a Save function, take a screenshot of the waveform.</li>
+                        <li>Compare the output with the expected Arduino signal.</li>
+                        <li>Adjust your Arduino code if needed to modify the signal.</li>
+                    </ul>
+                </div>
+            <pre><code>
+                void setup() {
+                pinMode(9, OUTPUT);
+                }
+
+                void loop() {
+                for (int u = 0; u < 255; u++){
+                    analogWrite(9, u);
+                    delay(50);
+                }
+                }
+            </code></pre>
+                    
+            <h2 style="font-weight: bold;"><strong>Video Demonstration</strong></h2>
+            <div class="video-container">     
+                <iframe src="https://drive.google.com/file/d/1Gl2Ir4gY5cMTqI0fo6Va6bBTkCqNabAo/preview" width="700px" height="400px" allowfullscreen></iframe>
+            </div>
+
+            <a href="#">For Group Assignment Refer here </a>
+            <br><br>
+                    
+            <h2 style="font-weight: bold;">Joystick Module</h2>
+                    
+            <p>The Joystick Module consists of two potentiometers, each controlling an axis (X and Y).</p>
+                    
+                    
+            <h3 style="font-weight: bold;">Reading Joystick Module</h3>
+                    
+                <p>Connect the joystick to Arduino: A0 and A1 for analog readings, pin 2 for the button.</p>
+                <pre><code style="text-align: left;">
+                    int x_Pin = A0;
+                    int y_Pin = A1;
+                    int button_Pin = 2;
+
+                    void setup(){
+                        Serial.begin(9600);
+                        pinMode(button_Pin, INPUT_PULLUP);
+                   }
+
+                    void loop(){
+                        Serial.print("X: "); Serial.print(analogRead(x_Pin));
+                        erial.print("\tY: "); Serial.print(analogRead(y_Pin));
+                        Serial.print("\tButton: "); Serial.println(digitalRead(button_Pin));
+                    delay(100);
+                    }
+                </code></pre>
+
+            <h2 style="font-weight: bold;">Joystick Axis Values</h2>
+            <table class="table table-striped table-bordered">
+                <tr><th>Axis X</th><th>Axis Y</th></tr>
+                <tr><td>Up</td><td>1023</td><td>527</td></tr>
+                <tr><td>Down</td><td>0</td><td>527</td></tr>
+                <tr><td>Right</td><td>512</td><td>1023</td></tr>
+                <tr><td>Left</td><td>512</td><td>0</td></tr>
+                <tr><td>Center</td><td>512</td><td>527</td></tr>
+            </table>
+
+            <h2 style="font-weight: bold;">Video Demonstration</h2>
+            <div class="video-container">
+                <iframe src="https://drive.google.com/file/d/1qNIKKUbCiI-ChxZHpB6fQFN1c4zXM_N9/preview" width="50%" height="400px" allowfullscreen></iframe>
+            </div>
+        <br><br><br>
+            <h2 style="font-weight: bold;"><strong>Temperature Sensor LM35</strong></h2>
+            <br>
+            <div class="image-container">
+                <img src="../media/ip/ip2.jpg" class="img-fluid rounded" alt="Description of Image" style="max-width: 100%; height: auto;">
+            </div>
+            <br>
+            <p>The LM35 is an analog temperature sensor with an output range of 0V to 1.5V.</p>
+            <div class="image-container">
+                <img src="../media/ip/ip3.jpg" class="img-fluid rounded" alt="Description of Image" style="max-width: 100%; height: auto;">
+            </div>
+            <br><br>
+            <pre><code class="copyable">
+                float temp = 0.0;
+                int temp_Pin = 0;
+
+                void setup(){
+                    Serial.begin(9600);
+                }
+                void loop(){
+                    temp = analogRead(temp_Pin);
+                    Serial.print("temperature: ");
+                    Serial.println(temp);
+                    delay(100);
+                }
+            </code></pre>
+
+            <h3>Converting to Celsius</h3>
+            <pre><code>float temp_C = (5.0 * temp * 100.0) / 1024.0;</code></pre>
+            <br><br>
+            <h2><strong>Ultrasonic Sensor HC-SR04</strong></h2>
+            <p>The HC-SR04 sensor calculates distance using ultrasonic waves.</p>
+            <div class="image-container">
+            <img src="../media/ip/ip4.jpg" class="img-fluid rounded" alt="Description of Image" style="max-width: 100%; height: auto;">
+        </div>
+        <br>
+            <pre><code>
+            const int Trig = 2;
+            const int Echo = 3;
+            float tim = 0.0;
+            float dist = 0.0;
+
+            void setup(){
+                Serial.begin(9600);
+                pinMode(Trig, OUTPUT);
+                pinMode(Echo, INPUT);
+                digitalWrite(Trig, LOW);
+            }
+
+            void loop(){
+                digitalWrite(Trig, HIGH);
+                delayMicroseconds(10);
+                digitalWrite(Trig, LOW);
+                tim = pulseIn(Echo, HIGH);
+                dist = tim / 59.0;
+                Serial.print("Distance: ");
+                Serial.print(dist);
+                Serial.println(" cm");
+                delay(100);
+            }
+        </code>
+        </pre>
+        <h2><b>Lets get into actual Work</b></h2>
+        <p>For this week we have to do a board attached with Microcontroller and then work on the</p>
+        <p>As we have worked on the previous weeks for <a href="pcb.html">PCB Design</a> and <a href="PCB_Prod.html">Electronics Production</a>. we are gonna repeat the same process for the Board production</p>
+        <h3><b>KiCAD Works</b></h3>
+        <p>Initially we're setting up the process for the Design as we're gonna design the product for Joystick Input, SDA, SCL ports and then Servomotor ports</p>
+        <h4><b>Schematic Design</b></h4>
+        <p>Initially designed up the Kicad Schematic for the Board that we are gonna design</p>
+        <img src="../media/ip/ip12.jpg" alt="">
+        <br>
+        <br>
+        <h4><b>PCB Design</b></h4>
+        <p>Now we gonna change that into PCB design using PCB Editor</p>
+        <img src="../media/ip/ip13.jpg" alt="">
+        <br>
+        <br>
+        <h3><b>PCB Milling</b></h3>
+        <p>After Designing the Board exported it as nc file from the <a href="https://modsproject.org/">MoDS CE</a> and imported it to Wegster CNC for milling and afterwards get that final Product is</p>
+        <img src="../media/ip/ip6.jpg" alt="">
+        <br>
+        <br>
+        <h4><b>Version 1 & Version 2 of the Board</b></h4>
+        <p>The Problem is due to the form of greenish layer on the Coppper Board and the other one is well cleaned and secured with mineral oil after fabrication</p>
+        <img src="../media/ip/ip5.jpg" alt="">
+        <br>
+        <br>
+        <h4><b>Blunders happened during making Soldering</b></h4>
+        <p>Intially I have soldered try to turn board it doesn't show any output and then I came to know the solder trace for the GND wasn't done at best</p>
+        <img src="../media/ip/ip10.jpg" alt="">
+        <br>
+        <br>
+        <img src="../media/ip/ip9.jpg" alt="">
+        <br>
+        <br>
+        <h4><b>Making things ready for showing output</b></h4>
+        <img src="../media/ip/ip7.jpg" alt="">
+        <br>
+        <br>
+        <p>Now we get the solder and make up the Board and next we are gonna add the joystick to our microcontroller and afterwards showing the Graph out in Serial Plotter in arduino</p>
         
-        <div class="section">
-            <h2><strong>2. Connecting the Oscilloscope to Arduino</strong></h2>
-            <h3>A. Connect the Probe Correctly</h3>
-            <ul>
-                <li>Turn OFF the oscilloscope before connecting anything.</li>
-                <li>Take one oscilloscope probe and connect:</li>
+        <h1>Joystick Interface Code Explanation</h1>
+
+            <pre><code>
+            #define VRX_PIN 2   // A0
+            #define VRY_PIN 3   // A1
+            #define SW_PIN  0   // Digital button
+
+            void setup() {
+                Serial.begin(115200);
+                pinMode(SW_PIN, INPUT_PULLUP); // Joystick button is active LOW
+            }
+
+            void loop() {
+                int xValue = analogRead(VRX_PIN);
+                int yValue = analogRead(VRY_PIN);
+                int swState = digitalRead(SW_PIN);
+
+            // Format for Serial Plotter: label:value, label:value
+                Serial.print("X:");
+                Serial.print(xValue);
+                Serial.print(",Y:");
+                Serial.print(yValue);
+                Serial.print(",SW:");
+                Serial.println(swState == LOW ? 0 : 4095); // show pressed/released as 0 or 4095
+
+                delay(50); // smoother graph
+            }
+        </code>
+        </pre>
+        
+        <h2>Pin Definitions</h2>
+        <ul>
+            <li><code>#define VRX_PIN 2</code>: Assigns pin 2 to read X-axis analog values.</li>
+            <li><code>#define VRY_PIN 3</code>: Assigns pin 3 to read Y-axis analog values.</li>
+            <li><code>#define SW_PIN 0</code>: Assigns pin 0 to read joystick button state.</li>
+        </ul>
+
+        <h2>Setup Function</h2>
+        <ul>
+            <li><code>Serial.begin(115200);</code>: Begins serial communication for plotting or debugging.</li>
+            <li><code>pinMode(SW_PIN, INPUT_PULLUP);</code>: Sets the button pin as input with an internal pull-up resistor.</li>
+        </ul>
+
+        <h2>Loop Function</h2>
+        <ul>
+            <li><code>int xValue = analogRead(VRX_PIN);</code>: Reads and stores X-axis value.</li>
+            <li><code>int yValue = analogRead(VRY_PIN);</code>: Reads and stores Y-axis value.</li>
+            <li><code>int swState = digitalRead(SW_PIN);</code>: Reads the joystick button state (pressed/released).</li>
+        </ul>
+
+        <h3>Serial Output Formatting</h3>
+        <ul>
+            <li><code>Serial.print("X:")</code>: Labels the X value for plotting.</li>
+            <li><code>Serial.print(xValue)</code>: Prints the X-axis value.</li>
+            <li><code>Serial.print(",Y:")</code>: Adds Y-axis label.</li>
+            <li><code>Serial.print(yValue)</code>: Prints Y-axis value.</li>
+            <li><code>Serial.print(",SW:")</code>: Adds switch label.</li>
+            <li><code>Serial.println(swState == LOW ? 0 : 4095);</code>: Converts button state to 0 or 4095 for Serial Plotter graph scaling.</li>
+        </ul>
+
+        <h3>Delay</h3>
+        <p><code>delay(50);</code>: Adds a 50ms delay for smoother plotting without excessive data refresh.</p>
+        
+
+        <a href="PCB_Prod.html">Refer for PCB Production</a>
+        <br>
+        <br>
+        <h2><b>Hero Shot</b></h2>
+        <br>
+        <div style="padding:177.78% 0 0 0;position:relative;">
+            <iframe src="https://player.vimeo.com/video/1091093533?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:75%;height:75%;" title="result_input"></iframe>
+        </div>
+        <script src="https://player.vimeo.com/api/player.js"></script>
+            <h3><b>Learning Summary</b></h3>
                 <ul>
-                    <li><strong>Probe Tip:</strong> To Arduino PWM Pin 9 (or any analog pin you are testing).</li>
-                    <li><strong>Probe Ground (Clip):</strong> To Arduino GND (Ground).</li>
+                    <li>Learned about the basics of Arduino and its components.</li>
+                    <li>Understood about the Xiao - Seeed Studio Esp32C3</li>
+                    <li>Learned how to use the LiquidCrystal library to control an LCD screen.</li>
+                    <li>Implemented a simple timer using the LCD screen.</li>
+                    <li>Interfacing Joystick with actually fabricated PCB Board</li>
                 </ul>
-                <li>Power up the Arduino and DSO.</li>
-            </ul>
+            <h2>Download the Files</h2>
+            <li><a href="../media/ip/joy_op/joy_op.ino">Joystick Interface</a></li>
+            <li><a href="../media/ip/waveform_analysis/waveform_analysis.ino" target="_blank">waveform_analysis</a></li> 
+            <li><a href="../media/ip/Motor_control.zip">PCB Design Files</a></li>
+
+            <p>That’s all for now!</p>
         </div>
-        
-        <div class="section">
-            <h2><strong>3. Configuring the Oscilloscope for Basic Signal Viewing</strong></h2>
-            <h3>A. Set the Channel</h3>
-            <ul>
-                <li>Press the CH1 button to activate Channel 1 (where we connected the probe).</li>
-                <li>If using two probes, press CH2 for the second channel.</li>
-            </ul>
-            <h3>B. Adjust the Voltage Scale (Vertical Setting)</h3>
-            <ul>
-                <li>Use the Volts/Div knob to set the voltage range.</li>
-                <li>Start with 1V/div and increase if needed.</li>
-                <li>For a 5V Arduino signal, set it around 2V/div for better viewing.</li>
-            </ul>
-            <h3>C. Adjust the Time Scale (Horizontal Setting)</h3>
-            <ul>
-                <li>Use the Time/Div knob to set the time range.</li>
-                <li>If measuring PWM signals (~500Hz), start with 1ms/div.</li>
-                <li>If measuring fast signals (above 1kHz), use 100µs/div.</li>
-            </ul>
-            <h3>D. Set the Trigger for a Stable Display</h3>
-            <ul>
-                <li>Press the Trigger Menu and set:</li>
-                <ul>
-                    <li><strong>Mode:</strong> Edge</li>
-                    <li><strong>Source:</strong> CH1</li>
-                    <li><strong>Slope:</strong> Rising Edge</li>
-                    <li><strong>Level:</strong> Adjust until the waveform stabilizes</li>
-                </ul>
-            </ul>
-        </div>
-        
-        <div class="section">
-            <h2><strong>4. Running the Oscilloscope & Viewing the Waveform</strong></h2>
-            <ul>
-                <li>Press <strong>AUTOSET</strong> (if available) to let the DSO automatically adjust settings.</li>
-                <li>If AUTOSET doesn’t work well, manually tweak Volts/Div and Time/Div.</li>
-                <li>Observe the waveform:</li>
-                <ul>
-                    <li>If using PWM output, you should see a square wave.</li>
-                    <li>If using an analog sensor, the waveform may look more irregular.</li>
-                </ul>
-                <li>Use <strong>Cursors or Measurements</strong> (if your DSO has them) to check signal values.</li>
-            </ul>
-        </div>
-        
-        <div class="section">
-            <h2><strong>5. Capturing & Analyzing the Waveform</strong></h2>
-            <ul>
-                <li>If your oscilloscope has a Save function, take a screenshot of the waveform.</li>
-                <li>Compare the output with the expected Arduino signal.</li>
-                <li>Adjust your Arduino code if needed to modify the signal.</li>
-            </ul>
-        </div>
-    <pre><code>void setup() {
-  pinMode(9, OUTPUT);
-}
-
-void loop() {
-  for (int u = 0; u < 255; u++){
-    analogWrite(9, u);
-    delay(50);
-  }
-}</code></pre>
-    <h2><strong>Video Demonstration</strong></h2>
-    <div class="video-container">
-        <iframe src="https://drive.google.com/file/d/1Gl2Ir4gY5cMTqI0fo6Va6bBTkCqNabAo/preview" width="50%" height="400px" allowfullscreen></iframe>
     </div>
-    
-<br><br><br>
-    <h2><strong>Joystick Module</strong></h2>
-    <p>The Joystick Module consists of two potentiometers, each controlling an axis (X and Y).</p>
-    
-    <h3>Reading Joystick Module</h3>
-    <p>Connect the joystick to Arduino: A0 and A1 for analog readings, pin 2 for the button.</p>
-    
-    <pre><code>int x_Pin = A0;
-int y_Pin = A1;
-int button_Pin = 2;
 
-void setup(){
-  Serial.begin(9600);
-  pinMode(button_Pin, INPUT_PULLUP);
-}
-
-void loop(){
-  Serial.print("X: "); Serial.print(analogRead(x_Pin));
-  Serial.print("\tY: "); Serial.print(analogRead(y_Pin));
-  Serial.print("\tButton: "); Serial.println(digitalRead(button_Pin));
-  delay(100);
-}</code></pre>
-
-    <h2>Joystick Axis Values</h2>
-    <table>
-        <tr><th>Axis X</th><th>Axis Y</th></tr>
-        <tr><td>Up</td><td>1023</td><td>527</td></tr>
-        <tr><td>Down</td><td>0</td><td>527</td></tr>
-        <tr><td>Right</td><td>512</td><td>1023</td></tr>
-        <tr><td>Left</td><td>512</td><td>0</td></tr>
-        <tr><td>Center</td><td>512</td><td>527</td></tr>
-    </table>
-
-    <h2>Video Demonstration</h2>
-    <div class="video-container">
-        <iframe src="https://drive.google.com/file/d/1qNIKKUbCiI-ChxZHpB6fQFN1c4zXM_N9/preview" width="50%" height="400px" allowfullscreen></iframe>
-    </div>
-<br><br><br>
-    <h2><strong>Temperature Sensor LM35</strong></h2>
-    <div class="image-container">
-        <img src="../media/ip/ip2.jpg" class="img-fluid rounded" alt="Description of Image" style="max-width: 100%; height: auto;">
-    </div>
-    <p>The LM35 is an analog temperature sensor with an output range of 0V to 1.5V.</p>
-    <div class="image-container">
-        <img src="../media/ip/ip3.jpg" class="img-fluid rounded" alt="Description of Image" style="max-width: 100%; height: auto;">
-    </div>
-    <pre><code>float temp = 0.0;
-int temp_Pin = 0;
-void setup(){
-    Serial.begin(9600);
-}
-void loop(){
-  temp = analogRead(temp_Pin);
-  Serial.print("temperature: ");
-  Serial.println(temp);
-  delay(100);
-}</code></pre>
-
-    <h3>Converting to Celsius</h3>
-    <pre><code>float temp_C = (5.0 * temp * 100.0) / 1024.0;</code></pre>
-    <br><br><br>
-    <h2><strong>Ultrasonic Sensor HC-SR04</strong></h2>
-    <p>The HC-SR04 sensor calculates distance using ultrasonic waves.</p>
-    <div class="image-container">
-    <img src="../media/ip/ip4.jpg" class="img-fluid rounded" alt="Description of Image" style="max-width: 100%; height: auto;">
 </div>
-    <pre><code>const int Trig = 2;
-const int Echo = 3;
-float tim = 0.0;
-float dist = 0.0;
-
-void setup(){
-  Serial.begin(9600);
-  pinMode(Trig, OUTPUT);
-  pinMode(Echo, INPUT);
-  digitalWrite(Trig, LOW);
-}
-
-void loop(){
-  digitalWrite(Trig, HIGH);
-  delayMicroseconds(10);
-  digitalWrite(Trig, LOW);
-  tim = pulseIn(Echo, HIGH);
-  dist = tim / 59.0;
-  Serial.print("Distance: ");
-  Serial.print(dist);
-  Serial.println(" cm");
-  delay(100);
-}</code></pre>
-
-
-    <!-- <h2>Download the Files</h2>
-    <p><a href="#">Click here to download</a></p>
-    <p>That’s all for now!</p> -->
 
 </body>
 <footer id="footer" class="text-center" style="background-color: #1a1a1a; color: #d3d3d3 !important;"
@@ -376,6 +543,8 @@ void loop(){
                 <img src="https://img.icons8.com/ios-filled/20/ffffff/gitlab.png" alt="GitLab" width="20" height="20" />
             </a>
         </section>
+        
+    </div>
 
        
     </div>
